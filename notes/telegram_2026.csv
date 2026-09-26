@@ -1,0 +1,14 @@
+id,niche,format,market,monetization,payout_rail,crypto_payout,days_to_first_usd,month6_ceiling_usd,ceiling_formula,p_first_usd_30d,owner_hours_week
+TG-01,"Разработка ботов/мини-аппов под ключ для крипто-нативных заказчиков",B2B-услуга,EN global (письменно),"Фикс $300-1500 + поддержка","USDT/USDC инвойс на Bybit; Contra USDC; фиат через Upwork/SRL",yes,21,1800,"2 проекта x $700 + 4 поддержки x $100",0.2,8
+TG-02,"AI guardian (проверка заявок + антиспам) для групп",Бот (Stars-подписка),EN/ES/UA,"250 Stars/мес за группу","Stars->Fragment->GRAM->Bybit",yes,45,360,"120 групп x 250 x $0.013 - LLM $30",0.05,3
+TG-03,"Автоответчик для личного профиля (Chat Automation + Managed Bots)",Бот (Stars-подписка),UA/EN/ES,"400 Stars/мес","Stars->Fragment",yes,50,350,"80 x 400 x $0.013 - LLM $64",0.04,3
+TG-04,"Фото на паспорт/визу/ID по спецификациям стран",Бот (оплата за фото),EN/UA/TR/IN,"75 Stars за фото","Stars->Fragment",yes,40,470,"500 x 75 x $0.013 - $20",0.05,2
+TG-05,"Экспресс-аудит сайта (SEO/CWV/a11y) в guest mode",Бот (оплата за отчёт),UA/KZ/MD/RO (RU/RO/UA),"100 Stars за отчёт","Stars->Fragment",yes,45,195,"150 x 100 x $0.013",0.03,2
+TG-06,"Инструменты админа канала: ИИ-черновики, расписание, предложенные посты",Мини-апп (подписка),UA/EN,"200 Stars/мес","Stars->Fragment",yes,50,360,"150 x 200 x $0.013 - LLM $30",0.03,3
+TG-07,"Безликий дайджест-канал (AI coding tools EN / ИИ и удалёнка UA)",Канал,EN/UA,"Реклама 50% + предложенные посты 85% + Adsgram","Fragment GRAM; Adsgram USDT-TON",yes,90,80,"2 x 150k просмотров x $0.074/1000 + посты $22 + Adsgram $30",0.01,1.5
+TG-08,"Бесплатный бот PDF/документов с рекламой",Бот (реклама),EN/IN/PT,"Adsgram","Adsgram USDT-TON",yes,60,120,"40000 MAU x $0.003",0.02,1
+TG-09,"Платный дайджест грантов/баунти/хакатонов для Web3-разработчиков",Платный Stars-канал,EN,"250 Stars/мес","Stars->Fragment",yes,45,260,"80 x 250 x $0.013",0.03,1
+TG-10,"Каталог мини-аппов с партнёрскими ссылками",Канал/бот,EN/IN,"Affiliate Programs (Stars)","Stars->Fragment",yes,60,80,"300 рефералов x 150 x 15% x $0.013",0.02,1
+TG-11,"Казуальная головоломка без токенов",Мини-апп-игра,EN global,"Stars IAP + Adsgram rewarded","Stars; Adsgram USDT",yes,60,230,"8000 MAU x 1% x 200 x $0.013 + 8000 x $0.003",0.02,2
+TG-12,"Грант/хакатон TON для мини-аппа флота",Грант/приз,global,"Разовый приз","GRAM/USDT",yes,90,0,"разово; суммы нет данных",0.01,2
+TG-13,"ИИ-редактор фото (фон, предметка, стилизация)",Бот (поштучно),UA/EN,"10 Stars за изображение","Stars->Fragment",yes,40,273,"3000 x 10 x $0.013 - 3000 x $0.039",0.05,2
