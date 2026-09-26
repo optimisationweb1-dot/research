@@ -1,0 +1,19 @@
+id,niche,buyer_market,channel,it_park,price_evidence,ceiling_m6_usd_estimate,ceiling_formula,p_first_usd_30d_estimate,owner_h_week_estimate,score,test_14d,time_to_first_usd
+N1,WCAG 2.2/EAA checkout audit Shopify/Shopware,EU e-commerce 10+ staff NL/DE/Nordics (EN report),Upwork Catalog + own landing,62.02/62.09? (interp),$500-1500 Upwork; DE 1500-4000 EUR,3000,1000x3,0.25,8,94,3 catalog items + 20 proposals (~$48) + landing,2-5 wk
+N2,White-label accessibility audit+remediation,web agencies US/UK/EU,Upwork + partner pages,62.01 (fixes),$500-1500 per project,2850,600x4+150x3,0.20,6,95,20 proposals ($48) + sample report,2-4 wk
+N3,VPAT/ACR drafting,B2B SaaS selling to US/EU public sector,Upwork,62.02?,no data,2400,1200x2,0.15,6,60,10 proposals ($24),3-6 wk
+N4,WordPress/Shopify theme accessibility remediation,site owners US/EU,Upwork,62.01,$30+/h (below = red flag),1800,30x60h,0.35,8,79,20 proposals ($48),1-3 wk
+N5,Monthly accessibility monitoring,clients of N1-N4,upsell,63.11/62.09,DE re-audits 700-2500 EUR/yr,1485,99x15,0.10,2,74,upsell only,after N1-N4
+N6,BFSG quick-check + accessibility statement (DE),small DE shops 10+ staff,DE landing,62.02?,quick-check from 490 EUR,2230,490 EURx4,0.10,8,28,DE landing $0,4+ wk
+N7,White-label technical SEO audit,SEO/web agencies US/UK/EU,Upwork + agency communities,non-IT 73.11 unless implementation 62.01,wholesale $300-700/mo per client; project $2000-10000,2400,400x6,0.35,6,140,3 catalog items + 30 proposals ($72),1-3 wk
+N8,SEO-safe site migration,agencies and e-commerce EN,Upwork,62.01 (interp),no Upwork data; wholesale $2000-10000,2400,1200x2,0.30,8,90,20 proposals ($48),1-3 wk
+N9,GEO/AI-visibility audit + schema/entity implementation,SaaS/B2B US,Upwork,62.01/73.11,$1000-5000 mid; auto audits $5,1200,300x4,0.25,4,75,10 proposals ($24),2-4 wk
+N10,Programmatic SEO engine on client data,SaaS/marketplaces US,Upwork,62.01,no data,2500,2500x1,0.15,8,47,10 proposals ($24),3-6 wk
+N11,SaaS/app localization EN->RO (MTPE + native QA),SaaS entering RO/MD,Upwork,74.30 non-IT; i18n 62.01,$0.05-0.15/word MTPE,1800,30000 words x 0.06,0.45,8,101,20 proposals ($48),1-2 wk
+N12,Technical SEO audit + retainer for RO e-shops (RO),RO e-commerce,RO landing + communities,non-IT 73.11,audit 2499-17499 RON; retainer 600-1350 RON/mo,2840,(1000 RONx5+7500 RON)/5 x1.137,0.20,6,95,RO landing + 2 free mini-audits,3-5 wk
+N13,Turnkey SMB websites RO/MD,SMB Moldova/Romania,RO/RU landing + directories,62.01,no data,2050,600 EURx3,0.25,6,85,landing $0,3-6 wk
+N14,Roofing pay-per-lead (pickaroofer.com),US roofers,inbound Advertise form,non-IT,$75-250 per lead,1500,100x15,0.15,3,75,Advertise form on site,6+ wk
+N15,Rank-and-rent roofing sites other cities,US roofers,same,non-IT,~$900-1000/mo rent,1800,900x2,0.05,3,30,not testable in 14 days,3-6 mo
+N16,Sell calls to pay-per-call network,networks,publisher application,non-IT,$60-130 per call,1200,60x20,0.10,2,60,publisher application $0,6+ wk
+N17,Core Web Vitals optimization WP/Shopify,shops US/EU,Upwork,62.01,no data,1600,400x4,0.30,5,96,20 proposals ($48),1-3 wk
+N18,Structured data implementation + validation,e-commerce and agencies,Upwork Catalog,62.01,no data,1500,250x6,0.30,4,112.5,3 catalog items + 15 proposals ($36),1-3 wk
