@@ -1,0 +1,1466 @@
+{
+ "prereg": [
+  [
+   "C_level_4h",
+   "rcrowd",
+   "4h",
+   {
+    "src": "level",
+    "pct": 0.9
+   }
+  ],
+  [
+   "C_level_1h",
+   "rcrowd",
+   "1h",
+   {
+    "src": "level",
+    "pct": 0.9
+   }
+  ],
+  [
+   "ctlPrice_4h",
+   "rcrowd",
+   "4h",
+   {
+    "src": "price",
+    "pct": 0.9
+   }
+  ],
+  [
+   "smartcrowd_4h",
+   "smartcrowd",
+   "4h",
+   {
+    "pct": 0.9,
+    "top_max": 0.5
+   }
+  ],
+  [
+   "Ffollow_1h",
+   "fcrowd",
+   "1h",
+   {
+    "norm": "z",
+    "trend": "ema",
+    "mode": "follow",
+    "z": 2.0
+   }
+  ],
+  [
+   "Ffollow_4h",
+   "fcrowd",
+   "4h",
+   {
+    "norm": "z",
+    "trend": "ema",
+    "mode": "follow",
+    "z": 2.0
+   }
+  ]
+ ],
+ "C_level_4h": {
+  "main_IS": {
+   "label": "IS",
+   "n": 714,
+   "trades_per_month": 61.6,
+   "win_pct": 45.7,
+   "avg_R": 0.122,
+   "t_stat": 2.76,
+   "sum_R": 86.9,
+   "pf": 1.27,
+   "ret_pct@0.5%": 52.5,
+   "max_dd_pct": 8.9,
+   "median_stop_pct": 4.573,
+   "t_clustered_week": 2.0,
+   "avgR_with_funding": 0.126,
+   "long": {
+    "n": 324,
+    "avg_R": 0.158,
+    "t_stat": 2.47
+   },
+   "short": {
+    "n": 390,
+    "avg_R": 0.092,
+    "t_stat": 1.51
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_IS_2024": {
+   "label": "IS2024",
+   "n": 714,
+   "trades_per_month": 61.6,
+   "win_pct": 45.7,
+   "avg_R": 0.122,
+   "t_stat": 2.76,
+   "sum_R": 86.9,
+   "pf": 1.27,
+   "ret_pct@0.5%": 52.5,
+   "max_dd_pct": 8.9,
+   "median_stop_pct": 4.573,
+   "t_clustered_week": 2.0,
+   "avgR_with_funding": 0.126,
+   "long": {
+    "n": 324,
+    "avg_R": 0.158,
+    "t_stat": 2.47
+   },
+   "short": {
+    "n": 390,
+    "avg_R": 0.092,
+    "t_stat": 1.51
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_OOS": {
+   "label": "OOS",
+   "n": 1272,
+   "trades_per_month": 63.8,
+   "win_pct": 46.2,
+   "avg_R": 0.083,
+   "t_stat": 2.58,
+   "sum_R": 105.2,
+   "pf": 1.18,
+   "ret_pct@0.5%": 65.7,
+   "max_dd_pct": 18.2,
+   "median_stop_pct": 4.32,
+   "t_clustered_week": 1.75,
+   "avgR_with_funding": 0.082,
+   "long": {
+    "n": 620,
+    "avg_R": 0.039,
+    "t_stat": 0.86
+   },
+   "short": {
+    "n": 652,
+    "avg_R": 0.124,
+    "t_stat": 2.77
+   },
+   "sym_pos": 9,
+   "n_sym": 10
+  },
+  "main_OOS_by_half": {
+   "2025H1": {
+    "n": 388,
+    "avg_R": 0.065
+   },
+   "2025H2": {
+    "n": 423,
+    "avg_R": 0.074
+   },
+   "2026H1": {
+    "n": 354,
+    "avg_R": 0.194
+   },
+   "2026H2": {
+    "n": 107,
+    "avg_R": -0.189
+   }
+  },
+  "main_OOS_per_symbol": {
+   "ADAUSDT": 0.101,
+   "AVAXUSDT": 0.099,
+   "BNBUSDT": 0.059,
+   "BTCUSDT": 0.075,
+   "DOGEUSDT": 0.086,
+   "ETHUSDT": 0.195,
+   "LINKUSDT": -0.001,
+   "LTCUSDT": 0.004,
+   "SOLUSDT": 0.136,
+   "XRPUSDT": 0.084
+  },
+  "main_OOS_delay1bar": {
+   "label": "OOS delay",
+   "n": 1292,
+   "trades_per_month": 64.8,
+   "win_pct": 44.1,
+   "avg_R": 0.04,
+   "t_stat": 1.21,
+   "sum_R": 51.3,
+   "pf": 1.08,
+   "ret_pct@0.5%": 26.4,
+   "max_dd_pct": 18.7,
+   "median_stop_pct": 4.308,
+   "t_clustered_week": 0.89,
+   "avgR_with_funding": 0.04,
+   "long": {
+    "n": 630,
+    "avg_R": -0.007,
+    "t_stat": -0.14
+   },
+   "short": {
+    "n": 662,
+    "avg_R": 0.084,
+    "t_stat": 1.83
+   },
+   "sym_pos": 8,
+   "n_sym": 10
+  },
+  "holdout_2024": {
+   "label": "H2024",
+   "n": 729,
+   "trades_per_month": 62.9,
+   "win_pct": 47.5,
+   "avg_R": 0.049,
+   "t_stat": 1.16,
+   "sum_R": 36.0,
+   "pf": 1.1,
+   "ret_pct@0.5%": 18.3,
+   "max_dd_pct": 15.5,
+   "median_stop_pct": 5.636,
+   "t_clustered_week": 0.81,
+   "avgR_with_funding": 0.053,
+   "long": {
+    "n": 329,
+    "avg_R": 0.025,
+    "t_stat": 0.41
+   },
+   "short": {
+    "n": 400,
+    "avg_R": 0.07,
+    "t_stat": 1.18
+   },
+   "sym_pos": 8,
+   "n_sym": 10
+  },
+  "holdout_2025_26": {
+   "label": "H2025",
+   "n": 1225,
+   "trades_per_month": 61.4,
+   "win_pct": 44.9,
+   "avg_R": 0.016,
+   "t_stat": 0.51,
+   "sum_R": 19.6,
+   "pf": 1.03,
+   "ret_pct@0.5%": 8.3,
+   "max_dd_pct": 19.7,
+   "median_stop_pct": 5.434,
+   "t_clustered_week": 0.39,
+   "avgR_with_funding": 0.015,
+   "long": {
+    "n": 684,
+    "avg_R": -0.035,
+    "t_stat": -0.84
+   },
+   "short": {
+    "n": 541,
+    "avg_R": 0.081,
+    "t_stat": 1.69
+   },
+   "sym_pos": 4,
+   "n_sym": 10
+  },
+  "holdout_all": {
+   "label": "Hall",
+   "n": 1954,
+   "trades_per_month": 62.1,
+   "win_pct": 45.9,
+   "avg_R": 0.028,
+   "t_stat": 1.12,
+   "sum_R": 55.7,
+   "pf": 1.06,
+   "ret_pct@0.5%": 28.1,
+   "max_dd_pct": 24.2,
+   "median_stop_pct": 5.53,
+   "t_clustered_week": 0.84,
+   "avgR_with_funding": 0.029,
+   "long": {
+    "n": 1013,
+    "avg_R": -0.016,
+    "t_stat": -0.46
+   },
+   "short": {
+    "n": 941,
+    "avg_R": 0.076,
+    "t_stat": 2.04
+   },
+   "sym_pos": 5,
+   "n_sym": 10
+  },
+  "holdout_2025_26_harsh_avgR": 0.001,
+  "holdout_per_symbol_2025_26": {
+   "APTUSDT": -0.045,
+   "ARBUSDT": 0.047,
+   "ATOMUSDT": -0.053,
+   "BCHUSDT": 0.092,
+   "DOTUSDT": 0.219,
+   "ETCUSDT": -0.023,
+   "FILUSDT": -0.022,
+   "NEARUSDT": -0.079,
+   "OPUSDT": -0.031,
+   "UNIUSDT": 0.05
+  }
+ },
+ "C_level_1h": {
+  "main_IS": {
+   "label": "IS",
+   "n": 1198,
+   "trades_per_month": 103.3,
+   "win_pct": 39.8,
+   "avg_R": 0.097,
+   "t_stat": 2.37,
+   "sum_R": 115.9,
+   "pf": 1.16,
+   "ret_pct@0.5%": 73.2,
+   "max_dd_pct": 14.0,
+   "median_stop_pct": 2.407,
+   "t_clustered_week": 1.98,
+   "avgR_with_funding": 0.101,
+   "long": {
+    "n": 521,
+    "avg_R": 0.068,
+    "t_stat": 1.11
+   },
+   "short": {
+    "n": 677,
+    "avg_R": 0.118,
+    "t_stat": 2.19
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_IS_2024": {
+   "label": "IS2024",
+   "n": 1198,
+   "trades_per_month": 103.3,
+   "win_pct": 39.8,
+   "avg_R": 0.097,
+   "t_stat": 2.37,
+   "sum_R": 115.9,
+   "pf": 1.16,
+   "ret_pct@0.5%": 73.2,
+   "max_dd_pct": 14.0,
+   "median_stop_pct": 2.407,
+   "t_clustered_week": 1.98,
+   "avgR_with_funding": 0.101,
+   "long": {
+    "n": 521,
+    "avg_R": 0.068,
+    "t_stat": 1.11
+   },
+   "short": {
+    "n": 677,
+    "avg_R": 0.118,
+    "t_stat": 2.19
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_OOS": {
+   "label": "OOS",
+   "n": 2157,
+   "trades_per_month": 108.2,
+   "win_pct": 38.0,
+   "avg_R": 0.037,
+   "t_stat": 1.24,
+   "sum_R": 80.9,
+   "pf": 1.06,
+   "ret_pct@0.5%": 42.1,
+   "max_dd_pct": 25.0,
+   "median_stop_pct": 2.206,
+   "t_clustered_week": 0.91,
+   "avgR_with_funding": 0.037,
+   "long": {
+    "n": 1067,
+    "avg_R": -0.034,
+    "t_stat": -0.8
+   },
+   "short": {
+    "n": 1090,
+    "avg_R": 0.107,
+    "t_stat": 2.49
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_OOS_by_half": {
+   "2025H1": {
+    "n": 685,
+    "avg_R": 0.08
+   },
+   "2025H2": {
+    "n": 701,
+    "avg_R": -0.034
+   },
+   "2026H1": {
+    "n": 583,
+    "avg_R": 0.155
+   },
+   "2026H2": {
+    "n": 188,
+    "avg_R": -0.216
+   }
+  },
+  "main_OOS_per_symbol": {
+   "ADAUSDT": -0.05,
+   "AVAXUSDT": 0.124,
+   "BNBUSDT": 0.081,
+   "BTCUSDT": 0.163,
+   "DOGEUSDT": 0.095,
+   "ETHUSDT": 0.081,
+   "LINKUSDT": -0.1,
+   "LTCUSDT": -0.083,
+   "SOLUSDT": 0.08,
+   "XRPUSDT": 0.042
+  },
+  "main_OOS_delay1bar": {
+   "label": "OOS delay",
+   "n": 2195,
+   "trades_per_month": 110.1,
+   "win_pct": 37.9,
+   "avg_R": 0.0,
+   "t_stat": 0.0,
+   "sum_R": 0.0,
+   "pf": 1.0,
+   "ret_pct@0.5%": -6.1,
+   "max_dd_pct": 39.0,
+   "median_stop_pct": 2.134,
+   "t_clustered_week": 0.0,
+   "avgR_with_funding": -0.001,
+   "long": {
+    "n": 1079,
+    "avg_R": -0.067,
+    "t_stat": -1.47
+   },
+   "short": {
+    "n": 1116,
+    "avg_R": 0.065,
+    "t_stat": 1.41
+   },
+   "sym_pos": 6,
+   "n_sym": 10
+  },
+  "holdout_2024": {
+   "label": "H2024",
+   "n": 1277,
+   "trades_per_month": 110.7,
+   "win_pct": 37.5,
+   "avg_R": 0.03,
+   "t_stat": 0.78,
+   "sum_R": 38.7,
+   "pf": 1.05,
+   "ret_pct@0.5%": 17.7,
+   "max_dd_pct": 27.7,
+   "median_stop_pct": 3.001,
+   "t_clustered_week": 0.6,
+   "avgR_with_funding": 0.034,
+   "long": {
+    "n": 581,
+    "avg_R": -0.051,
+    "t_stat": -0.9
+   },
+   "short": {
+    "n": 696,
+    "avg_R": 0.098,
+    "t_stat": 1.84
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "holdout_2025_26": {
+   "label": "H2025",
+   "n": 2180,
+   "trades_per_month": 109.3,
+   "win_pct": 36.2,
+   "avg_R": -0.014,
+   "t_stat": -0.47,
+   "sum_R": -30.2,
+   "pf": 0.98,
+   "ret_pct@0.5%": -18.4,
+   "max_dd_pct": 45.4,
+   "median_stop_pct": 2.684,
+   "t_clustered_week": -0.39,
+   "avgR_with_funding": -0.015,
+   "long": {
+    "n": 1204,
+    "avg_R": -0.08,
+    "t_stat": -2.04
+   },
+   "short": {
+    "n": 976,
+    "avg_R": 0.067,
+    "t_stat": 1.5
+   },
+   "sym_pos": 3,
+   "n_sym": 10
+  },
+  "holdout_all": {
+   "label": "Hall",
+   "n": 3457,
+   "trades_per_month": 109.8,
+   "win_pct": 36.7,
+   "avg_R": 0.002,
+   "t_stat": 0.1,
+   "sum_R": 8.4,
+   "pf": 1.0,
+   "ret_pct@0.5%": -4.0,
+   "max_dd_pct": 45.4,
+   "median_stop_pct": 2.769,
+   "t_clustered_week": 0.08,
+   "avgR_with_funding": 0.003,
+   "long": {
+    "n": 1785,
+    "avg_R": -0.07,
+    "t_stat": -2.19
+   },
+   "short": {
+    "n": 1672,
+    "avg_R": 0.08,
+    "t_stat": 2.33
+   },
+   "sym_pos": 6,
+   "n_sym": 10
+  },
+  "holdout_2025_26_harsh_avgR": -0.042,
+  "holdout_per_symbol_2025_26": {
+   "APTUSDT": 0.031,
+   "ARBUSDT": -0.004,
+   "ATOMUSDT": -0.071,
+   "BCHUSDT": -0.023,
+   "DOTUSDT": 0.101,
+   "ETCUSDT": -0.155,
+   "FILUSDT": -0.001,
+   "NEARUSDT": -0.03,
+   "OPUSDT": -0.004,
+   "UNIUSDT": 0.037
+  }
+ },
+ "ctlPrice_4h": {
+  "main_IS": {
+   "label": "IS",
+   "n": 974,
+   "trades_per_month": 42.2,
+   "win_pct": 42.4,
+   "avg_R": 0.05,
+   "t_stat": 1.33,
+   "sum_R": 48.4,
+   "pf": 1.1,
+   "ret_pct@0.5%": 25.3,
+   "max_dd_pct": 14.0,
+   "median_stop_pct": 4.067,
+   "t_clustered_week": 0.84,
+   "avgR_with_funding": 0.046,
+   "long": {
+    "n": 493,
+    "avg_R": 0.137,
+    "t_stat": 2.48
+   },
+   "short": {
+    "n": 481,
+    "avg_R": -0.04,
+    "t_stat": -0.79
+   },
+   "sym_pos": 5,
+   "n_sym": 10
+  },
+  "main_IS_2024": {
+   "label": "IS2024",
+   "n": 488,
+   "trades_per_month": 40.6,
+   "win_pct": 41.8,
+   "avg_R": 0.069,
+   "t_stat": 1.27,
+   "sum_R": 33.5,
+   "pf": 1.14,
+   "ret_pct@0.5%": 17.2,
+   "max_dd_pct": 9.0,
+   "median_stop_pct": 4.661,
+   "t_clustered_week": 0.84,
+   "avgR_with_funding": 0.064,
+   "long": {
+    "n": 257,
+    "avg_R": 0.17,
+    "t_stat": 2.16
+   },
+   "short": {
+    "n": 231,
+    "avg_R": -0.044,
+    "t_stat": -0.6
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_OOS": {
+   "label": "OOS",
+   "n": 893,
+   "trades_per_month": 44.9,
+   "win_pct": 36.7,
+   "avg_R": -0.058,
+   "t_stat": -1.5,
+   "sum_R": -51.6,
+   "pf": 0.89,
+   "ret_pct@0.5%": -23.9,
+   "max_dd_pct": 30.3,
+   "median_stop_pct": 4.096,
+   "t_clustered_week": -0.77,
+   "avgR_with_funding": -0.06,
+   "long": {
+    "n": 355,
+    "avg_R": 0.002,
+    "t_stat": 0.03
+   },
+   "short": {
+    "n": 538,
+    "avg_R": -0.097,
+    "t_stat": -2.04
+   },
+   "sym_pos": 4,
+   "n_sym": 10
+  },
+  "main_OOS_by_half": {
+   "2025H1": {
+    "n": 280,
+    "avg_R": -0.127
+   },
+   "2025H2": {
+    "n": 244,
+    "avg_R": 0.086
+   },
+   "2026H1": {
+    "n": 286,
+    "avg_R": -0.087
+   },
+   "2026H2": {
+    "n": 83,
+    "avg_R": -0.145
+   }
+  },
+  "main_OOS_per_symbol": {
+   "ADAUSDT": 0.092,
+   "AVAXUSDT": -0.196,
+   "BNBUSDT": 0.073,
+   "BTCUSDT": -0.157,
+   "DOGEUSDT": -0.029,
+   "ETHUSDT": 0.055,
+   "LINKUSDT": -0.084,
+   "LTCUSDT": -0.149,
+   "SOLUSDT": 0.028,
+   "XRPUSDT": -0.153
+  },
+  "main_OOS_delay1bar": {
+   "label": "OOS delay",
+   "n": 887,
+   "trades_per_month": 44.6,
+   "win_pct": 37.3,
+   "avg_R": -0.082,
+   "t_stat": -1.99,
+   "sum_R": -73.0,
+   "pf": 0.85,
+   "ret_pct@0.5%": -31.7,
+   "max_dd_pct": 34.9,
+   "median_stop_pct": 3.971,
+   "t_clustered_week": -1.16,
+   "avgR_with_funding": -0.084,
+   "long": {
+    "n": 345,
+    "avg_R": -0.011,
+    "t_stat": -0.15
+   },
+   "short": {
+    "n": 542,
+    "avg_R": -0.128,
+    "t_stat": -2.52
+   },
+   "sym_pos": 2,
+   "n_sym": 10
+  },
+  "holdout_2024": {
+   "label": "H2024",
+   "n": 500,
+   "trades_per_month": 41.6,
+   "win_pct": 44.2,
+   "avg_R": 0.072,
+   "t_stat": 1.38,
+   "sum_R": 36.1,
+   "pf": 1.15,
+   "ret_pct@0.5%": 18.8,
+   "max_dd_pct": 18.0,
+   "median_stop_pct": 5.679,
+   "t_clustered_week": 0.8,
+   "avgR_with_funding": 0.068,
+   "long": {
+    "n": 245,
+    "avg_R": 0.09,
+    "t_stat": 1.12
+   },
+   "short": {
+    "n": 255,
+    "avg_R": 0.056,
+    "t_stat": 0.81
+   },
+   "sym_pos": 9,
+   "n_sym": 10
+  },
+  "holdout_2025_26": {
+   "label": "H2025",
+   "n": 917,
+   "trades_per_month": 46.0,
+   "win_pct": 38.5,
+   "avg_R": -0.079,
+   "t_stat": -2.12,
+   "sum_R": -72.0,
+   "pf": 0.85,
+   "ret_pct@0.5%": -31.2,
+   "max_dd_pct": 38.6,
+   "median_stop_pct": 5.267,
+   "t_clustered_week": -1.14,
+   "avgR_with_funding": -0.083,
+   "long": {
+    "n": 318,
+    "avg_R": -0.119,
+    "t_stat": -1.77
+   },
+   "short": {
+    "n": 599,
+    "avg_R": -0.057,
+    "t_stat": -1.3
+   },
+   "sym_pos": 3,
+   "n_sym": 10
+  },
+  "holdout_all": {
+   "label": "Hall",
+   "n": 1417,
+   "trades_per_month": 44.3,
+   "win_pct": 40.5,
+   "avg_R": -0.025,
+   "t_stat": -0.84,
+   "sum_R": -35.9,
+   "pf": 0.95,
+   "ret_pct@0.5%": -18.3,
+   "max_dd_pct": 38.6,
+   "median_stop_pct": 5.391,
+   "t_clustered_week": -0.46,
+   "avgR_with_funding": -0.03,
+   "long": {
+    "n": 563,
+    "avg_R": -0.028,
+    "t_stat": -0.54
+   },
+   "short": {
+    "n": 854,
+    "avg_R": -0.024,
+    "t_stat": -0.64
+   },
+   "sym_pos": 5,
+   "n_sym": 10
+  },
+  "holdout_2025_26_harsh_avgR": -0.093,
+  "holdout_per_symbol_2025_26": {
+   "APTUSDT": -0.205,
+   "ARBUSDT": 0.051,
+   "ATOMUSDT": 0.009,
+   "BCHUSDT": -0.022,
+   "DOTUSDT": -0.027,
+   "ETCUSDT": -0.205,
+   "FILUSDT": -0.138,
+   "NEARUSDT": -0.055,
+   "OPUSDT": -0.172,
+   "UNIUSDT": 0.002
+  }
+ },
+ "smartcrowd_4h": {
+  "main_IS": {
+   "label": "IS",
+   "n": 383,
+   "trades_per_month": 33.0,
+   "win_pct": 43.1,
+   "avg_R": 0.06,
+   "t_stat": 0.99,
+   "sum_R": 23.1,
+   "pf": 1.12,
+   "ret_pct@0.5%": 11.5,
+   "max_dd_pct": 11.3,
+   "median_stop_pct": 4.281,
+   "t_clustered_week": 0.76,
+   "avgR_with_funding": 0.06,
+   "long": {
+    "n": 197,
+    "avg_R": 0.086,
+    "t_stat": 1.01
+   },
+   "short": {
+    "n": 186,
+    "avg_R": 0.033,
+    "t_stat": 0.37
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_IS_2024": {
+   "label": "IS2024",
+   "n": 383,
+   "trades_per_month": 33.0,
+   "win_pct": 43.1,
+   "avg_R": 0.06,
+   "t_stat": 0.99,
+   "sum_R": 23.1,
+   "pf": 1.12,
+   "ret_pct@0.5%": 11.5,
+   "max_dd_pct": 11.3,
+   "median_stop_pct": 4.281,
+   "t_clustered_week": 0.76,
+   "avgR_with_funding": 0.06,
+   "long": {
+    "n": 197,
+    "avg_R": 0.086,
+    "t_stat": 1.01
+   },
+   "short": {
+    "n": 186,
+    "avg_R": 0.033,
+    "t_stat": 0.37
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_OOS": {
+   "label": "OOS",
+   "n": 754,
+   "trades_per_month": 37.9,
+   "win_pct": 45.6,
+   "avg_R": 0.108,
+   "t_stat": 2.52,
+   "sum_R": 81.7,
+   "pf": 1.24,
+   "ret_pct@0.5%": 48.5,
+   "max_dd_pct": 15.4,
+   "median_stop_pct": 4.4,
+   "t_clustered_week": 1.75,
+   "avgR_with_funding": 0.106,
+   "long": {
+    "n": 384,
+    "avg_R": 0.005,
+    "t_stat": 0.09
+   },
+   "short": {
+    "n": 370,
+    "avg_R": 0.215,
+    "t_stat": 3.5
+   },
+   "sym_pos": 8,
+   "n_sym": 10
+  },
+  "main_OOS_by_half": {
+   "2025H1": {
+    "n": 210,
+    "avg_R": 0.163
+   },
+   "2025H2": {
+    "n": 266,
+    "avg_R": 0.034
+   },
+   "2026H1": {
+    "n": 211,
+    "avg_R": 0.243
+   },
+   "2026H2": {
+    "n": 67,
+    "avg_R": -0.19
+   }
+  },
+  "main_OOS_per_symbol": {
+   "ADAUSDT": 0.075,
+   "AVAXUSDT": -0.011,
+   "BNBUSDT": 0.162,
+   "BTCUSDT": 0.006,
+   "DOGEUSDT": 0.31,
+   "ETHUSDT": 0.21,
+   "LINKUSDT": 0.105,
+   "LTCUSDT": -0.128,
+   "SOLUSDT": 0.219,
+   "XRPUSDT": 0.085
+  },
+  "main_OOS_delay1bar": {
+   "label": "OOS delay",
+   "n": 770,
+   "trades_per_month": 38.8,
+   "win_pct": 44.3,
+   "avg_R": 0.054,
+   "t_stat": 1.22,
+   "sum_R": 41.2,
+   "pf": 1.11,
+   "ret_pct@0.5%": 21.2,
+   "max_dd_pct": 18.7,
+   "median_stop_pct": 4.384,
+   "t_clustered_week": 0.96,
+   "avgR_with_funding": 0.052,
+   "long": {
+    "n": 390,
+    "avg_R": -0.039,
+    "t_stat": -0.63
+   },
+   "short": {
+    "n": 380,
+    "avg_R": 0.148,
+    "t_stat": 2.42
+   },
+   "sym_pos": 6,
+   "n_sym": 10
+  },
+  "holdout_2024": {
+   "label": "H2024",
+   "n": 348,
+   "trades_per_month": 30.2,
+   "win_pct": 44.0,
+   "avg_R": 0.028,
+   "t_stat": 0.45,
+   "sum_R": 9.8,
+   "pf": 1.06,
+   "ret_pct@0.5%": 4.4,
+   "max_dd_pct": 10.1,
+   "median_stop_pct": 5.282,
+   "t_clustered_week": 0.33,
+   "avgR_with_funding": 0.026,
+   "long": {
+    "n": 175,
+    "avg_R": -0.007,
+    "t_stat": -0.08
+   },
+   "short": {
+    "n": 173,
+    "avg_R": 0.064,
+    "t_stat": 0.71
+   },
+   "sym_pos": 6,
+   "n_sym": 10
+  },
+  "holdout_2025_26": {
+   "label": "H2025",
+   "n": 655,
+   "trades_per_month": 33.0,
+   "win_pct": 39.7,
+   "avg_R": -0.073,
+   "t_stat": -1.71,
+   "sum_R": -48.0,
+   "pf": 0.86,
+   "ret_pct@0.5%": -22.1,
+   "max_dd_pct": 26.4,
+   "median_stop_pct": 5.218,
+   "t_clustered_week": -1.47,
+   "avgR_with_funding": -0.075,
+   "long": {
+    "n": 380,
+    "avg_R": -0.133,
+    "t_stat": -2.36
+   },
+   "short": {
+    "n": 275,
+    "avg_R": 0.009,
+    "t_stat": 0.13
+   },
+   "sym_pos": 2,
+   "n_sym": 10
+  },
+  "holdout_all": {
+   "label": "Hall",
+   "n": 1003,
+   "trades_per_month": 31.9,
+   "win_pct": 41.2,
+   "avg_R": -0.038,
+   "t_stat": -1.07,
+   "sum_R": -38.2,
+   "pf": 0.93,
+   "ret_pct@0.5%": -18.7,
+   "max_dd_pct": 30.3,
+   "median_stop_pct": 5.254,
+   "t_clustered_week": -0.86,
+   "avgR_with_funding": -0.04,
+   "long": {
+    "n": 555,
+    "avg_R": -0.093,
+    "t_stat": -1.96
+   },
+   "short": {
+    "n": 448,
+    "avg_R": 0.03,
+    "t_stat": 0.56
+   },
+   "sym_pos": 3,
+   "n_sym": 10
+  },
+  "holdout_2025_26_harsh_avgR": -0.088,
+  "holdout_per_symbol_2025_26": {
+   "APTUSDT": -0.065,
+   "ARBUSDT": -0.071,
+   "ATOMUSDT": -0.232,
+   "BCHUSDT": 0.017,
+   "DOTUSDT": -0.043,
+   "ETCUSDT": -0.087,
+   "FILUSDT": -0.15,
+   "NEARUSDT": -0.256,
+   "OPUSDT": 0.106,
+   "UNIUSDT": -0.016
+  }
+ },
+ "Ffollow_1h": {
+  "main_IS": {
+   "label": "IS",
+   "n": 133,
+   "trades_per_month": 6.2,
+   "win_pct": 40.6,
+   "avg_R": 0.114,
+   "t_stat": 0.94,
+   "sum_R": 15.2,
+   "pf": 1.19,
+   "ret_pct@0.5%": 7.6,
+   "max_dd_pct": 6.1,
+   "median_stop_pct": 1.868,
+   "t_clustered_week": 0.72,
+   "avgR_with_funding": 0.089,
+   "long": {
+    "n": 58,
+    "avg_R": 0.295,
+    "t_stat": 1.61
+   },
+   "short": {
+    "n": 75,
+    "avg_R": -0.026,
+    "t_stat": -0.16
+   },
+   "sym_pos": 6,
+   "n_sym": 10
+  },
+  "main_IS_2024": {
+   "label": "IS2024",
+   "n": 62,
+   "trades_per_month": 5.2,
+   "win_pct": 43.5,
+   "avg_R": 0.25,
+   "t_stat": 1.35,
+   "sum_R": 15.5,
+   "pf": 1.44,
+   "ret_pct@0.5%": 7.9,
+   "max_dd_pct": 4.6,
+   "median_stop_pct": 1.997,
+   "t_clustered_week": 0.84,
+   "avgR_with_funding": 0.236,
+   "long": {
+    "n": 27,
+    "avg_R": 0.404,
+    "t_stat": 1.48
+   },
+   "short": {
+    "n": 35,
+    "avg_R": 0.131,
+    "t_stat": 0.52
+   },
+   "sym_pos": 8,
+   "n_sym": 10
+  },
+  "main_OOS": {
+   "label": "OOS",
+   "n": 93,
+   "trades_per_month": 4.8,
+   "win_pct": 46.2,
+   "avg_R": 0.233,
+   "t_stat": 1.57,
+   "sum_R": 21.7,
+   "pf": 1.42,
+   "ret_pct@0.5%": 11.2,
+   "max_dd_pct": 4.9,
+   "median_stop_pct": 1.883,
+   "t_clustered_week": 1.24,
+   "avgR_with_funding": 0.229,
+   "long": {
+    "n": 25,
+    "avg_R": 0.046,
+    "t_stat": 0.17
+   },
+   "short": {
+    "n": 68,
+    "avg_R": 0.302,
+    "t_stat": 1.7
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "main_OOS_by_half": {
+   "2025H1": {
+    "n": 24,
+    "avg_R": 0.046
+   },
+   "2025H2": {
+    "n": 32,
+    "avg_R": 0.688
+   },
+   "2026H1": {
+    "n": 25,
+    "avg_R": 0.114
+   },
+   "2026H2": {
+    "n": 12,
+    "avg_R": -0.361
+   }
+  },
+  "main_OOS_per_symbol": {
+   "ADAUSDT": 0.458,
+   "AVAXUSDT": -0.454,
+   "BNBUSDT": 0.393,
+   "BTCUSDT": 0.457,
+   "DOGEUSDT": -0.513,
+   "ETHUSDT": -0.073,
+   "LINKUSDT": 0.61,
+   "LTCUSDT": 0.395,
+   "SOLUSDT": 0.145,
+   "XRPUSDT": 0.056
+  },
+  "main_OOS_delay1bar": {
+   "label": "OOS delay",
+   "n": 92,
+   "trades_per_month": 4.8,
+   "win_pct": 48.9,
+   "avg_R": 0.158,
+   "t_stat": 1.06,
+   "sum_R": 14.5,
+   "pf": 1.28,
+   "ret_pct@0.5%": 7.3,
+   "max_dd_pct": 5.0,
+   "median_stop_pct": 1.812,
+   "t_clustered_week": 0.87,
+   "avgR_with_funding": 0.154,
+   "long": {
+    "n": 24,
+    "avg_R": -0.061,
+    "t_stat": -0.24
+   },
+   "short": {
+    "n": 68,
+    "avg_R": 0.234,
+    "t_stat": 1.3
+   },
+   "sym_pos": 8,
+   "n_sym": 10
+  },
+  "holdout_2024": {
+   "label": "H2024",
+   "n": 33,
+   "trades_per_month": 2.9,
+   "win_pct": 42.4,
+   "avg_R": 0.146,
+   "t_stat": 0.59,
+   "sum_R": 4.8,
+   "pf": 1.25,
+   "ret_pct@0.5%": 2.4,
+   "max_dd_pct": 2.5,
+   "median_stop_pct": 2.988,
+   "t_clustered_week": 0.61,
+   "avgR_with_funding": 0.13,
+   "long": {
+    "n": 14,
+    "avg_R": 0.4,
+    "t_stat": 1.02
+   },
+   "short": {
+    "n": 19,
+    "avg_R": -0.041,
+    "t_stat": -0.13
+   },
+   "sym_pos": 5,
+   "n_sym": 10
+  },
+  "holdout_2025_26": {
+   "label": "H2025",
+   "n": 63,
+   "trades_per_month": 3.5,
+   "win_pct": 25.4,
+   "avg_R": -0.299,
+   "t_stat": -1.88,
+   "sum_R": -18.8,
+   "pf": 0.61,
+   "ret_pct@0.5%": -9.1,
+   "max_dd_pct": 12.6,
+   "median_stop_pct": 2.617,
+   "t_clustered_week": -1.87,
+   "avgR_with_funding": -0.309,
+   "long": {
+    "n": 0,
+    "avg_R": null,
+    "t_stat": null
+   },
+   "short": {
+    "n": 63,
+    "avg_R": -0.299,
+    "t_stat": -1.88
+   },
+   "sym_pos": 3,
+   "n_sym": 10
+  },
+  "holdout_all": {
+   "label": "Hall",
+   "n": 96,
+   "trades_per_month": 3.0,
+   "win_pct": 31.2,
+   "avg_R": -0.146,
+   "t_stat": -1.07,
+   "sum_R": -14.0,
+   "pf": 0.79,
+   "ret_pct@0.5%": -7.0,
+   "max_dd_pct": 14.0,
+   "median_stop_pct": 2.729,
+   "t_clustered_week": -1.04,
+   "avgR_with_funding": -0.158,
+   "long": {
+    "n": 14,
+    "avg_R": 0.4,
+    "t_stat": 1.02
+   },
+   "short": {
+    "n": 82,
+    "avg_R": -0.239,
+    "t_stat": -1.68
+   },
+   "sym_pos": 5,
+   "n_sym": 10
+  },
+  "holdout_2025_26_harsh_avgR": -0.324,
+  "holdout_per_symbol_2025_26": {
+   "APTUSDT": -0.48,
+   "ARBUSDT": -0.449,
+   "ATOMUSDT": 0.464,
+   "BCHUSDT": -0.698,
+   "DOTUSDT": -1.049,
+   "ETCUSDT": -0.469,
+   "FILUSDT": -1.031,
+   "NEARUSDT": -0.019,
+   "OPUSDT": 1.96,
+   "UNIUSDT": 0.233
+  }
+ },
+ "Ffollow_4h": {
+  "main_IS": {
+   "label": "IS",
+   "n": 95,
+   "trades_per_month": 4.4,
+   "win_pct": 50.5,
+   "avg_R": 0.149,
+   "t_stat": 1.29,
+   "sum_R": 14.2,
+   "pf": 1.37,
+   "ret_pct@0.5%": 7.2,
+   "max_dd_pct": 6.3,
+   "median_stop_pct": 3.687,
+   "t_clustered_week": 0.98,
+   "avgR_with_funding": 0.122,
+   "long": {
+    "n": 35,
+    "avg_R": 0.464,
+    "t_stat": 2.25
+   },
+   "short": {
+    "n": 60,
+    "avg_R": -0.034,
+    "t_stat": -0.26
+   },
+   "sym_pos": 8,
+   "n_sym": 10
+  },
+  "main_IS_2024": {
+   "label": "IS2024",
+   "n": 43,
+   "trades_per_month": 3.6,
+   "win_pct": 65.1,
+   "avg_R": 0.538,
+   "t_stat": 3.02,
+   "sum_R": 23.1,
+   "pf": 2.95,
+   "ret_pct@0.5%": 12.2,
+   "max_dd_pct": 2.1,
+   "median_stop_pct": 3.823,
+   "t_clustered_week": 1.96,
+   "avgR_with_funding": 0.514,
+   "long": {
+    "n": 18,
+    "avg_R": 0.802,
+    "t_stat": 2.72
+   },
+   "short": {
+    "n": 25,
+    "avg_R": 0.347,
+    "t_stat": 1.59
+   },
+   "sym_pos": 7,
+   "n_sym": 9
+  },
+  "main_OOS": {
+   "label": "OOS",
+   "n": 72,
+   "trades_per_month": 3.7,
+   "win_pct": 48.6,
+   "avg_R": 0.035,
+   "t_stat": 0.29,
+   "sum_R": 2.6,
+   "pf": 1.08,
+   "ret_pct@0.5%": 1.2,
+   "max_dd_pct": 6.4,
+   "median_stop_pct": 3.701,
+   "t_clustered_week": 0.18,
+   "avgR_with_funding": 0.032,
+   "long": {
+    "n": 20,
+    "avg_R": -0.339,
+    "t_stat": -1.65
+   },
+   "short": {
+    "n": 52,
+    "avg_R": 0.179,
+    "t_stat": 1.21
+   },
+   "sym_pos": 6,
+   "n_sym": 10
+  },
+  "main_OOS_by_half": {
+   "2025H1": {
+    "n": 18,
+    "avg_R": -0.125
+   },
+   "2025H2": {
+    "n": 24,
+    "avg_R": 0.687
+   },
+   "2026H1": {
+    "n": 21,
+    "avg_R": -0.406
+   },
+   "2026H2": {
+    "n": 9,
+    "avg_R": -0.349
+   }
+  },
+  "main_OOS_per_symbol": {
+   "ADAUSDT": 0.395,
+   "AVAXUSDT": 1.001,
+   "BNBUSDT": -0.2,
+   "BTCUSDT": -0.306,
+   "DOGEUSDT": -0.023,
+   "ETHUSDT": 0.07,
+   "LINKUSDT": 0.477,
+   "LTCUSDT": -0.229,
+   "SOLUSDT": 0.115,
+   "XRPUSDT": 0.216
+  },
+  "main_OOS_delay1bar": {
+   "label": "OOS delay",
+   "n": 70,
+   "trades_per_month": 3.6,
+   "win_pct": 50.0,
+   "avg_R": 0.076,
+   "t_stat": 0.54,
+   "sum_R": 5.3,
+   "pf": 1.18,
+   "ret_pct@0.5%": 2.6,
+   "max_dd_pct": 6.5,
+   "median_stop_pct": 3.58,
+   "t_clustered_week": 0.39,
+   "avgR_with_funding": 0.073,
+   "long": {
+    "n": 19,
+    "avg_R": -0.411,
+    "t_stat": -2.31
+   },
+   "short": {
+    "n": 51,
+    "avg_R": 0.258,
+    "t_stat": 1.45
+   },
+   "sym_pos": 7,
+   "n_sym": 10
+  },
+  "holdout_2024": {
+   "label": "H2024",
+   "n": 22,
+   "trades_per_month": 2.0,
+   "win_pct": 50.0,
+   "avg_R": 0.063,
+   "t_stat": 0.24,
+   "sum_R": 1.4,
+   "pf": 1.12,
+   "ret_pct@0.5%": 0.7,
+   "max_dd_pct": 1.9,
+   "median_stop_pct": 6.11,
+   "t_clustered_week": 0.25,
+   "avgR_with_funding": 0.052,
+   "long": {
+    "n": 7,
+    "avg_R": 0.161,
+    "t_stat": 0.36
+   },
+   "short": {
+    "n": 15,
+    "avg_R": 0.017,
+    "t_stat": 0.05
+   },
+   "sym_pos": 4,
+   "n_sym": 8
+  },
+  "holdout_2025_26": {
+   "label": "H2025",
+   "n": 54,
+   "trades_per_month": 3.0,
+   "win_pct": 31.5,
+   "avg_R": -0.369,
+   "t_stat": -3.14,
+   "sum_R": -19.9,
+   "pf": 0.4,
+   "ret_pct@0.5%": -9.5,
+   "max_dd_pct": 10.7,
+   "median_stop_pct": 5.074,
+   "t_clustered_week": -2.89,
+   "avgR_with_funding": -0.376,
+   "long": {
+    "n": 0,
+    "avg_R": null,
+    "t_stat": null
+   },
+   "short": {
+    "n": 54,
+    "avg_R": -0.369,
+    "t_stat": -3.14
+   },
+   "sym_pos": 2,
+   "n_sym": 10
+  },
+  "holdout_all": {
+   "label": "Hall",
+   "n": 76,
+   "trades_per_month": 2.4,
+   "win_pct": 36.8,
+   "avg_R": -0.244,
+   "t_stat": -2.15,
+   "sum_R": -18.6,
+   "pf": 0.58,
+   "ret_pct@0.5%": -9.0,
+   "max_dd_pct": 10.9,
+   "median_stop_pct": 5.331,
+   "t_clustered_week": -2.08,
+   "avgR_with_funding": -0.252,
+   "long": {
+    "n": 7,
+    "avg_R": 0.161,
+    "t_stat": 0.36
+   },
+   "short": {
+    "n": 69,
+    "avg_R": -0.285,
+    "t_stat": -2.44
+   },
+   "sym_pos": 0,
+   "n_sym": 10
+  },
+  "holdout_2025_26_harsh_avgR": -0.382,
+  "holdout_per_symbol_2025_26": {
+   "APTUSDT": -0.52,
+   "ARBUSDT": -0.538,
+   "ATOMUSDT": 0.104,
+   "BCHUSDT": -0.13,
+   "DOTUSDT": -0.655,
+   "ETCUSDT": -0.478,
+   "FILUSDT": -0.681,
+   "NEARUSDT": -0.541,
+   "OPUSDT": 0.112,
+   "UNIUSDT": -0.483
+  }
+ }
+}

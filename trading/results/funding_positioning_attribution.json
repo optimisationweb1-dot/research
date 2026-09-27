@@ -1,0 +1,76 @@
+{
+ "corr_crowdpct_pricepct_4h": -0.159,
+ "C_level_4h_by_price_state": {
+  "IS": {
+   "counter_trend": {
+    "n": 248,
+    "avg_R": 0.059,
+    "t": 0.82
+   },
+   "middle": {
+    "n": 138,
+    "avg_R": 0.107,
+    "t": 1.05
+   },
+   "momentum_aligned": {
+    "n": 328,
+    "avg_R": 0.176,
+    "t": 2.62
+   }
+  },
+  "OOS": {
+   "counter_trend": {
+    "n": 419,
+    "avg_R": 0.088,
+    "t": 1.75
+   },
+   "middle": {
+    "n": 271,
+    "avg_R": 0.053,
+    "t": 0.75
+   },
+   "momentum_aligned": {
+    "n": 582,
+    "avg_R": 0.092,
+    "t": 1.85
+   }
+  }
+ },
+ "corr_crowdpct_pricepct_1h": -0.158,
+ "C_level_1h_by_price_state": {
+  "IS": {
+   "counter_trend": {
+    "n": 404,
+    "avg_R": 0.032,
+    "t": 0.46
+   },
+   "middle": {
+    "n": 232,
+    "avg_R": 0.042,
+    "t": 0.46
+   },
+   "momentum_aligned": {
+    "n": 562,
+    "avg_R": 0.166,
+    "t": 2.74
+   }
+  },
+  "OOS": {
+   "counter_trend": {
+    "n": 705,
+    "avg_R": 0.011,
+    "t": 0.22
+   },
+   "middle": {
+    "n": 492,
+    "avg_R": -0.075,
+    "t": -1.21
+   },
+   "momentum_aligned": {
+    "n": 960,
+    "avg_R": 0.114,
+    "t": 2.49
+   }
+  }
+ }
+}

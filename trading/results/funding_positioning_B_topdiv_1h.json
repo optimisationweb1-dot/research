@@ -1,0 +1,310 @@
+{
+ "module": "strategies.funding_positioning",
+ "fn": "topdiv_1h",
+ "tf": "1h",
+ "symbols": [
+  "BTCUSDT",
+  "ETHUSDT",
+  "SOLUSDT",
+  "XRPUSDT",
+  "DOGEUSDT",
+  "BNBUSDT",
+  "ADAUSDT",
+  "AVAXUSDT",
+  "LINKUSDT",
+  "LTCUSDT"
+ ],
+ "load": {
+  "metrics": true,
+  "funding": true
+ },
+ "n_configs": 2,
+ "selection": "max IS t-stat with IS n>=30",
+ "selected_params": {
+  "mode": "follow_top",
+  "z": 1.5
+ },
+ "selected_IS": {
+  "label": "{\"mode\": \"follow_top\", \"z\": 1.5} IS",
+  "n": 1096,
+  "trades_per_month": 95.0,
+  "win_pct": 39.2,
+  "avg_R": 0.077,
+  "t_stat": 1.81,
+  "sum_R": 84.8,
+  "pf": 1.12,
+  "ret_pct@0.5%": 48.7,
+  "max_dd_pct": 16.3,
+  "median_stop_pct": 2.353
+ },
+ "selected_OOS": {
+  "label": "{\"mode\": \"follow_top\", \"z\": 1.5} OOS",
+  "n": 2108,
+  "trades_per_month": 105.7,
+  "win_pct": 34.2,
+  "avg_R": -0.07,
+  "t_stat": -2.36,
+  "sum_R": -147.6,
+  "pf": 0.9,
+  "ret_pct@0.5%": -54.5,
+  "max_dd_pct": 67.2,
+  "median_stop_pct": 2.196
+ },
+ "selected_OOS_harsh_costs": {
+  "label": " OOS",
+  "n": 2108,
+  "trades_per_month": 105.7,
+  "win_pct": 34.1,
+  "avg_R": -0.105,
+  "t_stat": -3.59,
+  "sum_R": -222.2,
+  "pf": 0.85,
+  "ret_pct@0.5%": -68.6,
+  "max_dd_pct": 76.6,
+  "median_stop_pct": 2.226
+ },
+ "selected_OOS_per_symbol": {
+  "ADAUSDT": {
+   "label": "ADAUSDT",
+   "n": 232,
+   "trades_per_month": 11.7,
+   "win_pct": 35.8,
+   "avg_R": -0.008,
+   "t_stat": -0.09,
+   "sum_R": -1.9,
+   "pf": 0.99,
+   "ret_pct@0.5%": -1.5,
+   "max_dd_pct": 12.5,
+   "median_stop_pct": 2.625
+  },
+  "AVAXUSDT": {
+   "label": "AVAXUSDT",
+   "n": 198,
+   "trades_per_month": 10.1,
+   "win_pct": 30.3,
+   "avg_R": -0.155,
+   "t_stat": -1.62,
+   "sum_R": -30.7,
+   "pf": 0.78,
+   "ret_pct@0.5%": -14.6,
+   "max_dd_pct": 18.9,
+   "median_stop_pct": 2.519
+  },
+  "BNBUSDT": {
+   "label": "BNBUSDT",
+   "n": 196,
+   "trades_per_month": 10.0,
+   "win_pct": 38.3,
+   "avg_R": 0.012,
+   "t_stat": 0.12,
+   "sum_R": 2.3,
+   "pf": 1.02,
+   "ret_pct@0.5%": 0.7,
+   "max_dd_pct": 11.2,
+   "median_stop_pct": 1.461
+  },
+  "BTCUSDT": {
+   "label": "BTCUSDT",
+   "n": 151,
+   "trades_per_month": 7.8,
+   "win_pct": 35.1,
+   "avg_R": -0.093,
+   "t_stat": -0.84,
+   "sum_R": -14.1,
+   "pf": 0.86,
+   "ret_pct@0.5%": -7.1,
+   "max_dd_pct": 9.7,
+   "median_stop_pct": 1.336
+  },
+  "DOGEUSDT": {
+   "label": "DOGEUSDT",
+   "n": 241,
+   "trades_per_month": 12.1,
+   "win_pct": 34.0,
+   "avg_R": -0.075,
+   "t_stat": -0.86,
+   "sum_R": -18.0,
+   "pf": 0.89,
+   "ret_pct@0.5%": -9.1,
+   "max_dd_pct": 15.2,
+   "median_stop_pct": 2.53
+  },
+  "ETHUSDT": {
+   "label": "ETHUSDT",
+   "n": 210,
+   "trades_per_month": 10.6,
+   "win_pct": 29.0,
+   "avg_R": -0.197,
+   "t_stat": -2.16,
+   "sum_R": -41.3,
+   "pf": 0.73,
+   "ret_pct@0.5%": -19.0,
+   "max_dd_pct": 22.4,
+   "median_stop_pct": 2.186
+  },
+  "LINKUSDT": {
+   "label": "LINKUSDT",
+   "n": 219,
+   "trades_per_month": 11.1,
+   "win_pct": 31.1,
+   "avg_R": -0.172,
+   "t_stat": -1.92,
+   "sum_R": -37.6,
+   "pf": 0.76,
+   "ret_pct@0.5%": -17.6,
+   "max_dd_pct": 20.9,
+   "median_stop_pct": 2.45
+  },
+  "LTCUSDT": {
+   "label": "LTCUSDT",
+   "n": 225,
+   "trades_per_month": 11.5,
+   "win_pct": 31.1,
+   "avg_R": -0.157,
+   "t_stat": -1.76,
+   "sum_R": -35.3,
+   "pf": 0.78,
+   "ret_pct@0.5%": -16.6,
+   "max_dd_pct": 19.6,
+   "median_stop_pct": 2.071
+  },
+  "SOLUSDT": {
+   "label": "SOLUSDT",
+   "n": 213,
+   "trades_per_month": 10.9,
+   "win_pct": 42.3,
+   "avg_R": 0.171,
+   "t_stat": 1.74,
+   "sum_R": 36.3,
+   "pf": 1.29,
+   "ret_pct@0.5%": 19.3,
+   "max_dd_pct": 6.6,
+   "median_stop_pct": 2.501
+  },
+  "XRPUSDT": {
+   "label": "XRPUSDT",
+   "n": 223,
+   "trades_per_month": 11.2,
+   "win_pct": 35.4,
+   "avg_R": -0.032,
+   "t_stat": -0.35,
+   "sum_R": -7.2,
+   "pf": 0.95,
+   "ret_pct@0.5%": -4.1,
+   "max_dd_pct": 11.1,
+   "median_stop_pct": 2.006
+  }
+ },
+ "selected_per_year": {
+  "2024": {
+   "label": "2024",
+   "n": 1096,
+   "trades_per_month": 95.0,
+   "win_pct": 39.2,
+   "avg_R": 0.077,
+   "t_stat": 1.81,
+   "sum_R": 84.8,
+   "pf": 1.12,
+   "ret_pct@0.5%": 48.7,
+   "max_dd_pct": 16.3,
+   "median_stop_pct": 2.353
+  },
+  "2025": {
+   "label": "2025",
+   "n": 1358,
+   "trades_per_month": 112.9,
+   "win_pct": 34.3,
+   "avg_R": -0.062,
+   "t_stat": -1.67,
+   "sum_R": -84.3,
+   "pf": 0.91,
+   "ret_pct@0.5%": -36.5,
+   "max_dd_pct": 51.7,
+   "median_stop_pct": 2.441
+  },
+  "2026": {
+   "label": "2026",
+   "n": 750,
+   "trades_per_month": 94.3,
+   "win_pct": 34.0,
+   "avg_R": -0.084,
+   "t_stat": -1.7,
+   "sum_R": -63.3,
+   "pf": 0.88,
+   "ret_pct@0.5%": -28.4,
+   "max_dd_pct": 39.2,
+   "median_stop_pct": 1.861
+  }
+ },
+ "all_configs_OOS_avgR": {
+  "median": -0.027500000000000004,
+  "share_positive": 0.5,
+  "n": 2
+ },
+ "configs": [
+  {
+   "params": {
+    "mode": "follow_top",
+    "z": 1.5
+   },
+   "IS": {
+    "label": "{\"mode\": \"follow_top\", \"z\": 1.5} IS",
+    "n": 1096,
+    "trades_per_month": 95.0,
+    "win_pct": 39.2,
+    "avg_R": 0.077,
+    "t_stat": 1.81,
+    "sum_R": 84.8,
+    "pf": 1.12,
+    "ret_pct@0.5%": 48.7,
+    "max_dd_pct": 16.3,
+    "median_stop_pct": 2.353
+   },
+   "OOS": {
+    "label": "{\"mode\": \"follow_top\", \"z\": 1.5} OOS",
+    "n": 2108,
+    "trades_per_month": 105.7,
+    "win_pct": 34.2,
+    "avg_R": -0.07,
+    "t_stat": -2.36,
+    "sum_R": -147.6,
+    "pf": 0.9,
+    "ret_pct@0.5%": -54.5,
+    "max_dd_pct": 67.2,
+    "median_stop_pct": 2.196
+   }
+  },
+  {
+   "params": {
+    "mode": "follow_top",
+    "z": 2.5
+   },
+   "IS": {
+    "label": "{\"mode\": \"follow_top\", \"z\": 2.5} IS",
+    "n": 566,
+    "trades_per_month": 49.1,
+    "win_pct": 37.8,
+    "avg_R": 0.022,
+    "t_stat": 0.38,
+    "sum_R": 12.6,
+    "pf": 1.03,
+    "ret_pct@0.5%": 5.1,
+    "max_dd_pct": 17.3,
+    "median_stop_pct": 2.393
+   },
+   "OOS": {
+    "label": "{\"mode\": \"follow_top\", \"z\": 2.5} OOS",
+    "n": 1084,
+    "trades_per_month": 54.5,
+    "win_pct": 37.2,
+    "avg_R": 0.015,
+    "t_stat": 0.36,
+    "sum_R": 16.4,
+    "pf": 1.02,
+    "ret_pct@0.5%": 5.7,
+    "max_dd_pct": 28.7,
+    "median_stop_pct": 2.323
+   }
+  }
+ ]
+}
