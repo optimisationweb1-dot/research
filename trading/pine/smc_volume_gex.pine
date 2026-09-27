@@ -1,0 +1,178 @@
+//@version=6
+// SMC + Volume Anomaly + GEX levels
+// 1) SMC: liquidity sweep -> CHoCH -> retrace into golden zone (0.5-0.786) with FVG -> entry, SL, TP, RR
+// 2) Volume: RVOL, approx. delta from lower timeframe, absorption / climax markers
+// 3) GEX: Call Wall / Zero Gamma / Put Wall pasted from gex_levels.py (options data is not available in Pine)
+indicator("SMC + Volume + GEX", overlay = true, max_labels_count = 300, max_lines_count = 300, max_boxes_count = 100)
+
+// ---------- inputs ----------
+grpS = "SMC"
+pivotLen  = input.int(5, "Swing pivot length", minval = 2, group = grpS)
+fibTop    = input.float(0.5, "Zone start (retrace)", step = 0.05, group = grpS)
+fibBot    = input.float(0.786, "Zone end (retrace)", step = 0.01, group = grpS)
+tpExt     = input.float(1.272, "TP extension of leg", step = 0.01, group = grpS)
+slBufAtr  = input.float(0.3, "SL buffer, ATR", step = 0.05, group = grpS)
+feePct    = input.float(0.10, "Round-trip fees, %", step = 0.01, group = grpS)
+minRR     = input.float(2.0, "Min RR after fees", step = 0.1, group = grpS)
+needFvg   = input.bool(true, "Require FVG in zone", group = grpS)
+
+grpV = "Volume"
+volLen    = input.int(96, "RVOL lookback (bars)", group = grpV)
+rvolMin   = input.float(2.5, "RVOL threshold", step = 0.1, group = grpV)
+narrowMax = input.float(1.2, "Narrow range max (x median)", step = 0.1, group = grpV)
+wideMin   = input.float(2.0, "Wide range min (x median)", step = 0.1, group = grpV)
+dMin      = input.float(0.15, "Min |delta| share", step = 0.01, group = grpV)
+ltf       = input.timeframe("1", "Lower TF for delta", group = grpV)
+colorBars = input.bool(true, "Color high-volume candles", group = grpV)
+
+grpG = "GEX (paste from gex_levels.py)"
+callWall  = input.float(0.0, "Call Wall", group = grpG)
+zeroGamma = input.float(0.0, "Zero Gamma", group = grpG)
+putWall   = input.float(0.0, "Put Wall", group = grpG)
+
+// ---------- volume & delta ----------
+[ltfO, ltfC, ltfV] = request.security_lower_tf(syminfo.tickerid, ltf, [open, close, volume])
+float delta = 0.0
+if array.size(ltfV) > 0
+    for i = 0 to array.size(ltfV) - 1
+        o = array.get(ltfO, i)
+        c = array.get(ltfC, i)
+        v = array.get(ltfV, i)
+        delta += c > o ? v : c < o ? -v : 0.0
+dShare   = volume > 0 ? delta / volume : 0.0
+medVol   = ta.median(volume, volLen)
+medRange = ta.median(high - low, volLen)
+rvol     = medVol > 0 ? volume / medVol : 0.0
+rRange   = medRange > 0 ? (high - low) / medRange : 0.0
+closePos = high > low ? (close - low) / (high - low) : 0.5
+
+hiVol       = rvol >= rvolMin
+absorbBull  = hiVol and rRange <= narrowMax and dShare <= -dMin and closePos >= 0.5
+absorbBear  = hiVol and rRange <= narrowMax and dShare >= dMin and closePos <= 0.5
+climaxUp    = hiVol and rRange >= wideMin and dShare >= dMin and close > open
+climaxDn    = hiVol and rRange >= wideMin and dShare <= -dMin and close < open
+
+plotshape(absorbBull, "Absorb bull", shape.circle, location.belowbar, color.new(color.lime, 0), size = size.tiny, text = "ABS")
+plotshape(absorbBear, "Absorb bear", shape.circle, location.abovebar, color.new(color.red, 0), size = size.tiny, text = "ABS")
+plotshape(climaxUp, "Climax up", shape.diamond, location.abovebar, color.new(color.orange, 0), size = size.tiny)
+plotshape(climaxDn, "Climax down", shape.diamond, location.belowbar, color.new(color.orange, 0), size = size.tiny)
+barcolor(colorBars and hiVol ? (dShare >= 0 ? color.new(color.aqua, 0) : color.new(color.fuchsia, 0)) : na)
+
+// ---------- swings ----------
+ph = ta.pivothigh(high, pivotLen, pivotLen)
+pl = ta.pivotlow(low, pivotLen, pivotLen)
+var float swingH = na
+var float swingL = na
+if not na(ph)
+    swingH := ph
+if not na(pl)
+    swingL := pl
+atr = ta.atr(14)
+
+// ---------- bullish setup state ----------
+// 0 idle, 1 swept low, 2 CHoCH done (leg building / waiting retrace)
+var int   bState = 0
+var float bLegLo = na
+var float bLegHi = na
+var float bFvgTop = na
+var float bFvgBot = na
+var float bChochLvl = na
+
+// ---------- bearish setup state ----------
+var int   sState = 0
+var float sLegHi = na
+var float sLegLo = na
+var float sFvgTop = na
+var float sFvgBot = na
+var float sChochLvl = na
+
+bullFvg = low > high[2]
+bearFvg = high < low[2]
+
+// bullish: sweep of swing low + reclaim
+if not na(swingL) and low < swingL and close > swingL
+    bState := 1
+    bLegLo := low
+    bChochLvl := swingH
+    bFvgTop := na
+    bFvgBot := na
+    label.new(bar_index, low, "SWEEP", style = label.style_label_up, color = color.new(color.teal, 60), textcolor = color.white, size = size.tiny)
+if bState == 1
+    bLegLo := math.min(bLegLo, low)
+    if not na(bChochLvl) and close > bChochLvl
+        bState := 2
+        bLegHi := high
+        label.new(bar_index, high, "CHoCH", style = label.style_label_down, color = color.new(color.teal, 40), textcolor = color.white, size = size.tiny)
+if bState == 2
+    // zone and FVG come from previous bars only; this bar may only fill the limit order
+    zHi = bLegHi - (bLegHi - bLegLo) * fibTop
+    zLo = bLegHi - (bLegHi - bLegLo) * fibBot
+    fvgInZone = not na(bFvgTop) and bFvgBot <= zHi and bFvgTop >= zLo
+    entry = needFvg and not na(bFvgTop) ? math.min(zHi, bFvgTop) : zHi
+    if (fvgInZone or not needFvg) and low < entry and low > zLo
+        sl = bLegLo - slBufAtr * atr
+        tp = bLegLo + (bLegHi - bLegLo) * tpExt
+        feePts = entry * feePct / 100
+        rr = (tp - entry - feePts) / (entry - sl + feePts)
+        if rr >= minRR
+            label.new(bar_index, low, str.format("LONG {0}\nSL {1}\nTP {2}\nRR {3}", entry, sl, tp, math.round(rr, 2)), style = label.style_label_up, color = color.new(color.green, 0), textcolor = color.white, size = size.small)
+            line.new(bar_index, sl, bar_index + 20, sl, color = color.red, style = line.style_dashed)
+            line.new(bar_index, tp, bar_index + 20, tp, color = color.green, style = line.style_dashed)
+            alert("SMC LONG " + syminfo.ticker + " RR " + str.tostring(math.round(rr, 2)), alert.freq_once_per_bar_close)
+        bState := 0
+    else if low < bLegLo
+        bState := 0
+    else
+        if high > bLegHi
+            bLegHi := high
+        if bullFvg
+            bFvgTop := low
+            bFvgBot := high[2]
+
+// bearish mirror
+if not na(swingH) and high > swingH and close < swingH
+    sState := 1
+    sLegHi := high
+    sChochLvl := swingL
+    sFvgTop := na
+    sFvgBot := na
+    label.new(bar_index, high, "SWEEP", style = label.style_label_down, color = color.new(color.maroon, 60), textcolor = color.white, size = size.tiny)
+if sState == 1
+    sLegHi := math.max(sLegHi, high)
+    if not na(sChochLvl) and close < sChochLvl
+        sState := 2
+        sLegLo := low
+        label.new(bar_index, low, "CHoCH", style = label.style_label_up, color = color.new(color.maroon, 40), textcolor = color.white, size = size.tiny)
+if sState == 2
+    zLo = sLegLo + (sLegHi - sLegLo) * fibTop
+    zHi = sLegLo + (sLegHi - sLegLo) * fibBot
+    fvgInZone = not na(sFvgBot) and sFvgTop >= zLo and sFvgBot <= zHi
+    entry = needFvg and not na(sFvgBot) ? math.max(zLo, sFvgBot) : zLo
+    if (fvgInZone or not needFvg) and high > entry and high < zHi
+        sl = sLegHi + slBufAtr * atr
+        tp = sLegHi - (sLegHi - sLegLo) * tpExt
+        feePts = entry * feePct / 100
+        rr = (entry - tp - feePts) / (sl - entry + feePts)
+        if rr >= minRR
+            label.new(bar_index, high, str.format("SHORT {0}\nSL {1}\nTP {2}\nRR {3}", entry, sl, tp, math.round(rr, 2)), style = label.style_label_down, color = color.new(color.red, 0), textcolor = color.white, size = size.small)
+            line.new(bar_index, sl, bar_index + 20, sl, color = color.red, style = line.style_dashed)
+            line.new(bar_index, tp, bar_index + 20, tp, color = color.green, style = line.style_dashed)
+            alert("SMC SHORT " + syminfo.ticker + " RR " + str.tostring(math.round(rr, 2)), alert.freq_once_per_bar_close)
+        sState := 0
+    else if high > sLegHi
+        sState := 0
+    else
+        if low < sLegLo
+            sLegLo := low
+        if bearFvg
+            sFvgBot := high
+            sFvgTop := low[2]
+
+// ---------- GEX lines ----------
+plot(callWall > 0 ? callWall : na, "Call Wall", color.new(color.green, 0), 2, plot.style_linebr)
+plot(zeroGamma > 0 ? zeroGamma : na, "Zero Gamma", color.new(color.yellow, 0), 2, plot.style_linebr)
+plot(putWall > 0 ? putWall : na, "Put Wall", color.new(color.red, 0), 2, plot.style_linebr)
+
+alertcondition(absorbBull, "Absorption bull", "High volume, sellers absorbed")
+alertcondition(absorbBear, "Absorption bear", "High volume, buyers absorbed")
+alertcondition(climaxUp or climaxDn, "Volume climax", "Volume climax candle")
