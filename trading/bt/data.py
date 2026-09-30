@@ -83,6 +83,9 @@ def download_klines(symbol, tf, start=START, end=END):
     for c in KCOLS[:-1]:
         df[c] = pd.to_numeric(df[c])
     df = df.drop(columns=["ignore", "buy_quote_vol"]).drop_duplicates("open_time").sort_values("open_time")
+    live = df.loc[df["volume"] > 0, "open_time"]
+    if len(live):  # data.binance.vision keeps writing flat zero-volume bars after a delisting
+        df = df[df["open_time"] <= live.max()]
     os.makedirs(os.path.dirname(path), exist_ok=True)
     df.to_parquet(path, index=False)
     return path
@@ -202,8 +205,11 @@ def load(symbol, tf="5m", start=None, end=None, metrics=False, funding=False, dv
 
 def _asof(df, ext, cols, avail_col="avail"):
     """Attach ext[cols] known at df.close_time (ext[avail_col] <= close_time)."""
-    left = pd.DataFrame({"open_ts": df.index, "close_time": df["close_time"].values})
-    right = ext[[avail_col] + cols].sort_values(avail_col)
+    ns_utc = lambda x: pd.DatetimeIndex(x).tz_convert("UTC").as_unit("ns")
+    left = pd.DataFrame({"open_ts": df.index, "close_time": ns_utc(df["close_time"])})
+    right = ext[[avail_col] + cols].copy()
+    right[avail_col] = ns_utc(right[avail_col])
+    right = right.sort_values(avail_col)
     m = pd.merge_asof(left.sort_values("close_time"), right, left_on="close_time", right_on=avail_col,
                       direction="backward")
     m.index = m["open_ts"]
@@ -218,8 +224,10 @@ def merge_metrics(df, symbol):
     if not os.path.exists(path):
         raise FileNotFoundError(path)
     mt = pd.read_parquet(path)
-    # snapshot stamped create_time; treat it as known 1 minute after the stamp (conservative)
-    mt["avail"] = mt["ts"] + pd.Timedelta(minutes=1)
+    # the row stamped T describes the window [T, T+5) (its taker ratio matches the 5m kline opening at T,
+    # corr 0.93-0.97), so it is not known before T+5; +1 minute publication latency [estimate]
+    mt["avail"] = mt["ts"] + pd.Timedelta(minutes=6)
+    mt.loc[mt["sum_open_interest"] <= 0, ["sum_open_interest", "sum_open_interest_value"]] = np.nan
     cols = ["sum_open_interest", "sum_open_interest_value", "count_toptrader_long_short_ratio",
             "sum_toptrader_long_short_ratio", "count_long_short_ratio", "sum_taker_long_short_vol_ratio"]
     out = _asof(df, mt, cols)

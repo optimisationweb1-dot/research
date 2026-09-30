@@ -1,0 +1,76 @@
+{
+ "OOS_corr_R_ret1dir": -0.069,
+ "OOS_corr_R_ret6dir": -0.026,
+ "OOS_share_signal_bar_against_trade": 0.299,
+ "OOS_by_signal_bar_return_tercile": {
+  "against": {
+   "n": 424,
+   "avg_R": 0.194,
+   "t_stat": 3.51
+  },
+  "mid": {
+   "n": 424,
+   "avg_R": 0.096,
+   "t_stat": 1.71
+  },
+  "with": {
+   "n": 424,
+   "avg_R": -0.042,
+   "t_stat": -0.77
+  }
+ },
+ "OOS_by_24h_return_tercile": {
+  "against": {
+   "n": 424,
+   "avg_R": 0.165,
+   "t_stat": 3.03
+  },
+  "mid": {
+   "n": 424,
+   "avg_R": 0.029,
+   "t_stat": 0.54
+  },
+  "with": {
+   "n": 424,
+   "avg_R": 0.054,
+   "t_stat": 0.93
+  }
+ },
+ "controls_price_reversal": {
+  "rev_ctl_k1": {
+   "IS": {
+    "n": 2645,
+    "avg_R": 0.009,
+    "t_stat": 0.42
+   },
+   "OOS": {
+    "n": 2226,
+    "avg_R": 0.001,
+    "t_stat": 0.04,
+    "t_cl_week": 0.02,
+    "sym_pos": 6
+   }
+  },
+  "rev_ctl_k6": {
+   "IS": {
+    "n": 1873,
+    "avg_R": 0.04,
+    "t_stat": 1.51
+   },
+   "OOS": {
+    "n": 1601,
+    "avg_R": -0.033,
+    "t_stat": -1.16,
+    "t_cl_week": -0.55,
+    "sym_pos": 2
+   }
+  }
+ },
+ "OOS_trades_per_week": {
+  "mean": 14.5,
+  "max": 23,
+  "weeks": 88
+ },
+ "OOS_share_trades_with_ge3_symbols_same_bar": 0.134,
+ "OOS_share_trades_in_same_side_cluster_ge3": 0.116
+}

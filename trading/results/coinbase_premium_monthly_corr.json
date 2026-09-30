@@ -1,0 +1,18 @@
+{
+ "btc": {
+  "corr_month_prem_vs_same_month_ret": 0.558,
+  "corr_month_prem_vs_next_month_ret": 0.205,
+  "corr_month_prem_vs_etf_flow": 0.632,
+  "corr_month_raw_vs_same_month_ret": 0.412,
+  "corr_month_raw_vs_next_month_ret": -0.054,
+  "n_months": 43
+ },
+ "eth": {
+  "corr_month_prem_vs_same_month_ret": 0.428,
+  "corr_month_prem_vs_next_month_ret": 0.153,
+  "corr_month_prem_vs_etf_flow": 0.573,
+  "corr_month_raw_vs_same_month_ret": 0.324,
+  "corr_month_raw_vs_next_month_ret": -0.008,
+  "n_months": 43
+ }
+}

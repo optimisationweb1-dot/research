@@ -1,0 +1,186 @@
+{
+ "smc_ambiguity_10sym": {
+  "BTCUSDT_5m": {
+   "n": 185,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 1
+  },
+  "ETHUSDT_5m": {
+   "n": 213,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "SOLUSDT_5m": {
+   "n": 271,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "XRPUSDT_5m": {
+   "n": 243,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "DOGEUSDT_5m": {
+   "n": 265,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "BNBUSDT_5m": {
+   "n": 181,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "ADAUSDT_5m": {
+   "n": 196,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "AVAXUSDT_5m": {
+   "n": 259,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 1
+  },
+  "LINKUSDT_5m": {
+   "n": 249,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "LTCUSDT_5m": {
+   "n": 229,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "BTCUSDT_15m": {
+   "n": 87,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 1
+  },
+  "ETHUSDT_15m": {
+   "n": 100,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "SOLUSDT_15m": {
+   "n": 96,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "XRPUSDT_15m": {
+   "n": 108,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "DOGEUSDT_15m": {
+   "n": 109,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 1
+  },
+  "BNBUSDT_15m": {
+   "n": 87,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "ADAUSDT_15m": {
+   "n": 88,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "AVAXUSDT_15m": {
+   "n": 92,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "LINKUSDT_15m": {
+   "n": 110,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  },
+  "LTCUSDT_15m": {
+   "n": 94,
+   "ambiguous_bars": 0,
+   "fill_bar_target_touch": 0
+  }
+ },
+ "stop_overshoot_1m": {
+  "BTCUSDT_smc_5m": {
+   "n_stops": 138,
+   "median_close_beyond_bps": -0.2,
+   "p90_close_beyond_bps": 15.0,
+   "median_extreme_beyond_bps": 6.1,
+   "p90_extreme_beyond_bps": 26.5,
+   "median_stop_pct": 0.451
+  },
+  "BTCUSDT_donchian_1h": {
+   "n_stops": 424,
+   "median_close_beyond_bps": -0.7,
+   "p90_close_beyond_bps": 11.2,
+   "median_extreme_beyond_bps": 5.3,
+   "p90_extreme_beyond_bps": 24.7,
+   "median_stop_pct": 1.372
+  },
+  "ETHUSDT_smc_5m": {
+   "n_stops": 156,
+   "median_close_beyond_bps": 0.4,
+   "p90_close_beyond_bps": 19.8,
+   "median_extreme_beyond_bps": 8.9,
+   "p90_extreme_beyond_bps": 39.2,
+   "median_stop_pct": 0.594
+  },
+  "ETHUSDT_donchian_1h": {
+   "n_stops": 446,
+   "median_close_beyond_bps": -1.6,
+   "p90_close_beyond_bps": 18.2,
+   "median_extreme_beyond_bps": 8.3,
+   "p90_extreme_beyond_bps": 37.0,
+   "median_stop_pct": 1.869
+  }
+ },
+ "spot_checks": [
+  {
+   "trade": {
+    "dir": "-1",
+    "t_signal": "2023-04-28 16:20:00+00:00",
+    "t_entry": "2023-04-28 16:45:00+00:00",
+    "t_exit": "2023-04-28 19:00:00+00:00",
+    "entry": "29192.6",
+    "stop": "29370.61858510326",
+    "target": "28739.8208",
+    "exit": "29376.492708820282",
+    "reason": "stop",
+    "R": "-1.1483041226067354"
+   },
+   "no_fill_before_fill_bar": true,
+   "fill_bar_low_lt_limit": true,
+   "exit_bar": {
+    "open": 29226.7,
+    "high": 29433.4,
+    "low": 29226.7,
+    "close": 29382.1
+   },
+   "bars_between_no_exit": true
+  },
+  {
+   "trade": {
+    "dir": "1",
+    "t_signal": "2024-11-26 18:50:00+00:00",
+    "t_entry": "2024-11-26 18:55:00+00:00",
+    "t_exit": "2024-11-26 19:55:00+00:00",
+    "entry": "92556.2",
+    "stop": "91708.76529997723",
+    "target": "95543.6016",
+    "exit": "91690.42354691723",
+    "reason": "stop",
+    "R": "-1.0975865218066176"
+   },
+   "no_fill_before_fill_bar": true,
+   "fill_bar_low_lt_limit": true,
+   "exit_bar": {
+    "open": 91747.5,
+    "high": 91868.0,
+    "low": 91650.6,
+    "close": 91760.0
+   },
+   "bars_between_no_exit": true
+  }
+ ]
+}

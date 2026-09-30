@@ -125,8 +125,10 @@ def simulate(df, sig, costs=Costs(), max_hold=None, limit_ttl=None, symbol=""):
     return pd.DataFrame(trades)
 
 
-def check_lookahead(strategy, df, params=None, n_checks=12, min_bars=500, seed=7):
-    """Recompute on df[:k+1] and compare the decision at bar k with the full run."""
+def check_lookahead(strategy, df, params=None, n_checks=12, min_bars=500, seed=7, window=64):
+    """Recompute on df[:k+1] and compare the decisions at bars k-window+1..k with the full run.
+    Comparing the whole tail (not only bar k) also catches look-ahead that only REMOVES signals
+    (e.g. `signal & ~(future_loss)`), which the last-bar comparison misses most of the time."""
     params = params or {}
     full = strategy(df, **params)
     rng = np.random.default_rng(seed)
@@ -139,12 +141,12 @@ def check_lookahead(strategy, df, params=None, n_checks=12, min_bars=500, seed=7
     bad = []
     for k in sorted(set(int(x) for x in ks)):
         cut = strategy(df.iloc[:k + 1], **params)
+        lo = max(0, k + 1 - window)
         for ccol in cols:
-            a, b = full[ccol].iloc[k], cut[ccol].iloc[k]
-            same = (pd.isna(a) and pd.isna(b)) or (not pd.isna(a) and not pd.isna(b) and
-                                                   math.isclose(float(a), float(b), rel_tol=1e-9, abs_tol=1e-12))
-            if not same:
-                bad.append((df.index[k], ccol, a, b))
+            a = full[ccol].iloc[lo:k + 1].to_numpy(dtype=float)
+            b = cut[ccol].iloc[lo:k + 1].to_numpy(dtype=float)
+            for j in np.flatnonzero(~np.isclose(a, b, rtol=1e-9, atol=1e-12, equal_nan=True))[:3]:
+                bad.append((df.index[lo + j], ccol, a[j], b[j]))
     if bad:
         raise AssertionError(f"LOOKAHEAD in {getattr(strategy, '__name__', strategy)}: {bad[:5]}")
     return True
@@ -160,9 +162,13 @@ def summarize(tr, risk_pct=0.5, label=""):
     months = max(1.0, (tr["t_exit"].max() - tr["t_entry"].min()).days / 30.44)
     sd = R.std(ddof=1) if len(R) > 1 else float("nan")
     pos, neg = R[R > 0].sum(), -R[R < 0].sum()
+    # trades of different symbols entered on the same day are correlated: cluster the SE by entry day
+    e = pd.Series(R - R.mean()).groupby(np.asarray(pd.DatetimeIndex(tr["t_entry"]).floor("1D"))).sum().to_numpy()
+    se_cl = math.sqrt((e ** 2).sum() * len(e) / max(len(e) - 1, 1)) / len(R)
     return {"label": label, "n": int(len(R)), "trades_per_month": round(len(R) / months, 1),
             "win_pct": round(100 * (R > 0).mean(), 1), "avg_R": round(R.mean(), 3),
             "t_stat": round(R.mean() / sd * math.sqrt(len(R)), 2) if sd and sd > 0 else None,
+            "t_stat_day_cluster": round(R.mean() / se_cl, 2) if se_cl > 0 else None,
             "sum_R": round(R.sum(), 1), "pf": round(pos / neg, 2) if neg > 0 else None,
             f"ret_pct@{risk_pct}%": round(100 * (eq[-1] - 1), 1),
             "max_dd_pct": round(100 * (1 - eq / peak).max(), 1),

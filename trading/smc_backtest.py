@@ -57,7 +57,7 @@ def signals(bars, piv=5, z0=0.5, z1=0.786, ext=1.272, buf=0.3, fee=0.10, min_rr=
             fvg = L["fvg"]
             in_zone = fvg and fvg[0] <= zhi and fvg[1] >= zlo
             entry = (min(zhi, fvg[1]) if need_fvg and fvg else zhi)
-            if (in_zone or not need_fvg) and zlo < b["l"] < entry:
+            if (in_zone or not need_fvg) and b["l"] < entry:  # a resting limit fills on any trade through it
                 sl = L["lo"] - buf * A[i]
                 tp = L["lo"] + leg * ext
                 f = entry * fee / 100
@@ -82,7 +82,7 @@ def signals(bars, piv=5, z0=0.5, z1=0.786, ext=1.272, buf=0.3, fee=0.10, min_rr=
             fvg = S["fvg"]
             in_zone = fvg and fvg[1] >= zlo and fvg[0] <= zhi
             entry = (max(zlo, fvg[0]) if need_fvg and fvg else zlo)
-            if (in_zone or not need_fvg) and entry < b["h"] < zhi:
+            if (in_zone or not need_fvg) and b["h"] > entry:
                 sl = S["hi"] + buf * A[i]
                 tp = S["hi"] - leg * ext
                 f = entry * fee / 100
@@ -106,6 +106,10 @@ def simulate(bars, sigs, fee=0.10, timeout=96):
             continue  # one position at a time
         risk = abs(e - sl)
         fee_r = e * fee / 100 / risk
+        if (d > 0 and bars[i]["l"] <= sl) or (d < 0 and bars[i]["h"] >= sl):  # stopped on the fill bar
+            res.append({"i": i, "dir": d, "r": -1.0 - fee_r, "stop_pct": 100 * risk / e})
+            busy_until = i
+            continue
         exit_r, k = None, i
         for k in range(i + 1, min(i + 1 + timeout, len(bars))):
             b = bars[k]

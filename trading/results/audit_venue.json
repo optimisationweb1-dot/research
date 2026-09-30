@@ -1,0 +1,162 @@
+{
+ "BTCUSDT_bingx": {
+  "label": "BTCUSDT binance vs bingx",
+  "minutes_binance": 44640,
+  "minutes_venue": 44640,
+  "minutes_joined": 44640,
+  "close_diff_bps": {
+   "mean": -0.15,
+   "median_abs": 0.31,
+   "p95_abs": 1.04,
+   "p99_abs": 1.63,
+   "share_abs_gt_5bps": 0.0003
+  },
+  "high_diff_bps": {
+   "mean": -0.15,
+   "median_abs": 0.35,
+   "p95_abs": 1.63,
+   "p99_abs": 4.41,
+   "share_abs_gt_5bps": 0.0075
+  },
+  "low_diff_bps": {
+   "mean": -0.15,
+   "median_abs": 0.34,
+   "p95_abs": 1.42,
+   "p99_abs": 4.31,
+   "share_abs_gt_5bps": 0.0077
+  },
+  "corr_1m_returns": 0.9923,
+  "5m_high_diff_bps": {
+   "mean": -0.17,
+   "median_abs": 0.41,
+   "p95_abs": 2.45
+  },
+  "5m_low_diff_bps": {
+   "mean": -0.11,
+   "median_abs": 0.38,
+   "p95_abs": 2.24
+  },
+  "5m_share_binance_low_below_venue_low_by_gt_3bps": 0.0113,
+  "5m_share_binance_high_above_venue_high_by_gt_3bps": 0.0149
+ },
+ "BTCUSDT_bitunix": {
+  "label": "BTCUSDT binance vs bitunix",
+  "minutes_binance": 44640,
+  "minutes_venue": 44417,
+  "minutes_joined": 44417,
+  "close_diff_bps": {
+   "mean": -0.0,
+   "median_abs": 0.01,
+   "p95_abs": 0.41,
+   "p99_abs": 1.13,
+   "share_abs_gt_5bps": 0.0002
+  },
+  "high_diff_bps": {
+   "mean": -0.04,
+   "median_abs": 0.0,
+   "p95_abs": 0.33,
+   "p99_abs": 1.3,
+   "share_abs_gt_5bps": 0.0007
+  },
+  "low_diff_bps": {
+   "mean": 0.03,
+   "median_abs": 0.0,
+   "p95_abs": 0.33,
+   "p99_abs": 1.27,
+   "share_abs_gt_5bps": 0.0005
+  },
+  "corr_1m_returns": 0.9776,
+  "5m_high_diff_bps": {
+   "mean": -0.08,
+   "median_abs": 0.0,
+   "p95_abs": 0.66
+  },
+  "5m_low_diff_bps": {
+   "mean": 0.08,
+   "median_abs": 0.0,
+   "p95_abs": 0.69
+  },
+  "5m_share_binance_low_below_venue_low_by_gt_3bps": 0.0043,
+  "5m_share_binance_high_above_venue_high_by_gt_3bps": 0.0048
+ },
+ "ETHUSDT_bingx": {
+  "label": "ETHUSDT binance vs bingx",
+  "minutes_binance": 44640,
+  "minutes_venue": 44640,
+  "minutes_joined": 44640,
+  "close_diff_bps": {
+   "mean": 0.08,
+   "median_abs": 0.33,
+   "p95_abs": 1.04,
+   "p99_abs": 1.65,
+   "share_abs_gt_5bps": 0.0006
+  },
+  "high_diff_bps": {
+   "mean": 0.03,
+   "median_abs": 0.37,
+   "p95_abs": 1.73,
+   "p99_abs": 5.86,
+   "share_abs_gt_5bps": 0.013
+  },
+  "low_diff_bps": {
+   "mean": 0.14,
+   "median_abs": 0.37,
+   "p95_abs": 1.84,
+   "p99_abs": 5.8,
+   "share_abs_gt_5bps": 0.0127
+  },
+  "corr_1m_returns": 0.9965,
+  "5m_high_diff_bps": {
+   "mean": -0.04,
+   "median_abs": 0.43,
+   "p95_abs": 3.16
+  },
+  "5m_low_diff_bps": {
+   "mean": 0.25,
+   "median_abs": 0.44,
+   "p95_abs": 3.25
+  },
+  "5m_share_binance_low_below_venue_low_by_gt_3bps": 0.0305,
+  "5m_share_binance_high_above_venue_high_by_gt_3bps": 0.0264
+ },
+ "ETHUSDT_bitunix": {
+  "label": "ETHUSDT binance vs bitunix",
+  "minutes_binance": 44640,
+  "minutes_venue": 44417,
+  "minutes_joined": 44417,
+  "close_diff_bps": {
+   "mean": 0.0,
+   "median_abs": 0.04,
+   "p95_abs": 0.73,
+   "p99_abs": 1.51,
+   "share_abs_gt_5bps": 0.0004
+  },
+  "high_diff_bps": {
+   "mean": -0.1,
+   "median_abs": 0.0,
+   "p95_abs": 0.74,
+   "p99_abs": 2.3,
+   "share_abs_gt_5bps": 0.002
+  },
+  "low_diff_bps": {
+   "mean": 0.11,
+   "median_abs": 0.0,
+   "p95_abs": 0.8,
+   "p99_abs": 2.45,
+   "share_abs_gt_5bps": 0.0027
+  },
+  "corr_1m_returns": 0.9887,
+  "5m_high_diff_bps": {
+   "mean": -0.19,
+   "median_abs": 0.0,
+   "p95_abs": 1.26
+  },
+  "5m_low_diff_bps": {
+   "mean": 0.23,
+   "median_abs": 0.0,
+   "p95_abs": 1.5
+  },
+  "5m_share_binance_low_below_venue_low_by_gt_3bps": 0.0171,
+  "5m_share_binance_high_above_venue_high_by_gt_3bps": 0.0133
+ }
+}

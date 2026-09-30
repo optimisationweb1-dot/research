@@ -1,0 +1,108 @@
+{
+ "ex_ante_top20": {
+  "buy_hold_multiple_equal_weight": 1.98,
+  "buy_hold_multiple_median": 0.91,
+  "last_bar": {
+   "MATICUSDT": "2024-09-04 08:00:00+00:00",
+   "BNXUSDT": "2025-03-17 09:00:00+00:00",
+   "FTMUSDT": "2025-01-06 09:00:00+00:00",
+   "WAVESUSDT": "2024-06-11 08:00:00+00:00",
+   "OCEANUSDT": "2024-06-25 09:00:00+00:00"
+  },
+  "ALL": {
+   "label": "ALL",
+   "n": 11816,
+   "win_pct": 33.9,
+   "avg_R": -0.0486,
+   "t": -3.76,
+   "sum_R": -574.45,
+   "t_cluster_day": -1.72
+  },
+  "IS": {
+   "label": "IS",
+   "n": 6963,
+   "win_pct": 33.6,
+   "avg_R": -0.0561,
+   "t": -3.34,
+   "sum_R": -390.91,
+   "t_cluster_day": -1.61
+  },
+  "OOS": {
+   "label": "OOS",
+   "n": 4853,
+   "win_pct": 34.4,
+   "avg_R": -0.0378,
+   "t": -1.87,
+   "sum_R": -183.54,
+   "t_cluster_day": -0.8
+  },
+  "LONG": {
+   "label": "LONG",
+   "n": 6199,
+   "win_pct": 33.7,
+   "avg_R": -0.0538,
+   "t": -3.0,
+   "sum_R": -333.33,
+   "t_cluster_day": -1.49
+  },
+  "SHORT": {
+   "label": "SHORT",
+   "n": 5617,
+   "win_pct": 34.2,
+   "avg_R": -0.0429,
+   "t": -2.3,
+   "sum_R": -241.13,
+   "t_cluster_day": -0.95
+  }
+ },
+ "current10": {
+  "buy_hold_multiple_equal_weight": 2.94,
+  "buy_hold_multiple_median": 2.05,
+  "last_bar": {},
+  "ALL": {
+   "label": "ALL",
+   "n": 6925,
+   "win_pct": 35.1,
+   "avg_R": -0.0197,
+   "t": -1.15,
+   "sum_R": -136.18,
+   "t_cluster_day": -0.61
+  },
+  "IS": {
+   "label": "IS",
+   "n": 3654,
+   "win_pct": 34.9,
+   "avg_R": -0.0225,
+   "t": -0.96,
+   "sum_R": -82.35,
+   "t_cluster_day": -0.57
+  },
+  "OOS": {
+   "label": "OOS",
+   "n": 3271,
+   "win_pct": 35.3,
+   "avg_R": -0.0165,
+   "t": -0.66,
+   "sum_R": -53.84,
+   "t_cluster_day": -0.32
+  },
+  "LONG": {
+   "label": "LONG",
+   "n": 3639,
+   "win_pct": 35.7,
+   "avg_R": -0.0009,
+   "t": -0.04,
+   "sum_R": -3.1,
+   "t_cluster_day": -0.02
+  },
+  "SHORT": {
+   "label": "SHORT",
+   "n": 3286,
+   "win_pct": 34.5,
+   "avg_R": -0.0405,
+   "t": -1.65,
+   "sum_R": -133.09,
+   "t_cluster_day": -0.8
+  }
+ }
+}

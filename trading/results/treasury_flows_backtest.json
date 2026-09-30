@@ -1,0 +1,3812 @@
+{
+ "BTC|flow_all|N7|p70|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N7|p70|base IS",
+    "n": 17,
+    "trades_per_month": 1.8,
+    "win_pct": 52.9,
+    "avg_R": 0.259,
+    "t_stat": 1.68,
+    "sum_R": 4.4,
+    "pf": 3.61,
+    "ret_pct@0.5%": 2.2,
+    "max_dd_pct": 0.4,
+    "median_stop_pct": 11.296
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N7|p70|base OOS",
+    "n": 29,
+    "trades_per_month": 1.5,
+    "win_pct": 41.4,
+    "avg_R": -0.13,
+    "t_stat": -1.47,
+    "sum_R": -3.8,
+    "pf": 0.45,
+    "ret_pct@0.5%": -1.9,
+    "max_dd_pct": 1.9,
+    "median_stop_pct": 9.196
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 17,
+    "avg_ret_pct": 2.7,
+    "t_ret": 1.71,
+    "sum_ret_pct": 45.9,
+    "days_in_market": 136
+   },
+   "OOS": {
+    "n": 29,
+    "avg_ret_pct": -1.332,
+    "t_ret": -1.58,
+    "sum_ret_pct": -38.6,
+    "days_in_market": 223
+   }
+  }
+ },
+ "BTC|flow_all|N7|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N7|p80|base IS",
+    "n": 12,
+    "trades_per_month": 1.3,
+    "win_pct": 58.3,
+    "avg_R": 0.222,
+    "t_stat": 1.21,
+    "sum_R": 2.7,
+    "pf": 3.58,
+    "ret_pct@0.5%": 1.3,
+    "max_dd_pct": 0.3,
+    "median_stop_pct": 10.862
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N7|p80|base OOS",
+    "n": 22,
+    "trades_per_month": 1.1,
+    "win_pct": 54.5,
+    "avg_R": -0.074,
+    "t_stat": -0.83,
+    "sum_R": -1.6,
+    "pf": 0.61,
+    "ret_pct@0.5%": -0.8,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 8.575
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 12,
+    "avg_ret_pct": 2.223,
+    "t_ret": 1.2,
+    "sum_ret_pct": 26.7,
+    "days_in_market": 96
+   },
+   "OOS": {
+    "n": 22,
+    "avg_ret_pct": -0.715,
+    "t_ret": -0.92,
+    "sum_ret_pct": -15.7,
+    "days_in_market": 172
+   }
+  }
+ },
+ "BTC|flow_all|N7|p90|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N7|p90|base IS",
+    "n": 8,
+    "trades_per_month": 0.9,
+    "win_pct": 50.0,
+    "avg_R": 0.048,
+    "t_stat": 0.48,
+    "sum_R": 0.4,
+    "pf": 1.51,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 0.1,
+    "median_stop_pct": 11.573
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N7|p90|base OOS",
+    "n": 8,
+    "trades_per_month": 0.5,
+    "win_pct": 50.0,
+    "avg_R": -0.147,
+    "t_stat": -0.93,
+    "sum_R": -1.2,
+    "pf": 0.38,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.8,
+    "median_stop_pct": 9.612
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": 0.39,
+    "t_ret": 0.37,
+    "sum_ret_pct": 3.1,
+    "days_in_market": 64
+   },
+   "OOS": {
+    "n": 8,
+    "avg_ret_pct": -1.128,
+    "t_ret": -0.89,
+    "sum_ret_pct": -9.0,
+    "days_in_market": 62
+   }
+  }
+ },
+ "BTC|flow_etf|N7|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_etf|N7|p80|base IS",
+    "n": 11,
+    "trades_per_month": 1.2,
+    "win_pct": 45.5,
+    "avg_R": 0.081,
+    "t_stat": 0.38,
+    "sum_R": 0.9,
+    "pf": 1.44,
+    "ret_pct@0.5%": 0.4,
+    "max_dd_pct": 0.8,
+    "median_stop_pct": 10.314
+   },
+   "OOS": {
+    "label": "BTC|flow_etf|N7|p80|base OOS",
+    "n": 18,
+    "trades_per_month": 0.9,
+    "win_pct": 33.3,
+    "avg_R": -0.144,
+    "t_stat": -1.3,
+    "sum_R": -2.6,
+    "pf": 0.38,
+    "ret_pct@0.5%": -1.3,
+    "max_dd_pct": 1.7,
+    "median_stop_pct": 8.494
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 11,
+    "avg_ret_pct": 0.886,
+    "t_ret": 0.41,
+    "sum_ret_pct": 9.7,
+    "days_in_market": 88
+   },
+   "OOS": {
+    "n": 18,
+    "avg_ret_pct": -1.177,
+    "t_ret": -1.25,
+    "sum_ret_pct": -21.2,
+    "days_in_market": 139
+   }
+  }
+ },
+ "BTC|flow_treasury|N7|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_treasury|N7|p80|base IS",
+    "n": 30,
+    "trades_per_month": 4.1,
+    "win_pct": 53.3,
+    "avg_R": 0.107,
+    "t_stat": 0.86,
+    "sum_R": 3.2,
+    "pf": 1.52,
+    "ret_pct@0.5%": 1.6,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 11.374
+   },
+   "OOS": {
+    "label": "BTC|flow_treasury|N7|p80|base OOS",
+    "n": 19,
+    "trades_per_month": 1.2,
+    "win_pct": 42.1,
+    "avg_R": -0.089,
+    "t_stat": -1.01,
+    "sum_R": -1.7,
+    "pf": 0.54,
+    "ret_pct@0.5%": -0.8,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 10.602
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 30,
+    "avg_ret_pct": 1.197,
+    "t_ret": 0.88,
+    "sum_ret_pct": 35.9,
+    "days_in_market": 224
+   },
+   "OOS": {
+    "n": 19,
+    "avg_ret_pct": -1.121,
+    "t_ret": -1.09,
+    "sum_ret_pct": -21.3,
+    "days_in_market": 148
+   }
+  }
+ },
+ "BTC|ctl_mom14|N7|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_mom14|N7|base IS",
+    "n": 66,
+    "trades_per_month": 2.8,
+    "win_pct": 57.6,
+    "avg_R": 0.208,
+    "t_stat": 2.55,
+    "sum_R": 13.7,
+    "pf": 2.48,
+    "ret_pct@0.5%": 7.1,
+    "max_dd_pct": 0.9,
+    "median_stop_pct": 10.633
+   },
+   "OOS": {
+    "label": "BTC|ctl_mom14|N7|base OOS",
+    "n": 53,
+    "trades_per_month": 2.7,
+    "win_pct": 45.3,
+    "avg_R": -0.019,
+    "t_stat": -0.18,
+    "sum_R": -1.0,
+    "pf": 0.93,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 2.7,
+    "median_stop_pct": 9.469
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 66,
+    "avg_ret_pct": 2.045,
+    "t_ret": 2.43,
+    "sum_ret_pct": 135.0,
+    "days_in_market": 517
+   },
+   "OOS": {
+    "n": 53,
+    "avg_ret_pct": -0.451,
+    "t_ret": -0.55,
+    "sum_ret_pct": -23.9,
+    "days_in_market": 404
+   }
+  }
+ },
+ "BTC|ctl_always|N7|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_always|N7|base IS",
+    "n": 39,
+    "trades_per_month": 4.0,
+    "win_pct": 51.3,
+    "avg_R": 0.07,
+    "t_stat": 0.71,
+    "sum_R": 2.7,
+    "pf": 1.36,
+    "ret_pct@0.5%": 1.4,
+    "max_dd_pct": 1.8,
+    "median_stop_pct": 12.09
+   },
+   "OOS": {
+    "label": "BTC|ctl_always|N7|base OOS",
+    "n": 80,
+    "trades_per_month": 4.0,
+    "win_pct": 47.5,
+    "avg_R": -0.028,
+    "t_stat": -0.34,
+    "sum_R": -2.2,
+    "pf": 0.89,
+    "ret_pct@0.5%": -1.2,
+    "max_dd_pct": 4.1,
+    "median_stop_pct": 10.201
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 39,
+    "avg_ret_pct": 0.729,
+    "t_ret": 0.63,
+    "sum_ret_pct": 28.4,
+    "days_in_market": 295
+   },
+   "OOS": {
+    "n": 80,
+    "avg_ret_pct": -0.376,
+    "t_ret": -0.55,
+    "sum_ret_pct": -30.1,
+    "days_in_market": 604
+   }
+  }
+ },
+ "BTC|flow_all|N14|p70|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N14|p70|base IS",
+    "n": 12,
+    "trades_per_month": 1.3,
+    "win_pct": 75.0,
+    "avg_R": 0.297,
+    "t_stat": 1.0,
+    "sum_R": 3.6,
+    "pf": 2.18,
+    "ret_pct@0.5%": 1.8,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 11.762
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N14|p70|base OOS",
+    "n": 21,
+    "trades_per_month": 1.1,
+    "win_pct": 42.9,
+    "avg_R": -0.165,
+    "t_stat": -1.08,
+    "sum_R": -3.5,
+    "pf": 0.57,
+    "ret_pct@0.5%": -1.7,
+    "max_dd_pct": 2.1,
+    "median_stop_pct": 8.698
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 12,
+    "avg_ret_pct": 3.366,
+    "t_ret": 1.12,
+    "sum_ret_pct": 40.4,
+    "days_in_market": 165
+   },
+   "OOS": {
+    "n": 21,
+    "avg_ret_pct": -1.468,
+    "t_ret": -1.0,
+    "sum_ret_pct": -30.8,
+    "days_in_market": 275
+   }
+  }
+ },
+ "BTC|flow_all|N14|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N14|p80|base IS",
+    "n": 10,
+    "trades_per_month": 1.0,
+    "win_pct": 70.0,
+    "avg_R": 0.292,
+    "t_stat": 0.74,
+    "sum_R": 2.9,
+    "pf": 1.96,
+    "ret_pct@0.5%": 1.5,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 11.406
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N14|p80|base OOS",
+    "n": 17,
+    "trades_per_month": 0.9,
+    "win_pct": 47.1,
+    "avg_R": -0.078,
+    "t_stat": -0.45,
+    "sum_R": -1.3,
+    "pf": 0.75,
+    "ret_pct@0.5%": -0.7,
+    "max_dd_pct": 2.4,
+    "median_stop_pct": 8.499
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 10,
+    "avg_ret_pct": 3.001,
+    "t_ret": 0.75,
+    "sum_ret_pct": 30.0,
+    "days_in_market": 133
+   },
+   "OOS": {
+    "n": 17,
+    "avg_ret_pct": -0.556,
+    "t_ret": -0.39,
+    "sum_ret_pct": -9.5,
+    "days_in_market": 225
+   }
+  }
+ },
+ "BTC|flow_all|N14|p90|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N14|p90|base IS",
+    "n": 6,
+    "trades_per_month": 0.6,
+    "win_pct": 83.3,
+    "avg_R": 0.748,
+    "t_stat": 1.43,
+    "sum_R": 4.5,
+    "pf": 99.29,
+    "ret_pct@0.5%": 2.3,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 11.087
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N14|p90|base OOS",
+    "n": 8,
+    "trades_per_month": 0.5,
+    "win_pct": 25.0,
+    "avg_R": -0.214,
+    "t_stat": -0.92,
+    "sum_R": -1.7,
+    "pf": 0.44,
+    "ret_pct@0.5%": -0.9,
+    "max_dd_pct": 1.3,
+    "median_stop_pct": 9.612
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 6,
+    "avg_ret_pct": 7.481,
+    "t_ret": 1.57,
+    "sum_ret_pct": 44.9,
+    "days_in_market": 90
+   },
+   "OOS": {
+    "n": 8,
+    "avg_ret_pct": -1.635,
+    "t_ret": -0.76,
+    "sum_ret_pct": -13.1,
+    "days_in_market": 107
+   }
+  }
+ },
+ "BTC|flow_etf|N14|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_etf|N14|p80|base IS",
+    "n": 9,
+    "trades_per_month": 0.9,
+    "win_pct": 55.6,
+    "avg_R": 0.166,
+    "t_stat": 0.38,
+    "sum_R": 1.5,
+    "pf": 1.48,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 10.413
+   },
+   "OOS": {
+    "label": "BTC|flow_etf|N14|p80|base OOS",
+    "n": 14,
+    "trades_per_month": 0.7,
+    "win_pct": 50.0,
+    "avg_R": -0.046,
+    "t_stat": -0.23,
+    "sum_R": -0.6,
+    "pf": 0.86,
+    "ret_pct@0.5%": -0.3,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 8.369
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 9,
+    "avg_ret_pct": 1.777,
+    "t_ret": 0.42,
+    "sum_ret_pct": 16.0,
+    "days_in_market": 125
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": 0.309,
+    "t_ret": 0.17,
+    "sum_ret_pct": 4.3,
+    "days_in_market": 186
+   }
+  }
+ },
+ "BTC|flow_treasury|N14|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_treasury|N14|p80|base IS",
+    "n": 17,
+    "trades_per_month": 2.3,
+    "win_pct": 52.9,
+    "avg_R": 0.199,
+    "t_stat": 0.75,
+    "sum_R": 3.4,
+    "pf": 1.67,
+    "ret_pct@0.5%": 1.7,
+    "max_dd_pct": 1.3,
+    "median_stop_pct": 11.555
+   },
+   "OOS": {
+    "label": "BTC|flow_treasury|N14|p80|base OOS",
+    "n": 14,
+    "trades_per_month": 0.9,
+    "win_pct": 50.0,
+    "avg_R": -0.128,
+    "t_stat": -0.83,
+    "sum_R": -1.8,
+    "pf": 0.56,
+    "ret_pct@0.5%": -0.9,
+    "max_dd_pct": 0.7,
+    "median_stop_pct": 10.567
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 17,
+    "avg_ret_pct": 2.04,
+    "t_ret": 0.73,
+    "sum_ret_pct": 34.7,
+    "days_in_market": 230
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": -1.504,
+    "t_ret": -0.91,
+    "sum_ret_pct": -21.1,
+    "days_in_market": 197
+   }
+  }
+ },
+ "BTC|ctl_mom14|N14|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_mom14|N14|base IS",
+    "n": 39,
+    "trades_per_month": 1.7,
+    "win_pct": 56.4,
+    "avg_R": 0.348,
+    "t_stat": 2.24,
+    "sum_R": 13.6,
+    "pf": 2.6,
+    "ret_pct@0.5%": 7.0,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 10.967
+   },
+   "OOS": {
+    "label": "BTC|ctl_mom14|N14|base OOS",
+    "n": 32,
+    "trades_per_month": 1.6,
+    "win_pct": 50.0,
+    "avg_R": 0.034,
+    "t_stat": 0.23,
+    "sum_R": 1.1,
+    "pf": 1.11,
+    "ret_pct@0.5%": 0.5,
+    "max_dd_pct": 1.7,
+    "median_stop_pct": 9.789
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 39,
+    "avg_ret_pct": 3.274,
+    "t_ret": 2.11,
+    "sum_ret_pct": 127.7,
+    "days_in_market": 558
+   },
+   "OOS": {
+    "n": 32,
+    "avg_ret_pct": 0.258,
+    "t_ret": 0.2,
+    "sum_ret_pct": 8.3,
+    "days_in_market": 435
+   }
+  }
+ },
+ "BTC|ctl_always|N14|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_always|N14|base IS",
+    "n": 21,
+    "trades_per_month": 2.2,
+    "win_pct": 52.4,
+    "avg_R": 0.171,
+    "t_stat": 0.78,
+    "sum_R": 3.6,
+    "pf": 1.63,
+    "ret_pct@0.5%": 1.8,
+    "max_dd_pct": 1.2,
+    "median_stop_pct": 12.09
+   },
+   "OOS": {
+    "label": "BTC|ctl_always|N14|base OOS",
+    "n": 45,
+    "trades_per_month": 2.3,
+    "win_pct": 46.7,
+    "avg_R": 0.012,
+    "t_stat": 0.09,
+    "sum_R": 0.6,
+    "pf": 1.04,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 3.0,
+    "median_stop_pct": 10.337
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 21,
+    "avg_ret_pct": 1.611,
+    "t_ret": 0.68,
+    "sum_ret_pct": 33.8,
+    "days_in_market": 293
+   },
+   "OOS": {
+    "n": 45,
+    "avg_ret_pct": 0.022,
+    "t_ret": 0.02,
+    "sum_ret_pct": 1.0,
+    "days_in_market": 606
+   }
+  }
+ },
+ "BTC|flow_all|N30|p70|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N30|p70|base IS",
+    "n": 8,
+    "trades_per_month": 0.8,
+    "win_pct": 50.0,
+    "avg_R": 0.382,
+    "t_stat": 0.71,
+    "sum_R": 3.1,
+    "pf": 2.22,
+    "ret_pct@0.5%": 1.5,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 11.991
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N30|p70|base OOS",
+    "n": 14,
+    "trades_per_month": 0.7,
+    "win_pct": 28.6,
+    "avg_R": -0.279,
+    "t_stat": -1.06,
+    "sum_R": -3.9,
+    "pf": 0.5,
+    "ret_pct@0.5%": -2.0,
+    "max_dd_pct": 2.2,
+    "median_stop_pct": 9.9
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": 3.41,
+    "t_ret": 0.61,
+    "sum_ret_pct": 27.3,
+    "days_in_market": 212
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": -2.716,
+    "t_ret": -1.05,
+    "sum_ret_pct": -38.0,
+    "days_in_market": 311
+   }
+  }
+ },
+ "BTC|flow_all|N30|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N30|p80|base IS",
+    "n": 7,
+    "trades_per_month": 0.7,
+    "win_pct": 57.1,
+    "avg_R": 0.55,
+    "t_stat": 0.88,
+    "sum_R": 3.8,
+    "pf": 2.57,
+    "ret_pct@0.5%": 1.9,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 11.761
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N30|p80|base OOS",
+    "n": 12,
+    "trades_per_month": 0.6,
+    "win_pct": 50.0,
+    "avg_R": -0.08,
+    "t_stat": -0.3,
+    "sum_R": -1.0,
+    "pf": 0.82,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 2.1,
+    "median_stop_pct": 8.947
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": 5.425,
+    "t_ret": 0.86,
+    "sum_ret_pct": 38.0,
+    "days_in_market": 179
+   },
+   "OOS": {
+    "n": 12,
+    "avg_ret_pct": -0.423,
+    "t_ret": -0.16,
+    "sum_ret_pct": -5.1,
+    "days_in_market": 278
+   }
+  }
+ },
+ "BTC|flow_all|N30|p90|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N30|p90|base IS",
+    "n": 4,
+    "trades_per_month": 0.4,
+    "win_pct": 75.0,
+    "avg_R": 1.103,
+    "t_stat": 1.35,
+    "sum_R": 4.4,
+    "pf": 11.46,
+    "ret_pct@0.5%": 2.2,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 12.586
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N30|p90|base OOS",
+    "n": 7,
+    "trades_per_month": 0.4,
+    "win_pct": 42.9,
+    "avg_R": -0.276,
+    "t_stat": -0.8,
+    "sum_R": -1.9,
+    "pf": 0.46,
+    "ret_pct@0.5%": -1.0,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 10.279
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 10.486,
+    "t_ret": 1.33,
+    "sum_ret_pct": 41.9,
+    "days_in_market": 124
+   },
+   "OOS": {
+    "n": 7,
+    "avg_ret_pct": -2.394,
+    "t_ret": -0.7,
+    "sum_ret_pct": -16.8,
+    "days_in_market": 166
+   }
+  }
+ },
+ "BTC|flow_etf|N30|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_etf|N30|p80|base IS",
+    "n": 7,
+    "trades_per_month": 0.7,
+    "win_pct": 42.9,
+    "avg_R": 0.286,
+    "t_stat": 0.43,
+    "sum_R": 2.0,
+    "pf": 1.58,
+    "ret_pct@0.5%": 1.0,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 11.261
+   },
+   "OOS": {
+    "label": "BTC|flow_etf|N30|p80|base OOS",
+    "n": 10,
+    "trades_per_month": 0.5,
+    "win_pct": 40.0,
+    "avg_R": -0.23,
+    "t_stat": -0.75,
+    "sum_R": -2.3,
+    "pf": 0.56,
+    "ret_pct@0.5%": -1.2,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 9.364
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": 2.661,
+    "t_ret": 0.4,
+    "sum_ret_pct": 18.6,
+    "days_in_market": 159
+   },
+   "OOS": {
+    "n": 10,
+    "avg_ret_pct": -2.074,
+    "t_ret": -0.72,
+    "sum_ret_pct": -20.7,
+    "days_in_market": 234
+   }
+  }
+ },
+ "BTC|flow_treasury|N30|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_treasury|N30|p80|base IS",
+    "n": 9,
+    "trades_per_month": 1.2,
+    "win_pct": 66.7,
+    "avg_R": 0.406,
+    "t_stat": 0.99,
+    "sum_R": 3.7,
+    "pf": 2.76,
+    "ret_pct@0.5%": 1.8,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 12.09
+   },
+   "OOS": {
+    "label": "BTC|flow_treasury|N30|p80|base OOS",
+    "n": 14,
+    "trades_per_month": 0.9,
+    "win_pct": 42.9,
+    "avg_R": -0.075,
+    "t_stat": -0.31,
+    "sum_R": -1.0,
+    "pf": 0.83,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 1.1,
+    "median_stop_pct": 10.567
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 9,
+    "avg_ret_pct": 4.884,
+    "t_ret": 1.16,
+    "sum_ret_pct": 44.0,
+    "days_in_market": 235
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": -0.467,
+    "t_ret": -0.19,
+    "sum_ret_pct": -6.5,
+    "days_in_market": 324
+   }
+  }
+ },
+ "BTC|ctl_mom14|N30|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_mom14|N30|base IS",
+    "n": 23,
+    "trades_per_month": 0.9,
+    "win_pct": 65.2,
+    "avg_R": 0.672,
+    "t_stat": 2.2,
+    "sum_R": 15.5,
+    "pf": 3.32,
+    "ret_pct@0.5%": 8.0,
+    "max_dd_pct": 0.8,
+    "median_stop_pct": 10.501
+   },
+   "OOS": {
+    "label": "BTC|ctl_mom14|N30|base OOS",
+    "n": 18,
+    "trades_per_month": 0.9,
+    "win_pct": 44.4,
+    "avg_R": 0.162,
+    "t_stat": 0.57,
+    "sum_R": 2.9,
+    "pf": 1.45,
+    "ret_pct@0.5%": 1.4,
+    "max_dd_pct": 1.7,
+    "median_stop_pct": 9.4
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 23,
+    "avg_ret_pct": 6.443,
+    "t_ret": 2.14,
+    "sum_ret_pct": 148.2,
+    "days_in_market": 630
+   },
+   "OOS": {
+    "n": 18,
+    "avg_ret_pct": 0.907,
+    "t_ret": 0.37,
+    "sum_ret_pct": 16.3,
+    "days_in_market": 465
+   }
+  }
+ },
+ "BTC|ctl_always|N30|base": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_always|N30|base IS",
+    "n": 11,
+    "trades_per_month": 1.1,
+    "win_pct": 72.7,
+    "avg_R": 0.334,
+    "t_stat": 0.98,
+    "sum_R": 3.7,
+    "pf": 2.53,
+    "ret_pct@0.5%": 1.8,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 12.362
+   },
+   "OOS": {
+    "label": "BTC|ctl_always|N30|base OOS",
+    "n": 26,
+    "trades_per_month": 1.3,
+    "win_pct": 50.0,
+    "avg_R": -0.03,
+    "t_stat": -0.14,
+    "sum_R": -0.8,
+    "pf": 0.93,
+    "ret_pct@0.5%": -0.4,
+    "max_dd_pct": 3.6,
+    "median_stop_pct": 10.809
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 11,
+    "avg_ret_pct": 4.045,
+    "t_ret": 1.15,
+    "sum_ret_pct": 44.5,
+    "days_in_market": 298
+   },
+   "OOS": {
+    "n": 26,
+    "avg_ret_pct": -0.296,
+    "t_ret": -0.15,
+    "sum_ret_pct": -7.7,
+    "days_in_market": 601
+   }
+  }
+ },
+ "BTC|flow_all|N7|p70|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N7|p70|harsh IS",
+    "n": 17,
+    "trades_per_month": 1.8,
+    "win_pct": 52.9,
+    "avg_R": 0.251,
+    "t_stat": 1.63,
+    "sum_R": 4.3,
+    "pf": 3.46,
+    "ret_pct@0.5%": 2.1,
+    "max_dd_pct": 0.4,
+    "median_stop_pct": 11.323
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N7|p70|harsh OOS",
+    "n": 29,
+    "trades_per_month": 1.5,
+    "win_pct": 37.9,
+    "avg_R": -0.138,
+    "t_stat": -1.56,
+    "sum_R": -4.0,
+    "pf": 0.43,
+    "ret_pct@0.5%": -2.0,
+    "max_dd_pct": 2.0,
+    "median_stop_pct": 9.223
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 17,
+    "avg_ret_pct": 2.618,
+    "t_ret": 1.66,
+    "sum_ret_pct": 44.5,
+    "days_in_market": 136
+   },
+   "OOS": {
+    "n": 29,
+    "avg_ret_pct": -1.411,
+    "t_ret": -1.68,
+    "sum_ret_pct": -40.9,
+    "days_in_market": 223
+   }
+  }
+ },
+ "BTC|flow_all|N7|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N7|p80|harsh IS",
+    "n": 12,
+    "trades_per_month": 1.3,
+    "win_pct": 58.3,
+    "avg_R": 0.214,
+    "t_stat": 1.17,
+    "sum_R": 2.6,
+    "pf": 3.42,
+    "ret_pct@0.5%": 1.3,
+    "max_dd_pct": 0.3,
+    "median_stop_pct": 10.889
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N7|p80|harsh OOS",
+    "n": 22,
+    "trades_per_month": 1.1,
+    "win_pct": 50.0,
+    "avg_R": -0.083,
+    "t_stat": -0.94,
+    "sum_R": -1.8,
+    "pf": 0.57,
+    "ret_pct@0.5%": -0.9,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 8.603
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 12,
+    "avg_ret_pct": 2.142,
+    "t_ret": 1.16,
+    "sum_ret_pct": 25.7,
+    "days_in_market": 96
+   },
+   "OOS": {
+    "n": 22,
+    "avg_ret_pct": -0.794,
+    "t_ret": -1.03,
+    "sum_ret_pct": -17.5,
+    "days_in_market": 172
+   }
+  }
+ },
+ "BTC|flow_all|N7|p90|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N7|p90|harsh IS",
+    "n": 8,
+    "trades_per_month": 0.9,
+    "win_pct": 50.0,
+    "avg_R": 0.041,
+    "t_stat": 0.41,
+    "sum_R": 0.3,
+    "pf": 1.42,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 0.2,
+    "median_stop_pct": 11.6
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N7|p90|harsh OOS",
+    "n": 8,
+    "trades_per_month": 0.5,
+    "win_pct": 50.0,
+    "avg_R": -0.155,
+    "t_stat": -0.99,
+    "sum_R": -1.2,
+    "pf": 0.35,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.8,
+    "median_stop_pct": 9.639
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": 0.309,
+    "t_ret": 0.3,
+    "sum_ret_pct": 2.5,
+    "days_in_market": 64
+   },
+   "OOS": {
+    "n": 8,
+    "avg_ret_pct": -1.207,
+    "t_ret": -0.96,
+    "sum_ret_pct": -9.7,
+    "days_in_market": 62
+   }
+  }
+ },
+ "BTC|flow_etf|N7|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_etf|N7|p80|harsh IS",
+    "n": 11,
+    "trades_per_month": 1.2,
+    "win_pct": 45.5,
+    "avg_R": 0.073,
+    "t_stat": 0.34,
+    "sum_R": 0.8,
+    "pf": 1.39,
+    "ret_pct@0.5%": 0.4,
+    "max_dd_pct": 0.8,
+    "median_stop_pct": 10.341
+   },
+   "OOS": {
+    "label": "BTC|flow_etf|N7|p80|harsh OOS",
+    "n": 18,
+    "trades_per_month": 0.9,
+    "win_pct": 27.8,
+    "avg_R": -0.152,
+    "t_stat": -1.38,
+    "sum_R": -2.7,
+    "pf": 0.36,
+    "ret_pct@0.5%": -1.4,
+    "max_dd_pct": 1.8,
+    "median_stop_pct": 8.521
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 11,
+    "avg_ret_pct": 0.805,
+    "t_ret": 0.38,
+    "sum_ret_pct": 8.9,
+    "days_in_market": 88
+   },
+   "OOS": {
+    "n": 18,
+    "avg_ret_pct": -1.256,
+    "t_ret": -1.34,
+    "sum_ret_pct": -22.6,
+    "days_in_market": 139
+   }
+  }
+ },
+ "BTC|flow_treasury|N7|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_treasury|N7|p80|harsh IS",
+    "n": 30,
+    "trades_per_month": 4.1,
+    "win_pct": 53.3,
+    "avg_R": 0.099,
+    "t_stat": 0.81,
+    "sum_R": 3.0,
+    "pf": 1.48,
+    "ret_pct@0.5%": 1.5,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 11.401
+   },
+   "OOS": {
+    "label": "BTC|flow_treasury|N7|p80|harsh OOS",
+    "n": 19,
+    "trades_per_month": 1.2,
+    "win_pct": 42.1,
+    "avg_R": -0.096,
+    "t_stat": -1.1,
+    "sum_R": -1.8,
+    "pf": 0.51,
+    "ret_pct@0.5%": -0.9,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 10.628
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 30,
+    "avg_ret_pct": 1.117,
+    "t_ret": 0.82,
+    "sum_ret_pct": 33.5,
+    "days_in_market": 224
+   },
+   "OOS": {
+    "n": 19,
+    "avg_ret_pct": -1.2,
+    "t_ret": -1.17,
+    "sum_ret_pct": -22.8,
+    "days_in_market": 148
+   }
+  }
+ },
+ "BTC|ctl_mom14|N7|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_mom14|N7|harsh IS",
+    "n": 66,
+    "trades_per_month": 2.8,
+    "win_pct": 57.6,
+    "avg_R": 0.199,
+    "t_stat": 2.46,
+    "sum_R": 13.2,
+    "pf": 2.39,
+    "ret_pct@0.5%": 6.8,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 10.66
+   },
+   "OOS": {
+    "label": "BTC|ctl_mom14|N7|harsh OOS",
+    "n": 53,
+    "trades_per_month": 2.7,
+    "win_pct": 43.4,
+    "avg_R": -0.028,
+    "t_stat": -0.27,
+    "sum_R": -1.5,
+    "pf": 0.89,
+    "ret_pct@0.5%": -0.8,
+    "max_dd_pct": 2.9,
+    "median_stop_pct": 9.496
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 66,
+    "avg_ret_pct": 1.964,
+    "t_ret": 2.33,
+    "sum_ret_pct": 129.6,
+    "days_in_market": 517
+   },
+   "OOS": {
+    "n": 53,
+    "avg_ret_pct": -0.531,
+    "t_ret": -0.65,
+    "sum_ret_pct": -28.1,
+    "days_in_market": 404
+   }
+  }
+ },
+ "BTC|ctl_always|N7|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_always|N7|harsh IS",
+    "n": 39,
+    "trades_per_month": 4.0,
+    "win_pct": 51.3,
+    "avg_R": 0.064,
+    "t_stat": 0.65,
+    "sum_R": 2.5,
+    "pf": 1.32,
+    "ret_pct@0.5%": 1.2,
+    "max_dd_pct": 1.8,
+    "median_stop_pct": 12.116
+   },
+   "OOS": {
+    "label": "BTC|ctl_always|N7|harsh OOS",
+    "n": 80,
+    "trades_per_month": 4.0,
+    "win_pct": 47.5,
+    "avg_R": -0.036,
+    "t_stat": -0.45,
+    "sum_R": -2.9,
+    "pf": 0.86,
+    "ret_pct@0.5%": -1.5,
+    "max_dd_pct": 4.3,
+    "median_stop_pct": 10.228
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 39,
+    "avg_ret_pct": 0.648,
+    "t_ret": 0.56,
+    "sum_ret_pct": 25.3,
+    "days_in_market": 295
+   },
+   "OOS": {
+    "n": 80,
+    "avg_ret_pct": -0.456,
+    "t_ret": -0.67,
+    "sum_ret_pct": -36.5,
+    "days_in_market": 604
+   }
+  }
+ },
+ "BTC|flow_all|N14|p70|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N14|p70|harsh IS",
+    "n": 12,
+    "trades_per_month": 1.3,
+    "win_pct": 75.0,
+    "avg_R": 0.289,
+    "t_stat": 0.97,
+    "sum_R": 3.5,
+    "pf": 2.14,
+    "ret_pct@0.5%": 1.7,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 11.789
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N14|p70|harsh OOS",
+    "n": 21,
+    "trades_per_month": 1.1,
+    "win_pct": 42.9,
+    "avg_R": -0.173,
+    "t_stat": -1.13,
+    "sum_R": -3.6,
+    "pf": 0.55,
+    "ret_pct@0.5%": -1.8,
+    "max_dd_pct": 2.2,
+    "median_stop_pct": 8.725
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 12,
+    "avg_ret_pct": 3.283,
+    "t_ret": 1.09,
+    "sum_ret_pct": 39.4,
+    "days_in_market": 165
+   },
+   "OOS": {
+    "n": 21,
+    "avg_ret_pct": -1.546,
+    "t_ret": -1.05,
+    "sum_ret_pct": -32.5,
+    "days_in_market": 275
+   }
+  }
+ },
+ "BTC|flow_all|N14|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N14|p80|harsh IS",
+    "n": 10,
+    "trades_per_month": 1.0,
+    "win_pct": 70.0,
+    "avg_R": 0.284,
+    "t_stat": 0.72,
+    "sum_R": 2.8,
+    "pf": 1.93,
+    "ret_pct@0.5%": 1.4,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 11.432
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N14|p80|harsh OOS",
+    "n": 17,
+    "trades_per_month": 0.9,
+    "win_pct": 47.1,
+    "avg_R": -0.086,
+    "t_stat": -0.51,
+    "sum_R": -1.5,
+    "pf": 0.72,
+    "ret_pct@0.5%": -0.7,
+    "max_dd_pct": 2.4,
+    "median_stop_pct": 8.526
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 10,
+    "avg_ret_pct": 2.918,
+    "t_ret": 0.73,
+    "sum_ret_pct": 29.2,
+    "days_in_market": 133
+   },
+   "OOS": {
+    "n": 17,
+    "avg_ret_pct": -0.634,
+    "t_ret": -0.44,
+    "sum_ret_pct": -10.8,
+    "days_in_market": 225
+   }
+  }
+ },
+ "BTC|flow_all|N14|p90|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N14|p90|harsh IS",
+    "n": 6,
+    "trades_per_month": 0.6,
+    "win_pct": 83.3,
+    "avg_R": 0.738,
+    "t_stat": 1.42,
+    "sum_R": 4.4,
+    "pf": 87.12,
+    "ret_pct@0.5%": 2.2,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 11.114
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N14|p90|harsh OOS",
+    "n": 8,
+    "trades_per_month": 0.5,
+    "win_pct": 25.0,
+    "avg_R": -0.222,
+    "t_stat": -0.96,
+    "sum_R": -1.8,
+    "pf": 0.42,
+    "ret_pct@0.5%": -0.9,
+    "max_dd_pct": 1.3,
+    "median_stop_pct": 9.639
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 6,
+    "avg_ret_pct": 7.396,
+    "t_ret": 1.55,
+    "sum_ret_pct": 44.4,
+    "days_in_market": 90
+   },
+   "OOS": {
+    "n": 8,
+    "avg_ret_pct": -1.714,
+    "t_ret": -0.8,
+    "sum_ret_pct": -13.7,
+    "days_in_market": 107
+   }
+  }
+ },
+ "BTC|flow_etf|N14|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_etf|N14|p80|harsh IS",
+    "n": 9,
+    "trades_per_month": 0.9,
+    "win_pct": 55.6,
+    "avg_R": 0.158,
+    "t_stat": 0.36,
+    "sum_R": 1.4,
+    "pf": 1.46,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 10.44
+   },
+   "OOS": {
+    "label": "BTC|flow_etf|N14|p80|harsh OOS",
+    "n": 14,
+    "trades_per_month": 0.7,
+    "win_pct": 50.0,
+    "avg_R": -0.054,
+    "t_stat": -0.27,
+    "sum_R": -0.8,
+    "pf": 0.84,
+    "ret_pct@0.5%": -0.4,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 8.397
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 9,
+    "avg_ret_pct": 1.696,
+    "t_ret": 0.4,
+    "sum_ret_pct": 15.3,
+    "days_in_market": 125
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": 0.231,
+    "t_ret": 0.13,
+    "sum_ret_pct": 3.2,
+    "days_in_market": 186
+   }
+  }
+ },
+ "BTC|flow_treasury|N14|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_treasury|N14|p80|harsh IS",
+    "n": 17,
+    "trades_per_month": 2.3,
+    "win_pct": 52.9,
+    "avg_R": 0.192,
+    "t_stat": 0.72,
+    "sum_R": 3.3,
+    "pf": 1.64,
+    "ret_pct@0.5%": 1.6,
+    "max_dd_pct": 1.4,
+    "median_stop_pct": 11.581
+   },
+   "OOS": {
+    "label": "BTC|flow_treasury|N14|p80|harsh OOS",
+    "n": 14,
+    "trades_per_month": 0.9,
+    "win_pct": 50.0,
+    "avg_R": -0.135,
+    "t_stat": -0.89,
+    "sum_R": -1.9,
+    "pf": 0.54,
+    "ret_pct@0.5%": -0.9,
+    "max_dd_pct": 0.7,
+    "median_stop_pct": 10.594
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 17,
+    "avg_ret_pct": 1.959,
+    "t_ret": 0.7,
+    "sum_ret_pct": 33.3,
+    "days_in_market": 230
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": -1.583,
+    "t_ret": -0.96,
+    "sum_ret_pct": -22.2,
+    "days_in_market": 197
+   }
+  }
+ },
+ "BTC|ctl_mom14|N14|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_mom14|N14|harsh IS",
+    "n": 39,
+    "trades_per_month": 1.7,
+    "win_pct": 56.4,
+    "avg_R": 0.339,
+    "t_stat": 2.2,
+    "sum_R": 13.2,
+    "pf": 2.54,
+    "ret_pct@0.5%": 6.8,
+    "max_dd_pct": 1.1,
+    "median_stop_pct": 10.994
+   },
+   "OOS": {
+    "label": "BTC|ctl_mom14|N14|harsh OOS",
+    "n": 32,
+    "trades_per_month": 1.6,
+    "win_pct": 50.0,
+    "avg_R": 0.026,
+    "t_stat": 0.17,
+    "sum_R": 0.8,
+    "pf": 1.08,
+    "ret_pct@0.5%": 0.4,
+    "max_dd_pct": 1.7,
+    "median_stop_pct": 9.816
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 39,
+    "avg_ret_pct": 3.192,
+    "t_ret": 2.06,
+    "sum_ret_pct": 124.5,
+    "days_in_market": 558
+   },
+   "OOS": {
+    "n": 32,
+    "avg_ret_pct": 0.179,
+    "t_ret": 0.14,
+    "sum_ret_pct": 5.7,
+    "days_in_market": 435
+   }
+  }
+ },
+ "BTC|ctl_always|N14|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_always|N14|harsh IS",
+    "n": 21,
+    "trades_per_month": 2.2,
+    "win_pct": 52.4,
+    "avg_R": 0.164,
+    "t_stat": 0.75,
+    "sum_R": 3.4,
+    "pf": 1.6,
+    "ret_pct@0.5%": 1.7,
+    "max_dd_pct": 1.2,
+    "median_stop_pct": 12.116
+   },
+   "OOS": {
+    "label": "BTC|ctl_always|N14|harsh OOS",
+    "n": 45,
+    "trades_per_month": 2.3,
+    "win_pct": 44.4,
+    "avg_R": 0.004,
+    "t_stat": 0.03,
+    "sum_R": 0.2,
+    "pf": 1.01,
+    "ret_pct@0.5%": 0.1,
+    "max_dd_pct": 3.1,
+    "median_stop_pct": 10.364
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 21,
+    "avg_ret_pct": 1.53,
+    "t_ret": 0.65,
+    "sum_ret_pct": 32.1,
+    "days_in_market": 293
+   },
+   "OOS": {
+    "n": 45,
+    "avg_ret_pct": -0.057,
+    "t_ret": -0.05,
+    "sum_ret_pct": -2.6,
+    "days_in_market": 606
+   }
+  }
+ },
+ "BTC|flow_all|N30|p70|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N30|p70|harsh IS",
+    "n": 8,
+    "trades_per_month": 0.8,
+    "win_pct": 50.0,
+    "avg_R": 0.374,
+    "t_stat": 0.7,
+    "sum_R": 3.0,
+    "pf": 2.19,
+    "ret_pct@0.5%": 1.5,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 12.017
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N30|p70|harsh OOS",
+    "n": 14,
+    "trades_per_month": 0.7,
+    "win_pct": 28.6,
+    "avg_R": -0.286,
+    "t_stat": -1.09,
+    "sum_R": -4.0,
+    "pf": 0.49,
+    "ret_pct@0.5%": -2.0,
+    "max_dd_pct": 2.2,
+    "median_stop_pct": 9.927
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": 3.327,
+    "t_ret": 0.6,
+    "sum_ret_pct": 26.6,
+    "days_in_market": 212
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": -2.792,
+    "t_ret": -1.08,
+    "sum_ret_pct": -39.1,
+    "days_in_market": 311
+   }
+  }
+ },
+ "BTC|flow_all|N30|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N30|p80|harsh IS",
+    "n": 7,
+    "trades_per_month": 0.7,
+    "win_pct": 57.1,
+    "avg_R": 0.541,
+    "t_stat": 0.87,
+    "sum_R": 3.8,
+    "pf": 2.54,
+    "ret_pct@0.5%": 1.9,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 11.788
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N30|p80|harsh OOS",
+    "n": 12,
+    "trades_per_month": 0.6,
+    "win_pct": 50.0,
+    "avg_R": -0.088,
+    "t_stat": -0.33,
+    "sum_R": -1.1,
+    "pf": 0.8,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 2.1,
+    "median_stop_pct": 8.974
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": 5.342,
+    "t_ret": 0.85,
+    "sum_ret_pct": 37.4,
+    "days_in_market": 179
+   },
+   "OOS": {
+    "n": 12,
+    "avg_ret_pct": -0.5,
+    "t_ret": -0.2,
+    "sum_ret_pct": -6.0,
+    "days_in_market": 278
+   }
+  }
+ },
+ "BTC|flow_all|N30|p90|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_all|N30|p90|harsh IS",
+    "n": 4,
+    "trades_per_month": 0.4,
+    "win_pct": 75.0,
+    "avg_R": 1.093,
+    "t_stat": 1.35,
+    "sum_R": 4.4,
+    "pf": 11.26,
+    "ret_pct@0.5%": 2.2,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 12.612
+   },
+   "OOS": {
+    "label": "BTC|flow_all|N30|p90|harsh OOS",
+    "n": 7,
+    "trades_per_month": 0.4,
+    "win_pct": 42.9,
+    "avg_R": -0.283,
+    "t_stat": -0.83,
+    "sum_R": -2.0,
+    "pf": 0.45,
+    "ret_pct@0.5%": -1.0,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 10.306
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 10.398,
+    "t_ret": 1.32,
+    "sum_ret_pct": 41.6,
+    "days_in_market": 124
+   },
+   "OOS": {
+    "n": 7,
+    "avg_ret_pct": -2.472,
+    "t_ret": -0.72,
+    "sum_ret_pct": -17.3,
+    "days_in_market": 166
+   }
+  }
+ },
+ "BTC|flow_etf|N30|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_etf|N30|p80|harsh IS",
+    "n": 7,
+    "trades_per_month": 0.7,
+    "win_pct": 42.9,
+    "avg_R": 0.278,
+    "t_stat": 0.42,
+    "sum_R": 1.9,
+    "pf": 1.56,
+    "ret_pct@0.5%": 1.0,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 11.288
+   },
+   "OOS": {
+    "label": "BTC|flow_etf|N30|p80|harsh OOS",
+    "n": 10,
+    "trades_per_month": 0.5,
+    "win_pct": 40.0,
+    "avg_R": -0.237,
+    "t_stat": -0.78,
+    "sum_R": -2.4,
+    "pf": 0.55,
+    "ret_pct@0.5%": -1.2,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 9.391
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": 2.579,
+    "t_ret": 0.39,
+    "sum_ret_pct": 18.1,
+    "days_in_market": 159
+   },
+   "OOS": {
+    "n": 10,
+    "avg_ret_pct": -2.149,
+    "t_ret": -0.75,
+    "sum_ret_pct": -21.5,
+    "days_in_market": 234
+   }
+  }
+ },
+ "BTC|flow_treasury|N30|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|flow_treasury|N30|p80|harsh IS",
+    "n": 9,
+    "trades_per_month": 1.2,
+    "win_pct": 66.7,
+    "avg_R": 0.398,
+    "t_stat": 0.97,
+    "sum_R": 3.6,
+    "pf": 2.71,
+    "ret_pct@0.5%": 1.8,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 12.116
+   },
+   "OOS": {
+    "label": "BTC|flow_treasury|N30|p80|harsh OOS",
+    "n": 14,
+    "trades_per_month": 0.9,
+    "win_pct": 42.9,
+    "avg_R": -0.082,
+    "t_stat": -0.34,
+    "sum_R": -1.2,
+    "pf": 0.81,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 1.2,
+    "median_stop_pct": 10.594
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 9,
+    "avg_ret_pct": 4.8,
+    "t_ret": 1.14,
+    "sum_ret_pct": 43.2,
+    "days_in_market": 235
+   },
+   "OOS": {
+    "n": 14,
+    "avg_ret_pct": -0.547,
+    "t_ret": -0.22,
+    "sum_ret_pct": -7.7,
+    "days_in_market": 324
+   }
+  }
+ },
+ "BTC|ctl_mom14|N30|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_mom14|N30|harsh IS",
+    "n": 23,
+    "trades_per_month": 0.9,
+    "win_pct": 65.2,
+    "avg_R": 0.661,
+    "t_stat": 2.17,
+    "sum_R": 15.2,
+    "pf": 3.27,
+    "ret_pct@0.5%": 7.8,
+    "max_dd_pct": 0.8,
+    "median_stop_pct": 10.527
+   },
+   "OOS": {
+    "label": "BTC|ctl_mom14|N30|harsh OOS",
+    "n": 18,
+    "trades_per_month": 0.9,
+    "win_pct": 44.4,
+    "avg_R": 0.153,
+    "t_stat": 0.54,
+    "sum_R": 2.8,
+    "pf": 1.42,
+    "ret_pct@0.5%": 1.4,
+    "max_dd_pct": 1.7,
+    "median_stop_pct": 9.427
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 23,
+    "avg_ret_pct": 6.358,
+    "t_ret": 2.11,
+    "sum_ret_pct": 146.2,
+    "days_in_market": 630
+   },
+   "OOS": {
+    "n": 18,
+    "avg_ret_pct": 0.829,
+    "t_ret": 0.34,
+    "sum_ret_pct": 14.9,
+    "days_in_market": 465
+   }
+  }
+ },
+ "BTC|ctl_always|N30|harsh": {
+  "summary": {
+   "IS": {
+    "label": "BTC|ctl_always|N30|harsh IS",
+    "n": 11,
+    "trades_per_month": 1.1,
+    "win_pct": 72.7,
+    "avg_R": 0.326,
+    "t_stat": 0.96,
+    "sum_R": 3.6,
+    "pf": 2.49,
+    "ret_pct@0.5%": 1.8,
+    "max_dd_pct": 1.0,
+    "median_stop_pct": 12.388
+   },
+   "OOS": {
+    "label": "BTC|ctl_always|N30|harsh OOS",
+    "n": 26,
+    "trades_per_month": 1.3,
+    "win_pct": 46.2,
+    "avg_R": -0.037,
+    "t_stat": -0.18,
+    "sum_R": -1.0,
+    "pf": 0.92,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 3.7,
+    "median_stop_pct": 10.835
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 11,
+    "avg_ret_pct": 3.962,
+    "t_ret": 1.13,
+    "sum_ret_pct": 43.6,
+    "days_in_market": 298
+   },
+   "OOS": {
+    "n": 26,
+    "avg_ret_pct": -0.374,
+    "t_ret": -0.19,
+    "sum_ret_pct": -9.7,
+    "days_in_market": 601
+   }
+  }
+ },
+ "ETH|flow_all|N7|p70|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N7|p70|base IS",
+    "n": 12,
+    "trades_per_month": 3.7,
+    "win_pct": 58.3,
+    "avg_R": 0.075,
+    "t_stat": 0.32,
+    "sum_R": 0.9,
+    "pf": 1.29,
+    "ret_pct@0.5%": 0.4,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 14.915
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N7|p70|base OOS",
+    "n": 37,
+    "trades_per_month": 1.9,
+    "win_pct": 48.6,
+    "avg_R": 0.101,
+    "t_stat": 0.94,
+    "sum_R": 3.7,
+    "pf": 1.62,
+    "ret_pct@0.5%": 1.9,
+    "max_dd_pct": 1.4,
+    "median_stop_pct": 15.939
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 12,
+    "avg_ret_pct": 0.99,
+    "t_ret": 0.31,
+    "sum_ret_pct": 11.9,
+    "days_in_market": 93
+   },
+   "OOS": {
+    "n": 37,
+    "avg_ret_pct": 1.46,
+    "t_ret": 0.93,
+    "sum_ret_pct": 54.0,
+    "days_in_market": 287
+   }
+  }
+ },
+ "ETH|flow_all|N7|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N7|p80|base IS",
+    "n": 8,
+    "trades_per_month": 2.5,
+    "win_pct": 62.5,
+    "avg_R": -0.063,
+    "t_stat": -0.28,
+    "sum_R": -0.5,
+    "pf": 0.78,
+    "ret_pct@0.5%": -0.3,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 15.323
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N7|p80|base OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 60.0,
+    "avg_R": 0.133,
+    "t_stat": 1.02,
+    "sum_R": 3.3,
+    "pf": 1.93,
+    "ret_pct@0.5%": 1.7,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 15.973
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": -0.594,
+    "t_ret": -0.18,
+    "sum_ret_pct": -4.7,
+    "days_in_market": 61
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": 2.131,
+    "t_ret": 1.1,
+    "sum_ret_pct": 53.3,
+    "days_in_market": 190
+   }
+  }
+ },
+ "ETH|flow_all|N7|p90|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N7|p90|base IS",
+    "n": 7,
+    "trades_per_month": 2.6,
+    "win_pct": 42.9,
+    "avg_R": -0.27,
+    "t_stat": -1.11,
+    "sum_R": -1.9,
+    "pf": 0.34,
+    "ret_pct@0.5%": -0.9,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 15.17
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N7|p90|base OOS",
+    "n": 13,
+    "trades_per_month": 2.9,
+    "win_pct": 53.8,
+    "avg_R": -0.017,
+    "t_stat": -0.09,
+    "sum_R": -0.2,
+    "pf": 0.94,
+    "ret_pct@0.5%": -0.1,
+    "max_dd_pct": 1.1,
+    "median_stop_pct": 13.924
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": -3.493,
+    "t_ret": -0.99,
+    "sum_ret_pct": -24.5,
+    "days_in_market": 51
+   },
+   "OOS": {
+    "n": 13,
+    "avg_ret_pct": -0.04,
+    "t_ret": -0.02,
+    "sum_ret_pct": -0.5,
+    "days_in_market": 103
+   }
+  }
+ },
+ "ETH|flow_etf|N7|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_etf|N7|p80|base IS",
+    "n": 8,
+    "trades_per_month": 2.5,
+    "win_pct": 62.5,
+    "avg_R": -0.063,
+    "t_stat": -0.28,
+    "sum_R": -0.5,
+    "pf": 0.78,
+    "ret_pct@0.5%": -0.3,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 15.323
+   },
+   "OOS": {
+    "label": "ETH|flow_etf|N7|p80|base OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 60.0,
+    "avg_R": 0.025,
+    "t_stat": 0.21,
+    "sum_R": 0.6,
+    "pf": 1.13,
+    "ret_pct@0.5%": 0.3,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 14.108
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": -0.594,
+    "t_ret": -0.18,
+    "sum_ret_pct": -4.7,
+    "days_in_market": 61
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": 0.389,
+    "t_ret": 0.24,
+    "sum_ret_pct": 9.7,
+    "days_in_market": 184
+   }
+  }
+ },
+ "ETH|flow_treasury|N7|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_treasury|N7|p80|base IS",
+    "n": 0
+   },
+   "OOS": {
+    "label": "ETH|flow_treasury|N7|p80|base OOS",
+    "n": 1,
+    "trades_per_month": 1.0,
+    "win_pct": 100.0,
+    "avg_R": 0.461,
+    "t_stat": null,
+    "sum_R": 0.5,
+    "pf": null,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 14.599
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 0,
+    "avg_ret_pct": null,
+    "t_ret": null,
+    "sum_ret_pct": null,
+    "days_in_market": 0
+   },
+   "OOS": {
+    "n": 1,
+    "avg_ret_pct": 6.736,
+    "t_ret": null,
+    "sum_ret_pct": 6.7,
+    "days_in_market": 8
+   }
+  }
+ },
+ "ETH|ctl_mom14|N7|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_mom14|N7|base IS",
+    "n": 60,
+    "trades_per_month": 2.6,
+    "win_pct": 53.3,
+    "avg_R": 0.039,
+    "t_stat": 0.52,
+    "sum_R": 2.4,
+    "pf": 1.19,
+    "ret_pct@0.5%": 1.2,
+    "max_dd_pct": 1.8,
+    "median_stop_pct": 12.492
+   },
+   "OOS": {
+    "label": "ETH|ctl_mom14|N7|base OOS",
+    "n": 49,
+    "trades_per_month": 2.5,
+    "win_pct": 40.8,
+    "avg_R": 0.069,
+    "t_stat": 0.5,
+    "sum_R": 3.4,
+    "pf": 1.27,
+    "ret_pct@0.5%": 1.7,
+    "max_dd_pct": 2.4,
+    "median_stop_pct": 14.655
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 60,
+    "avg_ret_pct": 0.311,
+    "t_ret": 0.32,
+    "sum_ret_pct": 18.6,
+    "days_in_market": 465
+   },
+   "OOS": {
+    "n": 49,
+    "avg_ret_pct": 0.527,
+    "t_ret": 0.31,
+    "sum_ret_pct": 25.8,
+    "days_in_market": 371
+   }
+  }
+ },
+ "ETH|ctl_always|N7|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_always|N7|base IS",
+    "n": 13,
+    "trades_per_month": 3.9,
+    "win_pct": 46.2,
+    "avg_R": 0.207,
+    "t_stat": 0.73,
+    "sum_R": 2.7,
+    "pf": 1.88,
+    "ret_pct@0.5%": 1.3,
+    "max_dd_pct": 0.7,
+    "median_stop_pct": 15.144
+   },
+   "OOS": {
+    "label": "ETH|ctl_always|N7|base OOS",
+    "n": 80,
+    "trades_per_month": 4.0,
+    "win_pct": 45.0,
+    "avg_R": -0.005,
+    "t_stat": -0.06,
+    "sum_R": -0.4,
+    "pf": 0.98,
+    "ret_pct@0.5%": -0.3,
+    "max_dd_pct": 3.8,
+    "median_stop_pct": 16.175
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 13,
+    "avg_ret_pct": 2.916,
+    "t_ret": 0.73,
+    "sum_ret_pct": 37.9,
+    "days_in_market": 102
+   },
+   "OOS": {
+    "n": 80,
+    "avg_ret_pct": -0.326,
+    "t_ret": -0.29,
+    "sum_ret_pct": -26.1,
+    "days_in_market": 603
+   }
+  }
+ },
+ "ETH|flow_all|N14|p70|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N14|p70|base IS",
+    "n": 8,
+    "trades_per_month": 2.5,
+    "win_pct": 62.5,
+    "avg_R": 0.3,
+    "t_stat": 0.78,
+    "sum_R": 2.4,
+    "pf": 1.98,
+    "ret_pct@0.5%": 1.2,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 14.919
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N14|p70|base OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 40.0,
+    "avg_R": -0.035,
+    "t_stat": -0.19,
+    "sum_R": -0.9,
+    "pf": 0.9,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 2.9,
+    "median_stop_pct": 15.784
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": 4.442,
+    "t_ret": 0.84,
+    "sum_ret_pct": 35.5,
+    "days_in_market": 99
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": -0.319,
+    "t_ret": -0.11,
+    "sum_ret_pct": -8.0,
+    "days_in_market": 329
+   }
+  }
+ },
+ "ETH|flow_all|N14|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N14|p80|base IS",
+    "n": 6,
+    "trades_per_month": 1.7,
+    "win_pct": 33.3,
+    "avg_R": -0.195,
+    "t_stat": -0.63,
+    "sum_R": -1.2,
+    "pf": 0.52,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 14.565
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N14|p80|base OOS",
+    "n": 16,
+    "trades_per_month": 0.8,
+    "win_pct": 50.0,
+    "avg_R": 0.347,
+    "t_stat": 1.33,
+    "sum_R": 5.6,
+    "pf": 2.63,
+    "ret_pct@0.5%": 2.8,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 15.166
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 6,
+    "avg_ret_pct": -3.183,
+    "t_ret": -0.71,
+    "sum_ret_pct": -19.1,
+    "days_in_market": 74
+   },
+   "OOS": {
+    "n": 16,
+    "avg_ret_pct": 5.535,
+    "t_ret": 1.35,
+    "sum_ret_pct": 88.6,
+    "days_in_market": 218
+   }
+  }
+ },
+ "ETH|flow_all|N14|p90|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N14|p90|base IS",
+    "n": 5,
+    "trades_per_month": 1.9,
+    "win_pct": 40.0,
+    "avg_R": -0.254,
+    "t_stat": -0.7,
+    "sum_R": -1.3,
+    "pf": 0.48,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 12.842
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N14|p90|base OOS",
+    "n": 10,
+    "trades_per_month": 2.1,
+    "win_pct": 50.0,
+    "avg_R": 0.035,
+    "t_stat": 0.11,
+    "sum_R": 0.3,
+    "pf": 1.09,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 0.9,
+    "median_stop_pct": 13.988
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 5,
+    "avg_ret_pct": -3.539,
+    "t_ret": -0.68,
+    "sum_ret_pct": -17.7,
+    "days_in_market": 57
+   },
+   "OOS": {
+    "n": 10,
+    "avg_ret_pct": 0.397,
+    "t_ret": 0.09,
+    "sum_ret_pct": 4.0,
+    "days_in_market": 120
+   }
+  }
+ },
+ "ETH|flow_etf|N14|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_etf|N14|p80|base IS",
+    "n": 6,
+    "trades_per_month": 1.7,
+    "win_pct": 33.3,
+    "avg_R": -0.195,
+    "t_stat": -0.63,
+    "sum_R": -1.2,
+    "pf": 0.52,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 14.565
+   },
+   "OOS": {
+    "label": "ETH|flow_etf|N14|p80|base OOS",
+    "n": 17,
+    "trades_per_month": 0.9,
+    "win_pct": 52.9,
+    "avg_R": 0.3,
+    "t_stat": 1.16,
+    "sum_R": 5.1,
+    "pf": 2.33,
+    "ret_pct@0.5%": 2.6,
+    "max_dd_pct": 0.9,
+    "median_stop_pct": 13.862
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 6,
+    "avg_ret_pct": -3.183,
+    "t_ret": -0.71,
+    "sum_ret_pct": -19.1,
+    "days_in_market": 74
+   },
+   "OOS": {
+    "n": 17,
+    "avg_ret_pct": 4.516,
+    "t_ret": 1.15,
+    "sum_ret_pct": 76.8,
+    "days_in_market": 233
+   }
+  }
+ },
+ "ETH|flow_treasury|N14|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_treasury|N14|p80|base IS",
+    "n": 0
+   },
+   "OOS": {
+    "label": "ETH|flow_treasury|N14|p80|base OOS",
+    "n": 1,
+    "trades_per_month": 1.0,
+    "win_pct": 0.0,
+    "avg_R": -0.134,
+    "t_stat": null,
+    "sum_R": -0.1,
+    "pf": 0.0,
+    "ret_pct@0.5%": -0.1,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 14.599
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 0,
+    "avg_ret_pct": null,
+    "t_ret": null,
+    "sum_ret_pct": null,
+    "days_in_market": 0
+   },
+   "OOS": {
+    "n": 1,
+    "avg_ret_pct": -1.952,
+    "t_ret": null,
+    "sum_ret_pct": -2.0,
+    "days_in_market": 15
+   }
+  }
+ },
+ "ETH|ctl_mom14|N14|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_mom14|N14|base IS",
+    "n": 36,
+    "trades_per_month": 1.6,
+    "win_pct": 44.4,
+    "avg_R": 0.138,
+    "t_stat": 0.85,
+    "sum_R": 5.0,
+    "pf": 1.47,
+    "ret_pct@0.5%": 2.5,
+    "max_dd_pct": 1.9,
+    "median_stop_pct": 12.649
+   },
+   "OOS": {
+    "label": "ETH|ctl_mom14|N14|base OOS",
+    "n": 31,
+    "trades_per_month": 1.6,
+    "win_pct": 54.8,
+    "avg_R": 0.043,
+    "t_stat": 0.24,
+    "sum_R": 1.3,
+    "pf": 1.12,
+    "ret_pct@0.5%": 0.6,
+    "max_dd_pct": 1.9,
+    "median_stop_pct": 15.395
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 36,
+    "avg_ret_pct": 1.212,
+    "t_ret": 0.6,
+    "sum_ret_pct": 43.6,
+    "days_in_market": 499
+   },
+   "OOS": {
+    "n": 31,
+    "avg_ret_pct": 0.439,
+    "t_ret": 0.17,
+    "sum_ret_pct": 13.6,
+    "days_in_market": 399
+   }
+  }
+ },
+ "ETH|ctl_always|N14|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_always|N14|base IS",
+    "n": 7,
+    "trades_per_month": 2.0,
+    "win_pct": 57.1,
+    "avg_R": 0.396,
+    "t_stat": 1.23,
+    "sum_R": 2.8,
+    "pf": 3.26,
+    "ret_pct@0.5%": 1.4,
+    "max_dd_pct": 0.3,
+    "median_stop_pct": 13.988
+   },
+   "OOS": {
+    "label": "ETH|ctl_always|N14|base OOS",
+    "n": 46,
+    "trades_per_month": 2.3,
+    "win_pct": 52.2,
+    "avg_R": -0.018,
+    "t_stat": -0.14,
+    "sum_R": -0.8,
+    "pf": 0.94,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 3.0,
+    "median_stop_pct": 16.811
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": 5.035,
+    "t_ret": 1.1,
+    "sum_ret_pct": 35.2,
+    "days_in_market": 105
+   },
+   "OOS": {
+    "n": 46,
+    "avg_ret_pct": -0.585,
+    "t_ret": -0.3,
+    "sum_ret_pct": -26.9,
+    "days_in_market": 600
+   }
+  }
+ },
+ "ETH|flow_all|N30|p70|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N30|p70|base IS",
+    "n": 5,
+    "trades_per_month": 1.3,
+    "win_pct": 40.0,
+    "avg_R": 0.332,
+    "t_stat": 0.38,
+    "sum_R": 1.7,
+    "pf": 1.7,
+    "ret_pct@0.5%": 0.8,
+    "max_dd_pct": 0.7,
+    "median_stop_pct": 14.451
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N30|p70|base OOS",
+    "n": 15,
+    "trades_per_month": 0.8,
+    "win_pct": 40.0,
+    "avg_R": 0.096,
+    "t_stat": 0.29,
+    "sum_R": 1.4,
+    "pf": 1.21,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 1.7,
+    "median_stop_pct": 17.275
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 5,
+    "avg_ret_pct": 3.514,
+    "t_ret": 0.31,
+    "sum_ret_pct": 17.6,
+    "days_in_market": 115
+   },
+   "OOS": {
+    "n": 15,
+    "avg_ret_pct": 1.543,
+    "t_ret": 0.27,
+    "sum_ret_pct": 23.1,
+    "days_in_market": 364
+   }
+  }
+ },
+ "ETH|flow_all|N30|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N30|p80|base IS",
+    "n": 4,
+    "trades_per_month": 1.1,
+    "win_pct": 50.0,
+    "avg_R": 0.353,
+    "t_stat": 0.45,
+    "sum_R": 1.4,
+    "pf": 1.7,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 14.213
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N30|p80|base OOS",
+    "n": 11,
+    "trades_per_month": 0.6,
+    "win_pct": 27.3,
+    "avg_R": 0.194,
+    "t_stat": 0.41,
+    "sum_R": 2.1,
+    "pf": 1.41,
+    "ret_pct@0.5%": 1.0,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 16.668
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 3.915,
+    "t_ret": 0.35,
+    "sum_ret_pct": 15.7,
+    "days_in_market": 94
+   },
+   "OOS": {
+    "n": 11,
+    "avg_ret_pct": 2.083,
+    "t_ret": 0.26,
+    "sum_ret_pct": 22.9,
+    "days_in_market": 273
+   }
+  }
+ },
+ "ETH|flow_all|N30|p90|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N30|p90|base IS",
+    "n": 3,
+    "trades_per_month": 1.1,
+    "win_pct": 66.7,
+    "avg_R": 0.428,
+    "t_stat": 0.58,
+    "sum_R": 1.3,
+    "pf": 2.27,
+    "ret_pct@0.5%": 0.6,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 12.842
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N30|p90|base OOS",
+    "n": 6,
+    "trades_per_month": 1.2,
+    "win_pct": 33.3,
+    "avg_R": -0.128,
+    "t_stat": -0.19,
+    "sum_R": -0.8,
+    "pf": 0.81,
+    "ret_pct@0.5%": -0.4,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 13.845
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 3,
+    "avg_ret_pct": 5.403,
+    "t_ret": 0.58,
+    "sum_ret_pct": 16.2,
+    "days_in_market": 67
+   },
+   "OOS": {
+    "n": 6,
+    "avg_ret_pct": -2.711,
+    "t_ret": -0.28,
+    "sum_ret_pct": -16.3,
+    "days_in_market": 132
+   }
+  }
+ },
+ "ETH|flow_etf|N30|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_etf|N30|p80|base IS",
+    "n": 4,
+    "trades_per_month": 1.1,
+    "win_pct": 50.0,
+    "avg_R": 0.353,
+    "t_stat": 0.45,
+    "sum_R": 1.4,
+    "pf": 1.7,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 14.213
+   },
+   "OOS": {
+    "label": "ETH|flow_etf|N30|p80|base OOS",
+    "n": 12,
+    "trades_per_month": 0.6,
+    "win_pct": 33.3,
+    "avg_R": 0.158,
+    "t_stat": 0.36,
+    "sum_R": 1.9,
+    "pf": 1.31,
+    "ret_pct@0.5%": 0.9,
+    "max_dd_pct": 2.0,
+    "median_stop_pct": 16.23
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 3.915,
+    "t_ret": 0.35,
+    "sum_ret_pct": 15.7,
+    "days_in_market": 94
+   },
+   "OOS": {
+    "n": 12,
+    "avg_ret_pct": 1.653,
+    "t_ret": 0.23,
+    "sum_ret_pct": 19.8,
+    "days_in_market": 290
+   }
+  }
+ },
+ "ETH|flow_treasury|N30|p80|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_treasury|N30|p80|base IS",
+    "n": 0
+   },
+   "OOS": {
+    "label": "ETH|flow_treasury|N30|p80|base OOS",
+    "n": 1,
+    "trades_per_month": 1.0,
+    "win_pct": 100.0,
+    "avg_R": 0.034,
+    "t_stat": null,
+    "sum_R": 0.0,
+    "pf": null,
+    "ret_pct@0.5%": 0.0,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 14.599
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 0,
+    "avg_ret_pct": null,
+    "t_ret": null,
+    "sum_ret_pct": null,
+    "days_in_market": 0
+   },
+   "OOS": {
+    "n": 1,
+    "avg_ret_pct": 0.503,
+    "t_ret": null,
+    "sum_ret_pct": 0.5,
+    "days_in_market": 31
+   }
+  }
+ },
+ "ETH|ctl_mom14|N30|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_mom14|N30|base IS",
+    "n": 23,
+    "trades_per_month": 1.0,
+    "win_pct": 34.8,
+    "avg_R": 0.084,
+    "t_stat": 0.25,
+    "sum_R": 1.9,
+    "pf": 1.16,
+    "ret_pct@0.5%": 0.9,
+    "max_dd_pct": 2.3,
+    "median_stop_pct": 12.419
+   },
+   "OOS": {
+    "label": "ETH|ctl_mom14|N30|base OOS",
+    "n": 19,
+    "trades_per_month": 1.0,
+    "win_pct": 42.1,
+    "avg_R": 0.032,
+    "t_stat": 0.11,
+    "sum_R": 0.6,
+    "pf": 1.06,
+    "ret_pct@0.5%": 0.3,
+    "max_dd_pct": 2.1,
+    "median_stop_pct": 16.159
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 23,
+    "avg_ret_pct": 0.541,
+    "t_ret": 0.14,
+    "sum_ret_pct": 12.4,
+    "days_in_market": 552
+   },
+   "OOS": {
+    "n": 19,
+    "avg_ret_pct": 0.856,
+    "t_ret": 0.18,
+    "sum_ret_pct": 16.3,
+    "days_in_market": 437
+   }
+  }
+ },
+ "ETH|ctl_always|N30|base": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_always|N30|base IS",
+    "n": 4,
+    "trades_per_month": 1.0,
+    "win_pct": 50.0,
+    "avg_R": 0.604,
+    "t_stat": 0.76,
+    "sum_R": 2.4,
+    "pf": 5.32,
+    "ret_pct@0.5%": 1.2,
+    "max_dd_pct": 0.1,
+    "median_stop_pct": 15.056
+   },
+   "OOS": {
+    "label": "ETH|ctl_always|N30|base OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 52.0,
+    "avg_R": -0.005,
+    "t_stat": -0.02,
+    "sum_R": -0.1,
+    "pf": 0.99,
+    "ret_pct@0.5%": -0.1,
+    "max_dd_pct": 2.8,
+    "median_stop_pct": 15.973
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 7.207,
+    "t_ret": 0.71,
+    "sum_ret_pct": 28.8,
+    "days_in_market": 124
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": -1.015,
+    "t_ret": -0.29,
+    "sum_ret_pct": -25.4,
+    "days_in_market": 581
+   }
+  }
+ },
+ "ETH|flow_all|N7|p70|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N7|p70|harsh IS",
+    "n": 12,
+    "trades_per_month": 3.7,
+    "win_pct": 58.3,
+    "avg_R": 0.069,
+    "t_stat": 0.3,
+    "sum_R": 0.8,
+    "pf": 1.27,
+    "ret_pct@0.5%": 0.4,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 14.94
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N7|p70|harsh OOS",
+    "n": 37,
+    "trades_per_month": 1.9,
+    "win_pct": 48.6,
+    "avg_R": 0.096,
+    "t_stat": 0.89,
+    "sum_R": 3.5,
+    "pf": 1.58,
+    "ret_pct@0.5%": 1.8,
+    "max_dd_pct": 1.4,
+    "median_stop_pct": 15.964
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 12,
+    "avg_ret_pct": 0.91,
+    "t_ret": 0.29,
+    "sum_ret_pct": 10.9,
+    "days_in_market": 93
+   },
+   "OOS": {
+    "n": 37,
+    "avg_ret_pct": 1.38,
+    "t_ret": 0.88,
+    "sum_ret_pct": 51.0,
+    "days_in_market": 287
+   }
+  }
+ },
+ "ETH|flow_all|N7|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N7|p80|harsh IS",
+    "n": 8,
+    "trades_per_month": 2.5,
+    "win_pct": 62.5,
+    "avg_R": -0.068,
+    "t_stat": -0.31,
+    "sum_R": -0.5,
+    "pf": 0.76,
+    "ret_pct@0.5%": -0.3,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 15.349
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N7|p80|harsh OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 56.0,
+    "avg_R": 0.127,
+    "t_stat": 0.98,
+    "sum_R": 3.2,
+    "pf": 1.88,
+    "ret_pct@0.5%": 1.6,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 15.998
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": -0.673,
+    "t_ret": -0.2,
+    "sum_ret_pct": -5.4,
+    "days_in_market": 61
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": 2.05,
+    "t_ret": 1.06,
+    "sum_ret_pct": 51.3,
+    "days_in_market": 190
+   }
+  }
+ },
+ "ETH|flow_all|N7|p90|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N7|p90|harsh IS",
+    "n": 7,
+    "trades_per_month": 2.6,
+    "win_pct": 42.9,
+    "avg_R": -0.275,
+    "t_stat": -1.13,
+    "sum_R": -1.9,
+    "pf": 0.33,
+    "ret_pct@0.5%": -1.0,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 15.196
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N7|p90|harsh OOS",
+    "n": 13,
+    "trades_per_month": 2.9,
+    "win_pct": 53.8,
+    "avg_R": -0.022,
+    "t_stat": -0.12,
+    "sum_R": -0.3,
+    "pf": 0.92,
+    "ret_pct@0.5%": -0.1,
+    "max_dd_pct": 1.1,
+    "median_stop_pct": 13.95
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": -3.571,
+    "t_ret": -1.02,
+    "sum_ret_pct": -25.0,
+    "days_in_market": 51
+   },
+   "OOS": {
+    "n": 13,
+    "avg_ret_pct": -0.12,
+    "t_ret": -0.05,
+    "sum_ret_pct": -1.6,
+    "days_in_market": 103
+   }
+  }
+ },
+ "ETH|flow_etf|N7|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_etf|N7|p80|harsh IS",
+    "n": 8,
+    "trades_per_month": 2.5,
+    "win_pct": 62.5,
+    "avg_R": -0.068,
+    "t_stat": -0.31,
+    "sum_R": -0.5,
+    "pf": 0.76,
+    "ret_pct@0.5%": -0.3,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 15.349
+   },
+   "OOS": {
+    "label": "ETH|flow_etf|N7|p80|harsh OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 56.0,
+    "avg_R": 0.02,
+    "t_stat": 0.16,
+    "sum_R": 0.5,
+    "pf": 1.1,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 14.133
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": -0.673,
+    "t_ret": -0.2,
+    "sum_ret_pct": -5.4,
+    "days_in_market": 61
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": 0.31,
+    "t_ret": 0.19,
+    "sum_ret_pct": 7.8,
+    "days_in_market": 184
+   }
+  }
+ },
+ "ETH|flow_treasury|N7|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_treasury|N7|p80|harsh IS",
+    "n": 0
+   },
+   "OOS": {
+    "label": "ETH|flow_treasury|N7|p80|harsh OOS",
+    "n": 1,
+    "trades_per_month": 1.0,
+    "win_pct": 100.0,
+    "avg_R": 0.455,
+    "t_stat": null,
+    "sum_R": 0.5,
+    "pf": null,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 14.625
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 0,
+    "avg_ret_pct": null,
+    "t_ret": null,
+    "sum_ret_pct": null,
+    "days_in_market": 0
+   },
+   "OOS": {
+    "n": 1,
+    "avg_ret_pct": 6.651,
+    "t_ret": null,
+    "sum_ret_pct": 6.7,
+    "days_in_market": 8
+   }
+  }
+ },
+ "ETH|ctl_mom14|N7|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_mom14|N7|harsh IS",
+    "n": 60,
+    "trades_per_month": 2.6,
+    "win_pct": 53.3,
+    "avg_R": 0.033,
+    "t_stat": 0.44,
+    "sum_R": 2.0,
+    "pf": 1.15,
+    "ret_pct@0.5%": 1.0,
+    "max_dd_pct": 1.9,
+    "median_stop_pct": 12.518
+   },
+   "OOS": {
+    "label": "ETH|ctl_mom14|N7|harsh OOS",
+    "n": 49,
+    "trades_per_month": 2.5,
+    "win_pct": 40.8,
+    "avg_R": 0.063,
+    "t_stat": 0.46,
+    "sum_R": 3.1,
+    "pf": 1.24,
+    "ret_pct@0.5%": 1.5,
+    "max_dd_pct": 2.4,
+    "median_stop_pct": 14.68
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 60,
+    "avg_ret_pct": 0.23,
+    "t_ret": 0.24,
+    "sum_ret_pct": 13.8,
+    "days_in_market": 465
+   },
+   "OOS": {
+    "n": 49,
+    "avg_ret_pct": 0.447,
+    "t_ret": 0.26,
+    "sum_ret_pct": 21.9,
+    "days_in_market": 371
+   }
+  }
+ },
+ "ETH|ctl_always|N7|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_always|N7|harsh IS",
+    "n": 13,
+    "trades_per_month": 3.9,
+    "win_pct": 46.2,
+    "avg_R": 0.201,
+    "t_stat": 0.71,
+    "sum_R": 2.6,
+    "pf": 1.85,
+    "ret_pct@0.5%": 1.3,
+    "max_dd_pct": 0.7,
+    "median_stop_pct": 15.17
+   },
+   "OOS": {
+    "label": "ETH|ctl_always|N7|harsh OOS",
+    "n": 80,
+    "trades_per_month": 4.0,
+    "win_pct": 45.0,
+    "avg_R": -0.01,
+    "t_stat": -0.12,
+    "sum_R": -0.8,
+    "pf": 0.96,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 3.9,
+    "median_stop_pct": 16.2
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 13,
+    "avg_ret_pct": 2.834,
+    "t_ret": 0.71,
+    "sum_ret_pct": 36.8,
+    "days_in_market": 102
+   },
+   "OOS": {
+    "n": 80,
+    "avg_ret_pct": -0.405,
+    "t_ret": -0.36,
+    "sum_ret_pct": -32.4,
+    "days_in_market": 603
+   }
+  }
+ },
+ "ETH|flow_all|N14|p70|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N14|p70|harsh IS",
+    "n": 8,
+    "trades_per_month": 2.5,
+    "win_pct": 62.5,
+    "avg_R": 0.293,
+    "t_stat": 0.77,
+    "sum_R": 2.3,
+    "pf": 1.95,
+    "ret_pct@0.5%": 1.2,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 14.945
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N14|p70|harsh OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 40.0,
+    "avg_R": -0.04,
+    "t_stat": -0.21,
+    "sum_R": -1.0,
+    "pf": 0.89,
+    "ret_pct@0.5%": -0.5,
+    "max_dd_pct": 3.0,
+    "median_stop_pct": 15.809
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 8,
+    "avg_ret_pct": 4.359,
+    "t_ret": 0.82,
+    "sum_ret_pct": 34.9,
+    "days_in_market": 99
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": -0.397,
+    "t_ret": -0.14,
+    "sum_ret_pct": -9.9,
+    "days_in_market": 329
+   }
+  }
+ },
+ "ETH|flow_all|N14|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N14|p80|harsh IS",
+    "n": 6,
+    "trades_per_month": 1.7,
+    "win_pct": 33.3,
+    "avg_R": -0.2,
+    "t_stat": -0.65,
+    "sum_R": -1.2,
+    "pf": 0.51,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 14.591
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N14|p80|harsh OOS",
+    "n": 16,
+    "trades_per_month": 0.8,
+    "win_pct": 50.0,
+    "avg_R": 0.342,
+    "t_stat": 1.31,
+    "sum_R": 5.5,
+    "pf": 2.59,
+    "ret_pct@0.5%": 2.7,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 15.191
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 6,
+    "avg_ret_pct": -3.261,
+    "t_ret": -0.73,
+    "sum_ret_pct": -19.6,
+    "days_in_market": 74
+   },
+   "OOS": {
+    "n": 16,
+    "avg_ret_pct": 5.453,
+    "t_ret": 1.34,
+    "sum_ret_pct": 87.2,
+    "days_in_market": 218
+   }
+  }
+ },
+ "ETH|flow_all|N14|p90|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N14|p90|harsh IS",
+    "n": 5,
+    "trades_per_month": 1.9,
+    "win_pct": 40.0,
+    "avg_R": -0.259,
+    "t_stat": -0.72,
+    "sum_R": -1.3,
+    "pf": 0.47,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 12.868
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N14|p90|harsh OOS",
+    "n": 10,
+    "trades_per_month": 2.1,
+    "win_pct": 50.0,
+    "avg_R": 0.029,
+    "t_stat": 0.09,
+    "sum_R": 0.3,
+    "pf": 1.08,
+    "ret_pct@0.5%": 0.1,
+    "max_dd_pct": 0.9,
+    "median_stop_pct": 14.014
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 5,
+    "avg_ret_pct": -3.616,
+    "t_ret": -0.7,
+    "sum_ret_pct": -18.1,
+    "days_in_market": 57
+   },
+   "OOS": {
+    "n": 10,
+    "avg_ret_pct": 0.317,
+    "t_ret": 0.07,
+    "sum_ret_pct": 3.2,
+    "days_in_market": 120
+   }
+  }
+ },
+ "ETH|flow_etf|N14|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_etf|N14|p80|harsh IS",
+    "n": 6,
+    "trades_per_month": 1.7,
+    "win_pct": 33.3,
+    "avg_R": -0.2,
+    "t_stat": -0.65,
+    "sum_R": -1.2,
+    "pf": 0.51,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 0.6,
+    "median_stop_pct": 14.591
+   },
+   "OOS": {
+    "label": "ETH|flow_etf|N14|p80|harsh OOS",
+    "n": 17,
+    "trades_per_month": 0.9,
+    "win_pct": 47.1,
+    "avg_R": 0.294,
+    "t_stat": 1.14,
+    "sum_R": 5.0,
+    "pf": 2.29,
+    "ret_pct@0.5%": 2.5,
+    "max_dd_pct": 0.9,
+    "median_stop_pct": 13.888
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 6,
+    "avg_ret_pct": -3.261,
+    "t_ret": -0.73,
+    "sum_ret_pct": -19.6,
+    "days_in_market": 74
+   },
+   "OOS": {
+    "n": 17,
+    "avg_ret_pct": 4.435,
+    "t_ret": 1.13,
+    "sum_ret_pct": 75.4,
+    "days_in_market": 233
+   }
+  }
+ },
+ "ETH|flow_treasury|N14|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_treasury|N14|p80|harsh IS",
+    "n": 0
+   },
+   "OOS": {
+    "label": "ETH|flow_treasury|N14|p80|harsh OOS",
+    "n": 1,
+    "trades_per_month": 1.0,
+    "win_pct": 0.0,
+    "avg_R": -0.139,
+    "t_stat": null,
+    "sum_R": -0.1,
+    "pf": 0.0,
+    "ret_pct@0.5%": -0.1,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 14.625
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 0,
+    "avg_ret_pct": null,
+    "t_ret": null,
+    "sum_ret_pct": null,
+    "days_in_market": 0
+   },
+   "OOS": {
+    "n": 1,
+    "avg_ret_pct": -2.031,
+    "t_ret": null,
+    "sum_ret_pct": -2.0,
+    "days_in_market": 15
+   }
+  }
+ },
+ "ETH|ctl_mom14|N14|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_mom14|N14|harsh IS",
+    "n": 36,
+    "trades_per_month": 1.6,
+    "win_pct": 44.4,
+    "avg_R": 0.131,
+    "t_stat": 0.81,
+    "sum_R": 4.7,
+    "pf": 1.44,
+    "ret_pct@0.5%": 2.3,
+    "max_dd_pct": 1.9,
+    "median_stop_pct": 12.675
+   },
+   "OOS": {
+    "label": "ETH|ctl_mom14|N14|harsh OOS",
+    "n": 31,
+    "trades_per_month": 1.6,
+    "win_pct": 51.6,
+    "avg_R": 0.038,
+    "t_stat": 0.21,
+    "sum_R": 1.2,
+    "pf": 1.11,
+    "ret_pct@0.5%": 0.5,
+    "max_dd_pct": 1.9,
+    "median_stop_pct": 15.42
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 36,
+    "avg_ret_pct": 1.131,
+    "t_ret": 0.56,
+    "sum_ret_pct": 40.7,
+    "days_in_market": 499
+   },
+   "OOS": {
+    "n": 31,
+    "avg_ret_pct": 0.36,
+    "t_ret": 0.14,
+    "sum_ret_pct": 11.1,
+    "days_in_market": 399
+   }
+  }
+ },
+ "ETH|ctl_always|N14|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_always|N14|harsh IS",
+    "n": 7,
+    "trades_per_month": 2.0,
+    "win_pct": 57.1,
+    "avg_R": 0.39,
+    "t_stat": 1.22,
+    "sum_R": 2.7,
+    "pf": 3.2,
+    "ret_pct@0.5%": 1.4,
+    "max_dd_pct": 0.3,
+    "median_stop_pct": 14.014
+   },
+   "OOS": {
+    "label": "ETH|ctl_always|N14|harsh OOS",
+    "n": 46,
+    "trades_per_month": 2.3,
+    "win_pct": 52.2,
+    "avg_R": -0.023,
+    "t_stat": -0.18,
+    "sum_R": -1.1,
+    "pf": 0.93,
+    "ret_pct@0.5%": -0.6,
+    "max_dd_pct": 3.0,
+    "median_stop_pct": 16.836
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 7,
+    "avg_ret_pct": 4.952,
+    "t_ret": 1.08,
+    "sum_ret_pct": 34.7,
+    "days_in_market": 105
+   },
+   "OOS": {
+    "n": 46,
+    "avg_ret_pct": -0.664,
+    "t_ret": -0.34,
+    "sum_ret_pct": -30.5,
+    "days_in_market": 600
+   }
+  }
+ },
+ "ETH|flow_all|N30|p70|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N30|p70|harsh IS",
+    "n": 5,
+    "trades_per_month": 1.3,
+    "win_pct": 40.0,
+    "avg_R": 0.326,
+    "t_stat": 0.38,
+    "sum_R": 1.6,
+    "pf": 1.68,
+    "ret_pct@0.5%": 0.8,
+    "max_dd_pct": 0.7,
+    "median_stop_pct": 14.477
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N30|p70|harsh OOS",
+    "n": 15,
+    "trades_per_month": 0.8,
+    "win_pct": 40.0,
+    "avg_R": 0.091,
+    "t_stat": 0.27,
+    "sum_R": 1.4,
+    "pf": 1.2,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 1.7,
+    "median_stop_pct": 17.3
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 5,
+    "avg_ret_pct": 3.431,
+    "t_ret": 0.3,
+    "sum_ret_pct": 17.2,
+    "days_in_market": 115
+   },
+   "OOS": {
+    "n": 15,
+    "avg_ret_pct": 1.464,
+    "t_ret": 0.26,
+    "sum_ret_pct": 22.0,
+    "days_in_market": 364
+   }
+  }
+ },
+ "ETH|flow_all|N30|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N30|p80|harsh IS",
+    "n": 4,
+    "trades_per_month": 1.1,
+    "win_pct": 50.0,
+    "avg_R": 0.347,
+    "t_stat": 0.44,
+    "sum_R": 1.4,
+    "pf": 1.69,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 14.239
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N30|p80|harsh OOS",
+    "n": 11,
+    "trades_per_month": 0.6,
+    "win_pct": 27.3,
+    "avg_R": 0.189,
+    "t_stat": 0.4,
+    "sum_R": 2.1,
+    "pf": 1.39,
+    "ret_pct@0.5%": 1.0,
+    "max_dd_pct": 1.6,
+    "median_stop_pct": 16.693
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 3.832,
+    "t_ret": 0.34,
+    "sum_ret_pct": 15.3,
+    "days_in_market": 94
+   },
+   "OOS": {
+    "n": 11,
+    "avg_ret_pct": 2.004,
+    "t_ret": 0.25,
+    "sum_ret_pct": 22.0,
+    "days_in_market": 273
+   }
+  }
+ },
+ "ETH|flow_all|N30|p90|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_all|N30|p90|harsh IS",
+    "n": 3,
+    "trades_per_month": 1.1,
+    "win_pct": 66.7,
+    "avg_R": 0.42,
+    "t_stat": 0.57,
+    "sum_R": 1.3,
+    "pf": 2.25,
+    "ret_pct@0.5%": 0.6,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 12.868
+   },
+   "OOS": {
+    "label": "ETH|flow_all|N30|p90|harsh OOS",
+    "n": 6,
+    "trades_per_month": 1.2,
+    "win_pct": 33.3,
+    "avg_R": -0.133,
+    "t_stat": -0.19,
+    "sum_R": -0.8,
+    "pf": 0.8,
+    "ret_pct@0.5%": -0.4,
+    "max_dd_pct": 1.5,
+    "median_stop_pct": 13.871
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 3,
+    "avg_ret_pct": 5.32,
+    "t_ret": 0.58,
+    "sum_ret_pct": 16.0,
+    "days_in_market": 67
+   },
+   "OOS": {
+    "n": 6,
+    "avg_ret_pct": -2.789,
+    "t_ret": -0.28,
+    "sum_ret_pct": -16.7,
+    "days_in_market": 132
+   }
+  }
+ },
+ "ETH|flow_etf|N30|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_etf|N30|p80|harsh IS",
+    "n": 4,
+    "trades_per_month": 1.1,
+    "win_pct": 50.0,
+    "avg_R": 0.347,
+    "t_stat": 0.44,
+    "sum_R": 1.4,
+    "pf": 1.69,
+    "ret_pct@0.5%": 0.7,
+    "max_dd_pct": 0.5,
+    "median_stop_pct": 14.239
+   },
+   "OOS": {
+    "label": "ETH|flow_etf|N30|p80|harsh OOS",
+    "n": 12,
+    "trades_per_month": 0.6,
+    "win_pct": 33.3,
+    "avg_R": 0.153,
+    "t_stat": 0.34,
+    "sum_R": 1.8,
+    "pf": 1.3,
+    "ret_pct@0.5%": 0.9,
+    "max_dd_pct": 2.0,
+    "median_stop_pct": 16.255
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 3.832,
+    "t_ret": 0.34,
+    "sum_ret_pct": 15.3,
+    "days_in_market": 94
+   },
+   "OOS": {
+    "n": 12,
+    "avg_ret_pct": 1.575,
+    "t_ret": 0.21,
+    "sum_ret_pct": 18.9,
+    "days_in_market": 290
+   }
+  }
+ },
+ "ETH|flow_treasury|N30|p80|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|flow_treasury|N30|p80|harsh IS",
+    "n": 0
+   },
+   "OOS": {
+    "label": "ETH|flow_treasury|N30|p80|harsh OOS",
+    "n": 1,
+    "trades_per_month": 1.0,
+    "win_pct": 100.0,
+    "avg_R": 0.029,
+    "t_stat": null,
+    "sum_R": 0.0,
+    "pf": null,
+    "ret_pct@0.5%": 0.0,
+    "max_dd_pct": 0.0,
+    "median_stop_pct": 14.625
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 0,
+    "avg_ret_pct": null,
+    "t_ret": null,
+    "sum_ret_pct": null,
+    "days_in_market": 0
+   },
+   "OOS": {
+    "n": 1,
+    "avg_ret_pct": 0.422,
+    "t_ret": null,
+    "sum_ret_pct": 0.4,
+    "days_in_market": 31
+   }
+  }
+ },
+ "ETH|ctl_mom14|N30|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_mom14|N30|harsh IS",
+    "n": 23,
+    "trades_per_month": 1.0,
+    "win_pct": 34.8,
+    "avg_R": 0.077,
+    "t_stat": 0.23,
+    "sum_R": 1.8,
+    "pf": 1.15,
+    "ret_pct@0.5%": 0.8,
+    "max_dd_pct": 2.3,
+    "median_stop_pct": 12.445
+   },
+   "OOS": {
+    "label": "ETH|ctl_mom14|N30|harsh OOS",
+    "n": 19,
+    "trades_per_month": 1.0,
+    "win_pct": 42.1,
+    "avg_R": 0.027,
+    "t_stat": 0.1,
+    "sum_R": 0.5,
+    "pf": 1.05,
+    "ret_pct@0.5%": 0.2,
+    "max_dd_pct": 2.1,
+    "median_stop_pct": 16.184
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 23,
+    "avg_ret_pct": 0.46,
+    "t_ret": 0.12,
+    "sum_ret_pct": 10.6,
+    "days_in_market": 552
+   },
+   "OOS": {
+    "n": 19,
+    "avg_ret_pct": 0.777,
+    "t_ret": 0.16,
+    "sum_ret_pct": 14.8,
+    "days_in_market": 437
+   }
+  }
+ },
+ "ETH|ctl_always|N30|harsh": {
+  "summary": {
+   "IS": {
+    "label": "ETH|ctl_always|N30|harsh IS",
+    "n": 4,
+    "trades_per_month": 1.0,
+    "win_pct": 25.0,
+    "avg_R": 0.597,
+    "t_stat": 0.75,
+    "sum_R": 2.4,
+    "pf": 5.19,
+    "ret_pct@0.5%": 1.2,
+    "max_dd_pct": 0.1,
+    "median_stop_pct": 15.082
+   },
+   "OOS": {
+    "label": "ETH|ctl_always|N30|harsh OOS",
+    "n": 25,
+    "trades_per_month": 1.3,
+    "win_pct": 52.0,
+    "avg_R": -0.01,
+    "t_stat": -0.04,
+    "sum_R": -0.3,
+    "pf": 0.98,
+    "ret_pct@0.5%": -0.2,
+    "max_dd_pct": 2.9,
+    "median_stop_pct": 15.998
+   }
+  },
+  "ret": {
+   "IS": {
+    "n": 4,
+    "avg_ret_pct": 7.122,
+    "t_ret": 0.7,
+    "sum_ret_pct": 28.5,
+    "days_in_market": 124
+   },
+   "OOS": {
+    "n": 25,
+    "avg_ret_pct": -1.093,
+    "t_ret": -0.32,
+    "sum_ret_pct": -27.3,
+    "days_in_market": 581
+   }
+  }
+ }
+}

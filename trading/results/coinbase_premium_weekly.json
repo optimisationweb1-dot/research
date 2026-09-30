@@ -1,0 +1,110 @@
+[
+ {
+  "asset": "btc",
+  "h_hours": 168,
+  "period": "IS",
+  "n_weeks": 97,
+  "b_bps": 94.1,
+  "t_nw": 1.75,
+  "p_placebo": 0.092
+ },
+ {
+  "asset": "btc",
+  "h_hours": 168,
+  "period": "OOS",
+  "n_weeks": 86,
+  "b_bps": 60.0,
+  "t_nw": 0.99,
+  "p_placebo": 0.323
+ },
+ {
+  "asset": "btc",
+  "h_hours": 336,
+  "period": "IS",
+  "n_weeks": 96,
+  "b_bps": 81.9,
+  "t_nw": 1.15,
+  "p_placebo": 0.279
+ },
+ {
+  "asset": "btc",
+  "h_hours": 336,
+  "period": "OOS",
+  "n_weeks": 85,
+  "b_bps": 114.5,
+  "t_nw": 1.25,
+  "p_placebo": 0.162
+ },
+ {
+  "asset": "btc",
+  "h_hours": 720,
+  "period": "IS",
+  "n_weeks": 94,
+  "b_bps": 32.0,
+  "t_nw": 0.39,
+  "p_placebo": 0.682
+ },
+ {
+  "asset": "btc",
+  "h_hours": 720,
+  "period": "OOS",
+  "n_weeks": 82,
+  "b_bps": 186.1,
+  "t_nw": 1.57,
+  "p_placebo": 0.273
+ },
+ {
+  "asset": "eth",
+  "h_hours": 168,
+  "period": "IS",
+  "n_weeks": 97,
+  "b_bps": 29.2,
+  "t_nw": 0.53,
+  "p_placebo": 0.672
+ },
+ {
+  "asset": "eth",
+  "h_hours": 168,
+  "period": "OOS",
+  "n_weeks": 86,
+  "b_bps": 125.3,
+  "t_nw": 1.62,
+  "p_placebo": 0.176
+ },
+ {
+  "asset": "eth",
+  "h_hours": 336,
+  "period": "IS",
+  "n_weeks": 96,
+  "b_bps": -147.9,
+  "t_nw": -1.49,
+  "p_placebo": 0.209
+ },
+ {
+  "asset": "eth",
+  "h_hours": 336,
+  "period": "OOS",
+  "n_weeks": 85,
+  "b_bps": 274.1,
+  "t_nw": 1.87,
+  "p_placebo": 0.178
+ },
+ {
+  "asset": "eth",
+  "h_hours": 720,
+  "period": "IS",
+  "n_weeks": 94,
+  "b_bps": -269.9,
+  "t_nw": -2.33,
+  "p_placebo": 0.017
+ },
+ {
+  "asset": "eth",
+  "h_hours": 720,
+  "period": "OOS",
+  "n_weeks": 82,
+  "b_bps": 365.3,
+  "t_nw": 1.76,
+  "p_placebo": 0.205
+ }
+]

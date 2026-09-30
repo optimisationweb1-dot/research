@@ -1,0 +1,248 @@
+{
+ "readme_window": {
+  "BTCUSDT": {
+   "legacy_as_is": {
+    "n": 12,
+    "win_pct": 58.3,
+    "avg_R": 0.413,
+    "sum_R": 5.0,
+    "t": 0.84
+   },
+   "legacy_fill_fixed": {
+    "n": 19,
+    "win_pct": 47.4,
+    "avg_R": 0.247,
+    "sum_R": 4.7,
+    "t": 0.58
+   },
+   "bt_port_base": {
+    "n": 47,
+    "win_pct": 25.5,
+    "avg_R": -0.261,
+    "sum_R": -12.3,
+    "t": -1.05
+   },
+   "bt_port_harsh": {
+    "n": 47,
+    "win_pct": 25.5,
+    "avg_R": -0.399,
+    "sum_R": -18.8,
+    "t": -1.58
+   }
+  },
+  "ETHUSDT": {
+   "legacy_as_is": {
+    "n": 19,
+    "win_pct": 36.8,
+    "avg_R": -0.04,
+    "sum_R": -0.8,
+    "t": -0.11
+   },
+   "legacy_fill_fixed": {
+    "n": 26,
+    "win_pct": 26.9,
+    "avg_R": -0.312,
+    "sum_R": -8.1,
+    "t": -1.07
+   },
+   "bt_port_base": {
+    "n": 59,
+    "win_pct": 25.4,
+    "avg_R": -0.176,
+    "sum_R": -10.4,
+    "t": -0.76
+   },
+   "bt_port_harsh": {
+    "n": 59,
+    "win_pct": 25.4,
+    "avg_R": -0.284,
+    "sum_R": -16.8,
+    "t": -1.21
+   }
+  },
+  "SOLUSDT": {
+   "legacy_as_is": {
+    "n": 26,
+    "win_pct": 46.2,
+    "avg_R": 0.335,
+    "sum_R": 8.7,
+    "t": 0.99
+   },
+   "legacy_fill_fixed": {
+    "n": 30,
+    "win_pct": 40.0,
+    "avg_R": 0.129,
+    "sum_R": 3.9,
+    "t": 0.42
+   },
+   "bt_port_base": {
+    "n": 48,
+    "win_pct": 18.8,
+    "avg_R": -0.458,
+    "sum_R": -22.0,
+    "t": -2.12
+   },
+   "bt_port_harsh": {
+    "n": 48,
+    "win_pct": 18.8,
+    "avg_R": -0.551,
+    "sum_R": -26.5,
+    "t": -2.52
+   }
+  },
+  "XRPUSDT": {
+   "legacy_as_is": {
+    "n": 23,
+    "win_pct": 47.8,
+    "avg_R": 0.392,
+    "sum_R": 9.0,
+    "t": 1.14
+   },
+   "legacy_fill_fixed": {
+    "n": 24,
+    "win_pct": 45.8,
+    "avg_R": 0.318,
+    "sum_R": 7.6,
+    "t": 0.94
+   },
+   "bt_port_base": {
+    "n": 45,
+    "win_pct": 31.1,
+    "avg_R": -0.002,
+    "sum_R": -0.1,
+    "t": -0.01
+   },
+   "bt_port_harsh": {
+    "n": 45,
+    "win_pct": 31.1,
+    "avg_R": -0.096,
+    "sum_R": -4.3,
+    "t": -0.35
+   }
+  },
+  "DOGEUSDT": {
+   "legacy_as_is": {
+    "n": 24,
+    "win_pct": 25.0,
+    "avg_R": -0.381,
+    "sum_R": -9.1,
+    "t": -1.53
+   },
+   "legacy_fill_fixed": {
+    "n": 30,
+    "win_pct": 23.3,
+    "avg_R": -0.345,
+    "sum_R": -10.3,
+    "t": -1.28
+   },
+   "bt_port_base": {
+    "n": 52,
+    "win_pct": 23.1,
+    "avg_R": -0.209,
+    "sum_R": -10.8,
+    "t": -0.88
+   },
+   "bt_port_harsh": {
+    "n": 52,
+    "win_pct": 23.1,
+    "avg_R": -0.293,
+    "sum_R": -15.2,
+    "t": -1.22
+   }
+  },
+  "TOTAL": {
+   "legacy_as_is": {
+    "n": 104,
+    "win_pct": 41.3,
+    "avg_R": 0.123,
+    "sum_R": 12.8,
+    "t": 0.79
+   },
+   "legacy_fill_fixed": {
+    "n": 129,
+    "win_pct": 35.7,
+    "avg_R": -0.018,
+    "sum_R": -2.3,
+    "t": -0.12
+   },
+   "bt_port_base": {
+    "n": 251,
+    "win_pct": 24.7,
+    "avg_R": -0.221,
+    "sum_R": -55.6,
+    "t": -2.07
+   },
+   "bt_port_harsh": {
+    "n": 251,
+    "win_pct": 24.7,
+    "avg_R": -0.325,
+    "sum_R": -81.6,
+    "t": -2.99
+   }
+  }
+ },
+ "full_period_bt_port": {
+  "5m": {
+   "IS": {
+    "label": "smc 5m IS",
+    "n": 1371,
+    "win_pct": 24.6,
+    "avg_R": -0.2235,
+    "t": -5.07,
+    "sum_R": -306.41
+   },
+   "OOS": {
+    "label": "smc 5m OOS",
+    "n": 920,
+    "win_pct": 27.6,
+    "avg_R": -0.1052,
+    "t": -1.83,
+    "sum_R": -96.79
+   },
+   "per_symbol_OOS_avgR": {
+    "ADAUSDT": 0.153,
+    "AVAXUSDT": -0.064,
+    "BNBUSDT": 0.029,
+    "BTCUSDT": -0.236,
+    "DOGEUSDT": 0.078,
+    "ETHUSDT": -0.188,
+    "LINKUSDT": -0.162,
+    "LTCUSDT": -0.383,
+    "SOLUSDT": -0.2,
+    "XRPUSDT": -0.049
+   },
+   "t_cluster_day_OOS": -1.66
+  },
+  "15m": {
+   "IS": {
+    "label": "smc 15m IS",
+    "n": 577,
+    "win_pct": 27.6,
+    "avg_R": -0.0673,
+    "t": -0.96,
+    "sum_R": -38.81
+   },
+   "OOS": {
+    "label": "smc 15m OOS",
+    "n": 394,
+    "win_pct": 30.5,
+    "avg_R": 0.0291,
+    "t": 0.33,
+    "sum_R": 11.45
+   },
+   "per_symbol_OOS_avgR": {
+    "ADAUSDT": 0.682,
+    "AVAXUSDT": 0.271,
+    "BNBUSDT": -0.249,
+    "BTCUSDT": 0.215,
+    "DOGEUSDT": -0.18,
+    "ETHUSDT": -0.334,
+    "LINKUSDT": 0.011,
+    "LTCUSDT": -0.138,
+    "SOLUSDT": 0.161,
+    "XRPUSDT": -0.109
+   },
+   "t_cluster_day_OOS": 0.3
+  }
+ }
+}

@@ -1,0 +1,54 @@
+[
+ {
+  "group": "MSTR_btc",
+  "asset": "btc",
+  "n_events": 78,
+  "from": "2024-02-26 13:00:00+00:00",
+  "to": "2026-08-31 12:00:00+00:00",
+  "pre120h_mean_bps": 0.22,
+  "baseline_bps": 0.26,
+  "diff_bps": -0.04,
+  "placebo_p_one_sided": 0.5,
+  "placebo_sd_bps": 0.14,
+  "spearman_pre_vs_usd_size": 0.491
+ },
+ {
+  "group": "BMNR_eth",
+  "asset": "eth",
+  "n_events": 61,
+  "from": "2025-07-14 14:00:00+00:00",
+  "to": "2026-08-31 12:00:00+00:00",
+  "pre120h_mean_bps": -0.03,
+  "baseline_bps": -0.01,
+  "diff_bps": -0.02,
+  "placebo_p_one_sided": 0.777,
+  "placebo_sd_bps": 0.03,
+  "spearman_pre_vs_usd_size": -0.018
+ },
+ {
+  "group": "SBET_eth",
+  "asset": "eth",
+  "n_events": 15,
+  "from": "2025-06-13 12:00:00+00:00",
+  "to": "2026-06-30 12:00:00+00:00",
+  "pre120h_mean_bps": 0.5,
+  "baseline_bps": -0.04,
+  "diff_bps": 0.55,
+  "placebo_p_one_sided": 0.009,
+  "placebo_sd_bps": 0.34,
+  "spearman_pre_vs_usd_size": 0.314
+ },
+ {
+  "group": "ETHtreas_eth",
+  "asset": "eth",
+  "n_events": 79,
+  "from": "2025-06-13 12:00:00+00:00",
+  "to": "2026-08-31 12:00:00+00:00",
+  "pre120h_mean_bps": 0.1,
+  "baseline_bps": 0.03,
+  "diff_bps": 0.07,
+  "placebo_p_one_sided": 0.235,
+  "placebo_sd_bps": 0.08,
+  "spearman_pre_vs_usd_size": -0.036
+ }
+]

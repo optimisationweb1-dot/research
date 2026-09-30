@@ -1,5 +1,5 @@
 {
- "n_configs_total": 58,
+ "n_configs_total": 76,
  "rows": [
   {
    "variant": "Aabs_break",
@@ -1376,6 +1376,495 @@
     ]
    ],
    "verdict": "NO_EDGE"
+  },
+  {
+   "variant": "R2Ffollow",
+   "tf": "1h",
+   "fn": "fcrowd_1h",
+   "params": {
+    "norm": "z",
+    "trend": "ema",
+    "mode": "follow",
+    "z": 2.0
+   },
+   "n_configs": 3,
+   "IS_n": 133,
+   "IS_win": 40.6,
+   "IS_avgR": 0.114,
+   "IS_t": 0.94,
+   "IS_ret": 7.6,
+   "IS_dd": 6.1,
+   "OOS_n": 93,
+   "OOS_win": 46.2,
+   "OOS_avgR": 0.233,
+   "OOS_t": 1.57,
+   "OOS_ret": 11.2,
+   "OOS_dd": 4.9,
+   "OOS_harsh_avgR": 0.186,
+   "OOS_sym_pos": 7,
+   "share_cfg_pos": 0.6666666666666666,
+   "median_cfg_OOS_avgR": 0.233,
+   "configs_OOS": [
+    [
+     {
+      "norm": "z",
+      "trend": "ema",
+      "mode": "follow",
+      "z": 1.5
+     },
+     -0.032,
+     -0.35,
+     231,
+     -0.14,
+     -1.58
+    ],
+    [
+     {
+      "norm": "z",
+      "trend": "ema",
+      "mode": "follow",
+      "z": 2.0
+     },
+     0.114,
+     0.94,
+     93,
+     0.233,
+     1.57
+    ],
+    [
+     {
+      "norm": "z",
+      "trend": "ema",
+      "mode": "follow",
+      "z": 2.5
+     },
+     0.127,
+     0.82,
+     40,
+     0.336,
+     1.51
+    ]
+   ],
+   "verdict": "WEAK"
+  },
+  {
+   "variant": "R2Ffollow",
+   "tf": "4h",
+   "fn": "fcrowd_4h",
+   "params": {
+    "norm": "z",
+    "trend": "ema",
+    "mode": "follow",
+    "z": 2.0
+   },
+   "n_configs": 3,
+   "IS_n": 95,
+   "IS_win": 50.5,
+   "IS_avgR": 0.149,
+   "IS_t": 1.29,
+   "IS_ret": 7.2,
+   "IS_dd": 6.3,
+   "OOS_n": 72,
+   "OOS_win": 48.6,
+   "OOS_avgR": 0.035,
+   "OOS_t": 0.29,
+   "OOS_ret": 1.2,
+   "OOS_dd": 6.4,
+   "OOS_harsh_avgR": 0.013,
+   "OOS_sym_pos": 6,
+   "share_cfg_pos": 1.0,
+   "median_cfg_OOS_avgR": 0.062,
+   "configs_OOS": [
+    [
+     {
+      "norm": "z",
+      "trend": "ema",
+      "mode": "follow",
+      "z": 1.5
+     },
+     0.005,
+     0.07,
+     194,
+     0.062,
+     0.78
+    ],
+    [
+     {
+      "norm": "z",
+      "trend": "ema",
+      "mode": "follow",
+      "z": 2.0
+     },
+     0.149,
+     1.29,
+     72,
+     0.035,
+     0.29
+    ],
+    [
+     {
+      "norm": "z",
+      "trend": "ema",
+      "mode": "follow",
+      "z": 2.5
+     },
+     0.077,
+     0.54,
+     30,
+     0.237,
+     1.18
+    ]
+   ],
+   "verdict": "WEAK"
+  },
+  {
+   "variant": "R2ctlPrice",
+   "tf": "1h",
+   "fn": "rcrowd_1h",
+   "params": {
+    "src": "price",
+    "pct": 0.9
+   },
+   "n_configs": 2,
+   "IS_n": 1716,
+   "IS_win": 35.0,
+   "IS_avgR": -0.058,
+   "IS_t": -1.76,
+   "IS_ret": -41.8,
+   "IS_dd": 49.8,
+   "OOS_n": 1478,
+   "OOS_win": 33.4,
+   "OOS_avgR": -0.09,
+   "OOS_t": -2.54,
+   "OOS_ret": -50.5,
+   "OOS_dd": 54.5,
+   "OOS_harsh_avgR": -0.129,
+   "OOS_sym_pos": 2,
+   "share_cfg_pos": 0.0,
+   "median_cfg_OOS_avgR": -0.0745,
+   "configs_OOS": [
+    [
+     {
+      "src": "price",
+      "pct": 0.9
+     },
+     -0.058,
+     -1.76,
+     1478,
+     -0.09,
+     -2.54
+    ],
+    [
+     {
+      "src": "price",
+      "pct": 0.95
+     },
+     -0.06,
+     -1.77,
+     1381,
+     -0.059,
+     -1.6
+    ]
+   ],
+   "verdict": "NO_EDGE"
+  },
+  {
+   "variant": "R2ctlPrice",
+   "tf": "4h",
+   "fn": "rcrowd_4h",
+   "params": {
+    "src": "price",
+    "pct": 0.9
+   },
+   "n_configs": 2,
+   "IS_n": 974,
+   "IS_win": 42.4,
+   "IS_avgR": 0.05,
+   "IS_t": 1.33,
+   "IS_ret": 25.3,
+   "IS_dd": 14.0,
+   "OOS_n": 893,
+   "OOS_win": 36.7,
+   "OOS_avgR": -0.058,
+   "OOS_t": -1.5,
+   "OOS_ret": -23.9,
+   "OOS_dd": 30.3,
+   "OOS_harsh_avgR": -0.078,
+   "OOS_sym_pos": 4,
+   "share_cfg_pos": 0.0,
+   "median_cfg_OOS_avgR": -0.057,
+   "configs_OOS": [
+    [
+     {
+      "src": "price",
+      "pct": 0.9
+     },
+     0.05,
+     1.33,
+     893,
+     -0.058,
+     -1.5
+    ],
+    [
+     {
+      "src": "price",
+      "pct": 0.95
+     },
+     0.027,
+     0.71,
+     827,
+     -0.056,
+     -1.41
+    ]
+   ],
+   "verdict": "NO_EDGE"
+  },
+  {
+   "variant": "R2sensExits",
+   "tf": "4h",
+   "fn": "rcrowd_4h",
+   "params": {
+    "src": "level",
+    "pct": 0.9,
+    "stop_atr": 1.5,
+    "rr": 3.0
+   },
+   "n_configs": 4,
+   "IS_n": 761,
+   "IS_win": 40.7,
+   "IS_avgR": 0.155,
+   "IS_t": 2.83,
+   "IS_ret": 76.2,
+   "IS_dd": 12.7,
+   "OOS_n": 1364,
+   "OOS_win": 40.1,
+   "OOS_avgR": 0.076,
+   "OOS_t": 1.96,
+   "OOS_ret": 62.5,
+   "OOS_dd": 29.4,
+   "OOS_harsh_avgR": 0.05,
+   "OOS_sym_pos": 9,
+   "share_cfg_pos": 1.0,
+   "median_cfg_OOS_avgR": 0.062,
+   "configs_OOS": [
+    [
+     {
+      "src": "level",
+      "pct": 0.9,
+      "stop_atr": 1.5,
+      "rr": 1.0
+     },
+     0.062,
+     1.95,
+     1655,
+     0.016,
+     0.66
+    ],
+    [
+     {
+      "src": "level",
+      "pct": 0.9,
+      "stop_atr": 1.5,
+      "rr": 3.0
+     },
+     0.155,
+     2.83,
+     1364,
+     0.076,
+     1.96
+    ],
+    [
+     {
+      "src": "level",
+      "pct": 0.9,
+      "stop_atr": 3.0,
+      "rr": 1.0
+     },
+     0.046,
+     1.54,
+     1227,
+     0.06,
+     2.71
+    ],
+    [
+     {
+      "src": "level",
+      "pct": 0.9,
+      "stop_atr": 3.0,
+      "rr": 3.0
+     },
+     0.084,
+     2.15,
+     1124,
+     0.064,
+     2.24
+    ]
+   ],
+   "verdict": "WEAK"
+  },
+  {
+   "variant": "R2smartcrowd",
+   "tf": "1h",
+   "fn": "smartcrowd_1h",
+   "params": {
+    "pct": 0.9,
+    "top_max": 0.5
+   },
+   "n_configs": 1,
+   "IS_n": 640,
+   "IS_win": 40.6,
+   "IS_avgR": 0.117,
+   "IS_t": 2.08,
+   "IS_ret": 43.1,
+   "IS_dd": 10.1,
+   "OOS_n": 1319,
+   "OOS_win": 37.5,
+   "OOS_avgR": 0.023,
+   "OOS_t": 0.59,
+   "OOS_ret": 12.4,
+   "OOS_dd": 33.9,
+   "OOS_harsh_avgR": -0.014,
+   "OOS_sym_pos": 5,
+   "share_cfg_pos": 1.0,
+   "median_cfg_OOS_avgR": 0.023,
+   "configs_OOS": [
+    [
+     {
+      "pct": 0.9,
+      "top_max": 0.5
+     },
+     0.117,
+     2.08,
+     1319,
+     0.023,
+     0.59
+    ]
+   ],
+   "verdict": "WEAK"
+  },
+  {
+   "variant": "R2smartcrowd",
+   "tf": "4h",
+   "fn": "smartcrowd_4h",
+   "params": {
+    "pct": 0.9,
+    "top_max": 0.5
+   },
+   "n_configs": 1,
+   "IS_n": 383,
+   "IS_win": 43.1,
+   "IS_avgR": 0.06,
+   "IS_t": 0.99,
+   "IS_ret": 11.5,
+   "IS_dd": 11.3,
+   "OOS_n": 754,
+   "OOS_win": 45.6,
+   "OOS_avgR": 0.108,
+   "OOS_t": 2.52,
+   "OOS_ret": 48.5,
+   "OOS_dd": 15.4,
+   "OOS_harsh_avgR": 0.089,
+   "OOS_sym_pos": 8,
+   "share_cfg_pos": 1.0,
+   "median_cfg_OOS_avgR": 0.108,
+   "configs_OOS": [
+    [
+     {
+      "pct": 0.9,
+      "top_max": 0.5
+     },
+     0.06,
+     0.99,
+     754,
+     0.108,
+     2.52
+    ]
+   ],
+   "verdict": "PROMISING"
+  },
+  {
+   "variant": "R3short",
+   "tf": "1h",
+   "fn": "rcrowd_1h",
+   "params": {
+    "src": "level",
+    "pct": 0.9,
+    "side": "short"
+   },
+   "n_configs": 1,
+   "IS_n": 680,
+   "IS_win": 41.0,
+   "IS_avgR": 0.122,
+   "IS_t": 2.25,
+   "IS_ret": 48.8,
+   "IS_dd": 26.1,
+   "OOS_n": 1096,
+   "OOS_win": 40.3,
+   "OOS_avgR": 0.109,
+   "OOS_t": 2.54,
+   "OOS_ret": 76.6,
+   "OOS_dd": 19.8,
+   "OOS_harsh_avgR": 0.071,
+   "OOS_sym_pos": 7,
+   "share_cfg_pos": 1.0,
+   "median_cfg_OOS_avgR": 0.109,
+   "configs_OOS": [
+    [
+     {
+      "src": "level",
+      "pct": 0.9,
+      "side": "short"
+     },
+     0.122,
+     2.25,
+     1096,
+     0.109,
+     2.54
+    ]
+   ],
+   "verdict": "PROMISING"
+  },
+  {
+   "variant": "R3short",
+   "tf": "4h",
+   "fn": "rcrowd_4h",
+   "params": {
+    "src": "level",
+    "pct": 0.9,
+    "side": "short"
+   },
+   "n_configs": 1,
+   "IS_n": 400,
+   "IS_win": 44.8,
+   "IS_avgR": 0.094,
+   "IS_t": 1.57,
+   "IS_ret": 19.9,
+   "IS_dd": 14.8,
+   "OOS_n": 670,
+   "OOS_win": 47.6,
+   "OOS_avgR": 0.121,
+   "OOS_t": 2.75,
+   "OOS_ret": 48.5,
+   "OOS_dd": 16.2,
+   "OOS_harsh_avgR": 0.102,
+   "OOS_sym_pos": 9,
+   "share_cfg_pos": 1.0,
+   "median_cfg_OOS_avgR": 0.121,
+   "configs_OOS": [
+    [
+     {
+      "src": "level",
+      "pct": 0.9,
+      "side": "short"
+     },
+     0.094,
+     1.57,
+     670,
+     0.121,
+     2.75
+    ]
+   ],
+   "verdict": "PROMISING"
   }
  ]
 }

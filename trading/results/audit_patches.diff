@@ -1,0 +1,117 @@
+--- trading/bt/data.py	2026-09-27 06:16:19.268144714 +0000
++++ trading/bt/data.py	2026-09-27 08:02:16.918801738 +0000
+@@ -83,6 +83,9 @@
+     for c in KCOLS[:-1]:
+         df[c] = pd.to_numeric(df[c])
+     df = df.drop(columns=["ignore", "buy_quote_vol"]).drop_duplicates("open_time").sort_values("open_time")
++    live = df.loc[df["volume"] > 0, "open_time"]
++    if len(live):  # data.binance.vision keeps writing flat zero-volume bars after a delisting
++        df = df[df["open_time"] <= live.max()]
+     os.makedirs(os.path.dirname(path), exist_ok=True)
+     df.to_parquet(path, index=False)
+     return path
+@@ -202,8 +205,11 @@
+ 
+ def _asof(df, ext, cols, avail_col="avail"):
+     """Attach ext[cols] known at df.close_time (ext[avail_col] <= close_time)."""
+-    left = pd.DataFrame({"open_ts": df.index, "close_time": df["close_time"].values})
+-    right = ext[[avail_col] + cols].sort_values(avail_col)
++    ns_utc = lambda x: pd.DatetimeIndex(x).tz_convert("UTC").as_unit("ns")
++    left = pd.DataFrame({"open_ts": df.index, "close_time": ns_utc(df["close_time"])})
++    right = ext[[avail_col] + cols].copy()
++    right[avail_col] = ns_utc(right[avail_col])
++    right = right.sort_values(avail_col)
+     m = pd.merge_asof(left.sort_values("close_time"), right, left_on="close_time", right_on=avail_col,
+                       direction="backward")
+     m.index = m["open_ts"]
+@@ -218,8 +224,10 @@
+     if not os.path.exists(path):
+         raise FileNotFoundError(path)
+     mt = pd.read_parquet(path)
+-    # snapshot stamped create_time; treat it as known 1 minute after the stamp (conservative)
+-    mt["avail"] = mt["ts"] + pd.Timedelta(minutes=1)
++    # the row stamped T describes the window [T, T+5) (its taker ratio matches the 5m kline opening at T,
++    # corr 0.93-0.97), so it is not known before T+5; +1 minute publication latency [estimate]
++    mt["avail"] = mt["ts"] + pd.Timedelta(minutes=6)
++    mt.loc[mt["sum_open_interest"] <= 0, ["sum_open_interest", "sum_open_interest_value"]] = np.nan
+     cols = ["sum_open_interest", "sum_open_interest_value", "count_toptrader_long_short_ratio",
+             "sum_toptrader_long_short_ratio", "count_long_short_ratio", "sum_taker_long_short_vol_ratio"]
+     out = _asof(df, mt, cols)
+--- trading/bt/engine.py	2026-09-27 06:17:23.947436879 +0000
++++ trading/bt/engine.py	2026-09-27 08:02:16.918960193 +0000
+@@ -125,8 +125,10 @@
+     return pd.DataFrame(trades)
+ 
+ 
+-def check_lookahead(strategy, df, params=None, n_checks=12, min_bars=500, seed=7):
+-    """Recompute on df[:k+1] and compare the decision at bar k with the full run."""
++def check_lookahead(strategy, df, params=None, n_checks=12, min_bars=500, seed=7, window=64):
++    """Recompute on df[:k+1] and compare the decisions at bars k-window+1..k with the full run.
++    Comparing the whole tail (not only bar k) also catches look-ahead that only REMOVES signals
++    (e.g. `signal & ~(future_loss)`), which the last-bar comparison misses most of the time."""
+     params = params or {}
+     full = strategy(df, **params)
+     rng = np.random.default_rng(seed)
+@@ -139,12 +141,12 @@
+     bad = []
+     for k in sorted(set(int(x) for x in ks)):
+         cut = strategy(df.iloc[:k + 1], **params)
++        lo = max(0, k + 1 - window)
+         for ccol in cols:
+-            a, b = full[ccol].iloc[k], cut[ccol].iloc[k]
+-            same = (pd.isna(a) and pd.isna(b)) or (not pd.isna(a) and not pd.isna(b) and
+-                                                   math.isclose(float(a), float(b), rel_tol=1e-9, abs_tol=1e-12))
+-            if not same:
+-                bad.append((df.index[k], ccol, a, b))
++            a = full[ccol].iloc[lo:k + 1].to_numpy(dtype=float)
++            b = cut[ccol].iloc[lo:k + 1].to_numpy(dtype=float)
++            for j in np.flatnonzero(~np.isclose(a, b, rtol=1e-9, atol=1e-12, equal_nan=True))[:3]:
++                bad.append((df.index[lo + j], ccol, a[j], b[j]))
+     if bad:
+         raise AssertionError(f"LOOKAHEAD in {getattr(strategy, '__name__', strategy)}: {bad[:5]}")
+     return True
+@@ -160,9 +162,13 @@
+     months = max(1.0, (tr["t_exit"].max() - tr["t_entry"].min()).days / 30.44)
+     sd = R.std(ddof=1) if len(R) > 1 else float("nan")
+     pos, neg = R[R > 0].sum(), -R[R < 0].sum()
++    # trades of different symbols entered on the same day are correlated: cluster the SE by entry day
++    e = pd.Series(R - R.mean()).groupby(np.asarray(pd.DatetimeIndex(tr["t_entry"]).floor("1D"))).sum().to_numpy()
++    se_cl = math.sqrt((e ** 2).sum() * len(e) / max(len(e) - 1, 1)) / len(R)
+     return {"label": label, "n": int(len(R)), "trades_per_month": round(len(R) / months, 1),
+             "win_pct": round(100 * (R > 0).mean(), 1), "avg_R": round(R.mean(), 3),
+             "t_stat": round(R.mean() / sd * math.sqrt(len(R)), 2) if sd and sd > 0 else None,
++            "t_stat_day_cluster": round(R.mean() / se_cl, 2) if se_cl > 0 else None,
+             "sum_R": round(R.sum(), 1), "pf": round(pos / neg, 2) if neg > 0 else None,
+             f"ret_pct@{risk_pct}%": round(100 * (eq[-1] - 1), 1),
+             "max_dd_pct": round(100 * (1 - eq / peak).max(), 1),
+--- trading/smc_backtest.py	2026-09-27 06:10:31.452470920 +0000
++++ trading/smc_backtest.py	2026-09-27 08:03:09.722041357 +0000
+@@ -57,7 +57,7 @@
+             fvg = L["fvg"]
+             in_zone = fvg and fvg[0] <= zhi and fvg[1] >= zlo
+             entry = (min(zhi, fvg[1]) if need_fvg and fvg else zhi)
+-            if (in_zone or not need_fvg) and zlo < b["l"] < entry:
++            if (in_zone or not need_fvg) and b["l"] < entry:  # a resting limit fills on any trade through it
+                 sl = L["lo"] - buf * A[i]
+                 tp = L["lo"] + leg * ext
+                 f = entry * fee / 100
+@@ -82,7 +82,7 @@
+             fvg = S["fvg"]
+             in_zone = fvg and fvg[1] >= zlo and fvg[0] <= zhi
+             entry = (max(zlo, fvg[0]) if need_fvg and fvg else zlo)
+-            if (in_zone or not need_fvg) and entry < b["h"] < zhi:
++            if (in_zone or not need_fvg) and b["h"] > entry:
+                 sl = S["hi"] + buf * A[i]
+                 tp = S["hi"] - leg * ext
+                 f = entry * fee / 100
+@@ -106,6 +106,10 @@
+             continue  # one position at a time
+         risk = abs(e - sl)
+         fee_r = e * fee / 100 / risk
++        if (d > 0 and bars[i]["l"] <= sl) or (d < 0 and bars[i]["h"] >= sl):  # stopped on the fill bar
++            res.append({"i": i, "dir": d, "r": -1.0 - fee_r, "stop_pct": 100 * risk / e})
++            busy_until = i
++            continue
+         exit_r, k = None, i
+         for k in range(i + 1, min(i + 1 + timeout, len(bars))):
+             b = bars[k]

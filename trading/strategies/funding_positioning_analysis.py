@@ -22,7 +22,7 @@ from bt.engine import IS_END, summarize
 from bt.runner import run_config
 
 RES = "results"
-SKIP = ("is_explore", "diagnostics", "summary", "holdout", "robust", "attribution", "baseline")
+SKIP = ("is_explore", "diagnostics", "summary", "holdout", "robust", "attribution", "baseline", "holdout2")
 
 
 def files():
@@ -340,3 +340,42 @@ HOLD2 = "TRXUSDT XLMUSDT HBARUSDT AAVEUSDT INJUSDT SUIUSDT LDOUSDT CRVUSDT ICPUS
 
 if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "baseline":
     baseline()
+
+
+# ================================================================ holdout 2 (fresh symbols, registered after holdout 1)
+PREREG2 = [
+    ("C_level_4h", "rcrowd", "4h", {"src": "level", "pct": 0.9}),
+    ("R3short_4h", "rcrowd", "4h", {"src": "level", "pct": 0.9, "side": "short"}),
+    ("R3short_1h", "rcrowd", "1h", {"src": "level", "pct": 0.9, "side": "short"}),
+    ("C_level_1h", "rcrowd", "1h", {"src": "level", "pct": 0.9}),
+]
+
+
+def validate2():
+    root = os.environ["FP_HOLDOUT2_ROOT"]
+    import bt.data as D
+    syms = [s for s in HOLD2 if os.path.exists(os.path.join(root, "klines", "5m", f"{s}.parquet"))
+            and os.path.exists(os.path.join(root, "metrics", f"{s}.parquet"))]
+    T24 = pd.Timestamp("2024-01-01", tz="UTC")
+    out = {"prereg": PREREG2, "symbols": syms}
+    for name, fn, tf, p in PREREG2:
+        th = _trades(fn, tf, p, syms, root=root)
+        thh = _trades(fn, tf, p, syms, root=root, costs="harsh")
+        th, thh = th[th["t_entry"] >= T24], thh[thh["t_entry"] >= T24]
+        r = {"holdout2_2024": _block(th[th["t_entry"] < IS_END], "2024"),
+             "holdout2_2025_26": _block(th[th["t_entry"] >= IS_END], "2025_26"),
+             "holdout2_all": _block(th, "all"),
+             "holdout2_2025_26_harsh_avgR": round(float(thh[thh["t_entry"] >= IS_END]["R"].mean()), 3),
+             "holdout2_per_symbol_2025_26": {s: round(float(g["R"].mean()), 3)
+                                             for s, g in th[th["t_entry"] >= IS_END].groupby("symbol")}}
+        out[name] = r
+        print(name, json.dumps({k: (v.get("n"), v.get("avg_R"), v.get("t_stat"), v.get("t_clustered_week"),
+                                    v.get("long"), v.get("short"), v.get("sym_pos"))
+                                for k, v in r.items() if isinstance(v, dict) and "n" in v}),
+              "harsh", r["holdout2_2025_26_harsh_avgR"], flush=True)
+    with open(f"{RES}/funding_positioning_holdout2.json", "w") as f:
+        json.dump(out, f, indent=1, default=str)
+
+
+if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "validate2":
+    validate2()

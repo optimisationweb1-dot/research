@@ -1,0 +1,1664 @@
+{
+ "period": "2020-01..2022-12",
+ "criteria": "t>=2; avg_R>0 base&harsh; >=6/10 symbols",
+ "variants": {
+  "a_donchian_1d": {
+   "params": {
+    "n": 120,
+    "k": 3.0
+   },
+   "tf": "1d",
+   "whole": {
+    "label": "",
+    "n": 79,
+    "trades_per_month": 2.5,
+    "win_pct": 48.1,
+    "avg_R": 2.03,
+    "t_stat": 2.88,
+    "sum_R": 160.4,
+    "pf": 5.48,
+    "ret_pct@0.5%": 114.4,
+    "max_dd_pct": 4.9,
+    "median_stop_pct": 21.649
+   },
+   "harsh": {
+    "label": "",
+    "n": 79,
+    "trades_per_month": 2.5,
+    "win_pct": 48.1,
+    "avg_R": 2.022,
+    "t_stat": 2.87,
+    "sum_R": 159.7,
+    "pf": 5.45,
+    "ret_pct@0.5%": 113.8,
+    "max_dd_pct": 4.9,
+    "median_stop_pct": 21.673
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 9,
+     "avg_R": 2.863,
+     "t": 1.12,
+     "win": 55.6
+    },
+    "AVAXUSDT": {
+     "n": 7,
+     "avg_R": 0.574,
+     "t": 0.98,
+     "win": 57.1
+    },
+    "BNBUSDT": {
+     "n": 9,
+     "avg_R": 3.183,
+     "t": 1.0,
+     "win": 44.4
+    },
+    "BTCUSDT": {
+     "n": 8,
+     "avg_R": 1.65,
+     "t": 1.15,
+     "win": 37.5
+    },
+    "DOGEUSDT": {
+     "n": 7,
+     "avg_R": 6.418,
+     "t": 1.24,
+     "win": 57.1
+    },
+    "ETHUSDT": {
+     "n": 8,
+     "avg_R": 1.745,
+     "t": 1.15,
+     "win": 50.0
+    },
+    "LINKUSDT": {
+     "n": 9,
+     "avg_R": 0.884,
+     "t": 0.86,
+     "win": 44.4
+    },
+    "LTCUSDT": {
+     "n": 10,
+     "avg_R": 0.181,
+     "t": 0.27,
+     "win": 30.0
+    },
+    "SOLUSDT": {
+     "n": 7,
+     "avg_R": 3.146,
+     "t": 1.98,
+     "win": 85.7
+    },
+    "XRPUSDT": {
+     "n": 5,
+     "avg_R": -0.391,
+     "t": -0.94,
+     "win": 20.0
+    }
+   },
+   "symbols_positive": 9,
+   "by_year": {
+    "2020": {
+     "n": 19,
+     "avg_R": 5.09,
+     "t": 2.67,
+     "win": 52.6
+    },
+    "2021": {
+     "n": 33,
+     "avg_R": 1.704,
+     "t": 1.42,
+     "win": 39.4
+    },
+    "2022": {
+     "n": 27,
+     "avg_R": 0.275,
+     "t": 1.38,
+     "win": 55.6
+    }
+   },
+   "long": {
+    "n": 53,
+    "avg_R": 2.798,
+    "t": 2.71,
+    "win": 39.6
+   },
+   "short": {
+    "n": 26,
+    "avg_R": 0.464,
+    "t": 2.58,
+    "win": 65.4
+   },
+   "tails": {
+    "median_R": -0.068,
+    "max_R": 36.1,
+    "top5pct_sumR": 87.2,
+    "total_sumR": 160.4,
+    "top5pct_share_of_gross_wins": 0.44,
+    "avg_R_ex_top1pct": 1.593,
+    "t_ex_top1pct": 2.84,
+    "avg_bars": 41.1
+   },
+   "PASS": true
+  },
+  "a_donchian_1h": {
+   "params": {
+    "n": 120,
+    "k": 3.0
+   },
+   "tf": "1h",
+   "whole": {
+    "label": "",
+    "n": 1530,
+    "trades_per_month": 42.7,
+    "win_pct": 27.5,
+    "avg_R": 0.392,
+    "t_stat": 3.45,
+    "sum_R": 600.1,
+    "pf": 1.57,
+    "ret_pct@0.5%": 1338.2,
+    "max_dd_pct": 44.3,
+    "median_stop_pct": 4.153
+   },
+   "harsh": {
+    "label": "",
+    "n": 1530,
+    "trades_per_month": 42.7,
+    "win_pct": 27.3,
+    "avg_R": 0.368,
+    "t_stat": 3.26,
+    "sum_R": 562.6,
+    "pf": 1.53,
+    "ret_pct@0.5%": 1099.5,
+    "max_dd_pct": 45.5,
+    "median_stop_pct": 4.182
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 159,
+     "avg_R": 0.327,
+     "t": 1.35,
+     "win": 28.3
+    },
+    "AVAXUSDT": {
+     "n": 131,
+     "avg_R": 0.798,
+     "t": 1.48,
+     "win": 30.5
+    },
+    "BNBUSDT": {
+     "n": 163,
+     "avg_R": 0.646,
+     "t": 1.04,
+     "win": 26.4
+    },
+    "BTCUSDT": {
+     "n": 156,
+     "avg_R": 0.429,
+     "t": 1.58,
+     "win": 26.9
+    },
+    "DOGEUSDT": {
+     "n": 117,
+     "avg_R": 0.897,
+     "t": 1.77,
+     "win": 33.3
+    },
+    "ETHUSDT": {
+     "n": 171,
+     "avg_R": 0.391,
+     "t": 1.31,
+     "win": 28.1
+    },
+    "LINKUSDT": {
+     "n": 179,
+     "avg_R": -0.089,
+     "t": -0.59,
+     "win": 24.0
+    },
+    "LTCUSDT": {
+     "n": 164,
+     "avg_R": 0.013,
+     "t": 0.08,
+     "win": 27.4
+    },
+    "SOLUSDT": {
+     "n": 135,
+     "avg_R": 0.304,
+     "t": 1.1,
+     "win": 27.4
+    },
+    "XRPUSDT": {
+     "n": 155,
+     "avg_R": 0.465,
+     "t": 1.34,
+     "win": 24.5
+    }
+   },
+   "symbols_positive": 9,
+   "by_year": {
+    "2020": {
+     "n": 407,
+     "avg_R": 0.57,
+     "t": 2.78,
+     "win": 27.8
+    },
+    "2021": {
+     "n": 538,
+     "avg_R": 0.642,
+     "t": 2.44,
+     "win": 25.7
+    },
+    "2022": {
+     "n": 585,
+     "avg_R": 0.039,
+     "t": 0.4,
+     "win": 28.9
+    }
+   },
+   "long": {
+    "n": 809,
+    "avg_R": 0.718,
+    "t": 3.52,
+    "win": 25.3
+   },
+   "short": {
+    "n": 721,
+    "avg_R": 0.027,
+    "t": 0.37,
+    "win": 29.8
+   },
+   "tails": {
+    "median_R": -1.02,
+    "max_R": 95.4,
+    "top5pct_sumR": 1068.2,
+    "total_sumR": 600.1,
+    "top5pct_share_of_gross_wins": 0.65,
+    "avg_R_ex_top1pct": 0.074,
+    "t_ex_top1pct": 1.2,
+    "avg_bars": 88.9
+   },
+   "PASS": true
+  },
+  "a_donchian_4h": {
+   "params": {
+    "n": 20,
+    "k": 3.0
+   },
+   "tf": "4h",
+   "whole": {
+    "label": "",
+    "n": 1522,
+    "trades_per_month": 42.5,
+    "win_pct": 36.5,
+    "avg_R": 0.237,
+    "t_stat": 4.01,
+    "sum_R": 360.9,
+    "pf": 1.62,
+    "ret_pct@0.5%": 452.1,
+    "max_dd_pct": 18.9,
+    "median_stop_pct": 8.767
+   },
+   "harsh": {
+    "label": "",
+    "n": 1522,
+    "trades_per_month": 42.5,
+    "win_pct": 36.2,
+    "avg_R": 0.226,
+    "t_stat": 3.85,
+    "sum_R": 344.1,
+    "pf": 1.58,
+    "ret_pct@0.5%": 408.2,
+    "max_dd_pct": 19.5,
+    "median_stop_pct": 8.797
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 162,
+     "avg_R": 0.136,
+     "t": 1.09,
+     "win": 36.4
+    },
+    "AVAXUSDT": {
+     "n": 131,
+     "avg_R": 0.278,
+     "t": 1.49,
+     "win": 36.6
+    },
+    "BNBUSDT": {
+     "n": 158,
+     "avg_R": 0.328,
+     "t": 1.17,
+     "win": 42.4
+    },
+    "BTCUSDT": {
+     "n": 157,
+     "avg_R": 0.295,
+     "t": 1.98,
+     "win": 39.5
+    },
+    "DOGEUSDT": {
+     "n": 115,
+     "avg_R": 0.683,
+     "t": 1.8,
+     "win": 38.3
+    },
+    "ETHUSDT": {
+     "n": 174,
+     "avg_R": 0.193,
+     "t": 1.24,
+     "win": 32.8
+    },
+    "LINKUSDT": {
+     "n": 172,
+     "avg_R": 0.11,
+     "t": 1.02,
+     "win": 35.5
+    },
+    "LTCUSDT": {
+     "n": 167,
+     "avg_R": 0.07,
+     "t": 0.76,
+     "win": 37.7
+    },
+    "SOLUSDT": {
+     "n": 131,
+     "avg_R": 0.128,
+     "t": 1.12,
+     "win": 35.1
+    },
+    "XRPUSDT": {
+     "n": 155,
+     "avg_R": 0.29,
+     "t": 1.33,
+     "win": 31.0
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2020": {
+     "n": 398,
+     "avg_R": 0.413,
+     "t": 3.44,
+     "win": 36.2
+    },
+    "2021": {
+     "n": 559,
+     "avg_R": 0.263,
+     "t": 2.16,
+     "win": 34.0
+    },
+    "2022": {
+     "n": 565,
+     "avg_R": 0.088,
+     "t": 1.45,
+     "win": 39.1
+    }
+   },
+   "long": {
+    "n": 780,
+    "avg_R": 0.455,
+    "t": 4.19,
+    "win": 35.8
+   },
+   "short": {
+    "n": 742,
+    "avg_R": 0.008,
+    "t": 0.2,
+    "win": 37.2
+   },
+   "tails": {
+    "median_R": -0.312,
+    "max_R": 41.3,
+    "top5pct_sumR": 539.1,
+    "total_sumR": 360.9,
+    "top5pct_share_of_gross_wins": 0.57,
+    "avg_R_ex_top1pct": 0.07,
+    "t_ex_top1pct": 2.14,
+    "avg_bars": 28.0
+   },
+   "PASS": true
+  },
+  "b_emapb_1h": {
+   "params": {
+    "pair": "20_100",
+    "k": 3.0
+   },
+   "tf": "1h",
+   "whole": {
+    "label": "",
+    "n": 5111,
+    "trades_per_month": 142.6,
+    "win_pct": 23.5,
+    "avg_R": 0.152,
+    "t_stat": 4.66,
+    "sum_R": 777.2,
+    "pf": 1.43,
+    "ret_pct@0.5%": 3427.2,
+    "max_dd_pct": 37.3,
+    "median_stop_pct": 4.04
+   },
+   "harsh": {
+    "label": "",
+    "n": 5111,
+    "trades_per_month": 142.6,
+    "win_pct": 23.1,
+    "avg_R": 0.129,
+    "t_stat": 3.99,
+    "sum_R": 658.2,
+    "pf": 1.35,
+    "ret_pct@0.5%": 1859.4,
+    "max_dd_pct": 41.3,
+    "median_stop_pct": 4.07
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 578,
+     "avg_R": 0.141,
+     "t": 1.72,
+     "win": 22.8
+    },
+    "AVAXUSDT": {
+     "n": 434,
+     "avg_R": 0.2,
+     "t": 1.62,
+     "win": 24.7
+    },
+    "BNBUSDT": {
+     "n": 510,
+     "avg_R": 0.194,
+     "t": 1.6,
+     "win": 26.1
+    },
+    "BTCUSDT": {
+     "n": 525,
+     "avg_R": 0.114,
+     "t": 1.28,
+     "win": 22.5
+    },
+    "DOGEUSDT": {
+     "n": 513,
+     "avg_R": 0.264,
+     "t": 1.68,
+     "win": 20.7
+    },
+    "ETHUSDT": {
+     "n": 491,
+     "avg_R": 0.183,
+     "t": 1.52,
+     "win": 23.6
+    },
+    "LINKUSDT": {
+     "n": 508,
+     "avg_R": 0.153,
+     "t": 2.02,
+     "win": 28.0
+    },
+    "LTCUSDT": {
+     "n": 579,
+     "avg_R": 0.02,
+     "t": 0.34,
+     "win": 21.2
+    },
+    "SOLUSDT": {
+     "n": 409,
+     "avg_R": 0.169,
+     "t": 2.07,
+     "win": 27.1
+    },
+    "XRPUSDT": {
+     "n": 564,
+     "avg_R": 0.117,
+     "t": 1.22,
+     "win": 20.4
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2020": {
+     "n": 1456,
+     "avg_R": 0.157,
+     "t": 2.48,
+     "win": 20.6
+    },
+    "2021": {
+     "n": 1863,
+     "avg_R": 0.208,
+     "t": 3.48,
+     "win": 25.4
+    },
+    "2022": {
+     "n": 1792,
+     "avg_R": 0.091,
+     "t": 1.93,
+     "win": 23.9
+    }
+   },
+   "long": {
+    "n": 2545,
+    "avg_R": 0.28,
+    "t": 4.67,
+    "win": 23.8
+   },
+   "short": {
+    "n": 2566,
+    "avg_R": 0.025,
+    "t": 0.97,
+    "win": 23.3
+   },
+   "tails": {
+    "median_R": -0.315,
+    "max_R": 51.8,
+    "top5pct_sumR": 1783.1,
+    "total_sumR": 777.2,
+    "top5pct_share_of_gross_wins": 0.69,
+    "avg_R_ex_top1pct": -0.018,
+    "t_ex_top1pct": -1.11,
+    "avg_bars": 36.0
+   },
+   "PASS": true
+  },
+  "b_emapb_4h": {
+   "params": {
+    "pair": "50_200",
+    "k": 3.0
+   },
+   "tf": "4h",
+   "whole": {
+    "label": "",
+    "n": 592,
+    "trades_per_month": 17.0,
+    "win_pct": 28.2,
+    "avg_R": 0.85,
+    "t_stat": 4.1,
+    "sum_R": 503.4,
+    "pf": 3.16,
+    "ret_pct@0.5%": 942.1,
+    "max_dd_pct": 22.6,
+    "median_stop_pct": 8.79
+   },
+   "harsh": {
+    "label": "",
+    "n": 592,
+    "trades_per_month": 17.0,
+    "win_pct": 27.7,
+    "avg_R": 0.837,
+    "t_stat": 4.05,
+    "sum_R": 495.5,
+    "pf": 3.09,
+    "ret_pct@0.5%": 903.1,
+    "max_dd_pct": 23.1,
+    "median_stop_pct": 8.822
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 53,
+     "avg_R": 1.474,
+     "t": 1.89,
+     "win": 39.6
+    },
+    "AVAXUSDT": {
+     "n": 50,
+     "avg_R": 1.262,
+     "t": 1.42,
+     "win": 22.0
+    },
+    "BNBUSDT": {
+     "n": 60,
+     "avg_R": 1.106,
+     "t": 1.32,
+     "win": 26.7
+    },
+    "BTCUSDT": {
+     "n": 63,
+     "avg_R": 0.435,
+     "t": 1.15,
+     "win": 27.0
+    },
+    "DOGEUSDT": {
+     "n": 53,
+     "avg_R": 1.828,
+     "t": 1.53,
+     "win": 34.0
+    },
+    "ETHUSDT": {
+     "n": 67,
+     "avg_R": 0.791,
+     "t": 1.63,
+     "win": 23.9
+    },
+    "LINKUSDT": {
+     "n": 65,
+     "avg_R": 0.639,
+     "t": 0.88,
+     "win": 26.2
+    },
+    "LTCUSDT": {
+     "n": 58,
+     "avg_R": 0.328,
+     "t": 1.36,
+     "win": 36.2
+    },
+    "SOLUSDT": {
+     "n": 46,
+     "avg_R": 0.766,
+     "t": 1.52,
+     "win": 30.4
+    },
+    "XRPUSDT": {
+     "n": 77,
+     "avg_R": 0.296,
+     "t": 1.15,
+     "win": 20.8
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2020": {
+     "n": 173,
+     "avg_R": 1.135,
+     "t": 2.61,
+     "win": 24.3
+    },
+    "2021": {
+     "n": 209,
+     "avg_R": 1.329,
+     "t": 3.02,
+     "win": 34.9
+    },
+    "2022": {
+     "n": 210,
+     "avg_R": 0.139,
+     "t": 1.02,
+     "win": 24.8
+    }
+   },
+   "long": {
+    "n": 309,
+    "avg_R": 1.422,
+    "t": 3.73,
+    "win": 27.2
+   },
+   "short": {
+    "n": 283,
+    "avg_R": 0.227,
+    "t": 2.04,
+    "win": 29.3
+   },
+   "tails": {
+    "median_R": -0.333,
+    "max_R": 56.0,
+    "top5pct_sumR": 525.0,
+    "total_sumR": 503.4,
+    "top5pct_share_of_gross_wins": 0.71,
+    "avg_R_ex_top1pct": 0.476,
+    "t_ex_top1pct": 3.94,
+    "avg_bars": 71.5
+   },
+   "PASS": true
+  },
+  "c_tsmom_1d": {
+   "params": {
+    "K": 72,
+    "z0": 0.5
+   },
+   "tf": "1d",
+   "whole": {
+    "label": "",
+    "n": 363,
+    "trades_per_month": 11.0,
+    "win_pct": 27.0,
+    "avg_R": 0.745,
+    "t_stat": 2.16,
+    "sum_R": 270.3,
+    "pf": 2.14,
+    "ret_pct@0.5%": 229.0,
+    "max_dd_pct": 23.4,
+    "median_stop_pct": 11.927
+   },
+   "harsh": {
+    "label": "",
+    "n": 363,
+    "trades_per_month": 11.0,
+    "win_pct": 27.0,
+    "avg_R": 0.736,
+    "t_stat": 2.14,
+    "sum_R": 267.0,
+    "pf": 2.12,
+    "ret_pct@0.5%": 224.0,
+    "max_dd_pct": 23.5,
+    "median_stop_pct": 11.961
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 42,
+     "avg_R": 0.678,
+     "t": 1.19,
+     "win": 33.3
+    },
+    "AVAXUSDT": {
+     "n": 33,
+     "avg_R": 0.996,
+     "t": 1.05,
+     "win": 18.2
+    },
+    "BNBUSDT": {
+     "n": 39,
+     "avg_R": 0.893,
+     "t": 0.94,
+     "win": 28.2
+    },
+    "BTCUSDT": {
+     "n": 42,
+     "avg_R": 0.487,
+     "t": 0.94,
+     "win": 28.6
+    },
+    "DOGEUSDT": {
+     "n": 29,
+     "avg_R": 3.359,
+     "t": 0.94,
+     "win": 24.1
+    },
+    "ETHUSDT": {
+     "n": 39,
+     "avg_R": 0.413,
+     "t": 0.85,
+     "win": 30.8
+    },
+    "LINKUSDT": {
+     "n": 41,
+     "avg_R": 0.081,
+     "t": 0.24,
+     "win": 22.0
+    },
+    "LTCUSDT": {
+     "n": 29,
+     "avg_R": 0.37,
+     "t": 0.76,
+     "win": 34.5
+    },
+    "SOLUSDT": {
+     "n": 27,
+     "avg_R": 1.346,
+     "t": 1.29,
+     "win": 29.6
+    },
+    "XRPUSDT": {
+     "n": 42,
+     "avg_R": -0.244,
+     "t": -0.74,
+     "win": 21.4
+    }
+   },
+   "symbols_positive": 9,
+   "by_year": {
+    "2020": {
+     "n": 77,
+     "avg_R": 2.725,
+     "t": 1.86,
+     "win": 33.8
+    },
+    "2021": {
+     "n": 130,
+     "avg_R": 0.693,
+     "t": 1.95,
+     "win": 30.0
+    },
+    "2022": {
+     "n": 156,
+     "avg_R": -0.19,
+     "t": -1.47,
+     "win": 21.2
+    }
+   },
+   "long": {
+    "n": 169,
+    "avg_R": 1.833,
+    "t": 2.55,
+    "win": 33.1
+   },
+   "short": {
+    "n": 194,
+    "avg_R": -0.203,
+    "t": -1.81,
+    "win": 21.6
+   },
+   "tails": {
+    "median_R": -1.006,
+    "max_R": 102.6,
+    "top5pct_sumR": 346.4,
+    "total_sumR": 270.3,
+    "top5pct_share_of_gross_wins": 0.68,
+    "avg_R_ex_top1pct": 0.293,
+    "t_ex_top1pct": 1.85,
+    "avg_bars": 20.8
+   },
+   "PASS": true
+  },
+  "c_tsmom_1h": {
+   "params": {
+    "K": 168,
+    "z0": 0.5
+   },
+   "tf": "1h",
+   "whole": {
+    "label": "",
+    "n": 1613,
+    "trades_per_month": 45.5,
+    "win_pct": 37.4,
+    "avg_R": 0.156,
+    "t_stat": 4.4,
+    "sum_R": 250.8,
+    "pf": 1.68,
+    "ret_pct@0.5%": 236.9,
+    "max_dd_pct": 22.5,
+    "median_stop_pct": 13.412
+   },
+   "harsh": {
+    "label": "",
+    "n": 1613,
+    "trades_per_month": 45.5,
+    "win_pct": 36.8,
+    "avg_R": 0.149,
+    "t_stat": 4.22,
+    "sum_R": 239.9,
+    "pf": 1.64,
+    "ret_pct@0.5%": 219.1,
+    "max_dd_pct": 23.0,
+    "median_stop_pct": 13.447
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 169,
+     "avg_R": 0.153,
+     "t": 1.69,
+     "win": 33.7
+    },
+    "AVAXUSDT": {
+     "n": 127,
+     "avg_R": 0.313,
+     "t": 1.52,
+     "win": 34.6
+    },
+    "BNBUSDT": {
+     "n": 183,
+     "avg_R": 0.104,
+     "t": 1.07,
+     "win": 35.5
+    },
+    "BTCUSDT": {
+     "n": 169,
+     "avg_R": 0.135,
+     "t": 1.66,
+     "win": 39.6
+    },
+    "DOGEUSDT": {
+     "n": 140,
+     "avg_R": 0.283,
+     "t": 1.66,
+     "win": 43.6
+    },
+    "ETHUSDT": {
+     "n": 175,
+     "avg_R": 0.131,
+     "t": 1.38,
+     "win": 34.9
+    },
+    "LINKUSDT": {
+     "n": 171,
+     "avg_R": 0.103,
+     "t": 1.38,
+     "win": 42.1
+    },
+    "LTCUSDT": {
+     "n": 176,
+     "avg_R": 0.028,
+     "t": 0.49,
+     "win": 36.9
+    },
+    "SOLUSDT": {
+     "n": 120,
+     "avg_R": 0.239,
+     "t": 1.97,
+     "win": 38.3
+    },
+    "XRPUSDT": {
+     "n": 183,
+     "avg_R": 0.162,
+     "t": 1.32,
+     "win": 36.1
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2020": {
+     "n": 440,
+     "avg_R": 0.206,
+     "t": 2.87,
+     "win": 38.4
+    },
+    "2021": {
+     "n": 567,
+     "avg_R": 0.214,
+     "t": 2.96,
+     "win": 38.8
+    },
+    "2022": {
+     "n": 606,
+     "avg_R": 0.065,
+     "t": 1.63,
+     "win": 35.5
+    }
+   },
+   "long": {
+    "n": 820,
+    "avg_R": 0.286,
+    "t": 4.47,
+    "win": 36.7
+   },
+   "short": {
+    "n": 793,
+    "avg_R": 0.02,
+    "t": 0.76,
+    "win": 38.2
+   },
+   "tails": {
+    "median_R": -0.121,
+    "max_R": 19.4,
+    "top5pct_sumR": 375.4,
+    "total_sumR": 250.8,
+    "top5pct_share_of_gross_wins": 0.6,
+    "avg_R_ex_top1pct": 0.051,
+    "t_ex_top1pct": 2.4,
+    "avg_bars": 111.4
+   },
+   "PASS": true
+  },
+  "c_tsmom_4h": {
+   "params": {
+    "K": 168,
+    "z0": 0.5
+   },
+   "tf": "4h",
+   "whole": {
+    "label": "",
+    "n": 482,
+    "trades_per_month": 13.8,
+    "win_pct": 41.3,
+    "avg_R": 0.991,
+    "t_stat": 3.7,
+    "sum_R": 477.6,
+    "pf": 3.52,
+    "ret_pct@0.5%": 805.9,
+    "max_dd_pct": 11.3,
+    "median_stop_pct": 12.977
+   },
+   "harsh": {
+    "label": "",
+    "n": 482,
+    "trades_per_month": 13.8,
+    "win_pct": 41.1,
+    "avg_R": 0.981,
+    "t_stat": 3.68,
+    "sum_R": 473.1,
+    "pf": 3.47,
+    "ret_pct@0.5%": 786.3,
+    "max_dd_pct": 11.5,
+    "median_stop_pct": 13.011
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 45,
+     "avg_R": 1.285,
+     "t": 1.35,
+     "win": 42.2
+    },
+    "AVAXUSDT": {
+     "n": 42,
+     "avg_R": 1.068,
+     "t": 1.22,
+     "win": 33.3
+    },
+    "BNBUSDT": {
+     "n": 51,
+     "avg_R": 1.475,
+     "t": 1.12,
+     "win": 45.1
+    },
+    "BTCUSDT": {
+     "n": 43,
+     "avg_R": 0.949,
+     "t": 2.12,
+     "win": 48.8
+    },
+    "DOGEUSDT": {
+     "n": 46,
+     "avg_R": 2.152,
+     "t": 1.31,
+     "win": 41.3
+    },
+    "ETHUSDT": {
+     "n": 54,
+     "avg_R": 0.613,
+     "t": 1.28,
+     "win": 33.3
+    },
+    "LINKUSDT": {
+     "n": 58,
+     "avg_R": 0.501,
+     "t": 0.9,
+     "win": 34.5
+    },
+    "LTCUSDT": {
+     "n": 49,
+     "avg_R": 0.435,
+     "t": 1.26,
+     "win": 44.9
+    },
+    "SOLUSDT": {
+     "n": 37,
+     "avg_R": 1.227,
+     "t": 1.82,
+     "win": 48.6
+    },
+    "XRPUSDT": {
+     "n": 57,
+     "avg_R": 0.546,
+     "t": 1.47,
+     "win": 43.9
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2020": {
+     "n": 118,
+     "avg_R": 2.653,
+     "t": 2.73,
+     "win": 39.8
+    },
+    "2021": {
+     "n": 164,
+     "avg_R": 0.904,
+     "t": 2.83,
+     "win": 43.9
+    },
+    "2022": {
+     "n": 200,
+     "avg_R": 0.082,
+     "t": 0.86,
+     "win": 40.0
+    }
+   },
+   "long": {
+    "n": 239,
+    "avg_R": 1.861,
+    "t": 3.53,
+    "win": 40.2
+   },
+   "short": {
+    "n": 243,
+    "avg_R": 0.135,
+    "t": 1.57,
+    "win": 42.4
+   },
+   "tails": {
+    "median_R": -0.183,
+    "max_R": 72.1,
+    "top5pct_sumR": 463.4,
+    "total_sumR": 477.6,
+    "top5pct_share_of_gross_wins": 0.69,
+    "avg_R_ex_top1pct": 0.557,
+    "t_ex_top1pct": 3.93,
+    "avg_bars": 98.9
+   },
+   "PASS": true
+  },
+  "d_mtf_15m": {
+   "params": {
+    "n": 55,
+    "htf": "ema20_50"
+   },
+   "tf": "15m",
+   "whole": {
+    "label": "",
+    "n": 2539,
+    "trades_per_month": 71.1,
+    "win_pct": 33.3,
+    "avg_R": 0.197,
+    "t_stat": 4.14,
+    "sum_R": 499.7,
+    "pf": 1.46,
+    "ret_pct@0.5%": 924.6,
+    "max_dd_pct": 39.5,
+    "median_stop_pct": 5.904
+   },
+   "harsh": {
+    "label": "",
+    "n": 2539,
+    "trades_per_month": 71.1,
+    "win_pct": 32.7,
+    "avg_R": 0.181,
+    "t_stat": 3.83,
+    "sum_R": 458.9,
+    "pf": 1.42,
+    "ret_pct@0.5%": 737.6,
+    "max_dd_pct": 40.9,
+    "median_stop_pct": 5.933
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 257,
+     "avg_R": 0.255,
+     "t": 2.06,
+     "win": 35.4
+    },
+    "AVAXUSDT": {
+     "n": 208,
+     "avg_R": 0.259,
+     "t": 1.44,
+     "win": 37.0
+    },
+    "BNBUSDT": {
+     "n": 266,
+     "avg_R": 0.2,
+     "t": 1.21,
+     "win": 33.1
+    },
+    "BTCUSDT": {
+     "n": 265,
+     "avg_R": 0.145,
+     "t": 1.26,
+     "win": 32.1
+    },
+    "DOGEUSDT": {
+     "n": 211,
+     "avg_R": 0.432,
+     "t": 1.46,
+     "win": 29.9
+    },
+    "ETHUSDT": {
+     "n": 277,
+     "avg_R": 0.222,
+     "t": 1.61,
+     "win": 36.1
+    },
+    "LINKUSDT": {
+     "n": 281,
+     "avg_R": 0.103,
+     "t": 1.05,
+     "win": 33.5
+    },
+    "LTCUSDT": {
+     "n": 277,
+     "avg_R": 0.084,
+     "t": 0.88,
+     "win": 30.7
+    },
+    "SOLUSDT": {
+     "n": 218,
+     "avg_R": 0.157,
+     "t": 1.4,
+     "win": 35.3
+    },
+    "XRPUSDT": {
+     "n": 279,
+     "avg_R": 0.178,
+     "t": 1.13,
+     "win": 30.5
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2020": {
+     "n": 672,
+     "avg_R": 0.233,
+     "t": 2.49,
+     "win": 30.2
+    },
+    "2021": {
+     "n": 957,
+     "avg_R": 0.243,
+     "t": 2.72,
+     "win": 35.6
+    },
+    "2022": {
+     "n": 910,
+     "avg_R": 0.121,
+     "t": 1.92,
+     "win": 33.1
+    }
+   },
+   "long": {
+    "n": 1243,
+    "avg_R": 0.376,
+    "t": 4.23,
+    "win": 33.8
+   },
+   "short": {
+    "n": 1296,
+    "avg_R": 0.025,
+    "t": 0.69,
+    "win": 32.8
+   },
+   "tails": {
+    "median_R": -0.391,
+    "max_R": 45.5,
+    "top5pct_sumR": 933.6,
+    "total_sumR": 499.7,
+    "top5pct_share_of_gross_wins": 0.59,
+    "avg_R_ex_top1pct": 0.027,
+    "t_ex_top1pct": 0.99,
+    "avg_bars": 276.4
+   },
+   "PASS": true
+  },
+  "d_mtf_1h": {
+   "params": {
+    "n": 55,
+    "htf": "ema50_200"
+   },
+   "tf": "1h",
+   "whole": {
+    "label": "",
+    "n": 1200,
+    "trades_per_month": 34.5,
+    "win_pct": 34.3,
+    "avg_R": 0.41,
+    "t_stat": 3.82,
+    "sum_R": 492.1,
+    "pf": 1.79,
+    "ret_pct@0.5%": 872.3,
+    "max_dd_pct": 33.1,
+    "median_stop_pct": 5.684
+   },
+   "harsh": {
+    "label": "",
+    "n": 1200,
+    "trades_per_month": 34.5,
+    "win_pct": 34.2,
+    "avg_R": 0.392,
+    "t_stat": 3.68,
+    "sum_R": 470.5,
+    "pf": 1.74,
+    "ret_pct@0.5%": 774.9,
+    "max_dd_pct": 34.2,
+    "median_stop_pct": 5.716
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 118,
+     "avg_R": 0.481,
+     "t": 2.13,
+     "win": 39.8
+    },
+    "AVAXUSDT": {
+     "n": 98,
+     "avg_R": 0.494,
+     "t": 1.38,
+     "win": 38.8
+    },
+    "BNBUSDT": {
+     "n": 121,
+     "avg_R": 0.72,
+     "t": 1.24,
+     "win": 36.4
+    },
+    "BTCUSDT": {
+     "n": 137,
+     "avg_R": 0.205,
+     "t": 1.02,
+     "win": 29.9
+    },
+    "DOGEUSDT": {
+     "n": 99,
+     "avg_R": 0.895,
+     "t": 1.34,
+     "win": 32.3
+    },
+    "ETHUSDT": {
+     "n": 129,
+     "avg_R": 0.525,
+     "t": 1.76,
+     "win": 41.1
+    },
+    "LINKUSDT": {
+     "n": 136,
+     "avg_R": 0.035,
+     "t": 0.21,
+     "win": 30.1
+    },
+    "LTCUSDT": {
+     "n": 139,
+     "avg_R": 0.071,
+     "t": 0.44,
+     "win": 26.6
+    },
+    "SOLUSDT": {
+     "n": 93,
+     "avg_R": 0.627,
+     "t": 2.37,
+     "win": 44.1
+    },
+    "XRPUSDT": {
+     "n": 130,
+     "avg_R": 0.327,
+     "t": 1.1,
+     "win": 29.2
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2020": {
+     "n": 285,
+     "avg_R": 0.678,
+     "t": 3.15,
+     "win": 35.1
+    },
+    "2021": {
+     "n": 464,
+     "avg_R": 0.56,
+     "t": 2.42,
+     "win": 33.0
+    },
+    "2022": {
+     "n": 451,
+     "avg_R": 0.087,
+     "t": 1.1,
+     "win": 35.3
+    }
+   },
+   "long": {
+    "n": 600,
+    "avg_R": 0.709,
+    "t": 3.48,
+    "win": 33.2
+   },
+   "short": {
+    "n": 600,
+    "avg_R": 0.112,
+    "t": 1.71,
+    "win": 35.5
+   },
+   "tails": {
+    "median_R": -0.559,
+    "max_R": 68.1,
+    "top5pct_sumR": 662.8,
+    "total_sumR": 492.1,
+    "top5pct_share_of_gross_wins": 0.59,
+    "avg_R_ex_top1pct": 0.143,
+    "t_ex_top1pct": 2.62,
+    "avg_bars": 93.2
+   },
+   "PASS": true
+  },
+  "e_regime_1h": {
+   "params": {
+    "n": 120,
+    "k": 3.0,
+    "regime": "dvol_lo"
+   },
+   "tf": "1h",
+   "whole": {
+    "label": "",
+    "n": 677,
+    "trades_per_month": 33.6,
+    "win_pct": 29.5,
+    "avg_R": 0.231,
+    "t_stat": 2.12,
+    "sum_R": 156.7,
+    "pf": 1.35,
+    "ret_pct@0.5%": 105.0,
+    "max_dd_pct": 33.9,
+    "median_stop_pct": 3.797
+   },
+   "harsh": {
+    "label": "",
+    "n": 677,
+    "trades_per_month": 33.6,
+    "win_pct": 29.4,
+    "avg_R": 0.207,
+    "t_stat": 1.92,
+    "sum_R": 140.3,
+    "pf": 1.31,
+    "ret_pct@0.5%": 89.1,
+    "max_dd_pct": 35.0,
+    "median_stop_pct": 3.825
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 71,
+     "avg_R": 0.342,
+     "t": 1.0,
+     "win": 33.8
+    },
+    "AVAXUSDT": {
+     "n": 74,
+     "avg_R": 0.494,
+     "t": 1.22,
+     "win": 31.1
+    },
+    "BNBUSDT": {
+     "n": 74,
+     "avg_R": -0.017,
+     "t": -0.06,
+     "win": 28.4
+    },
+    "BTCUSDT": {
+     "n": 65,
+     "avg_R": 0.024,
+     "t": 0.09,
+     "win": 27.7
+    },
+    "DOGEUSDT": {
+     "n": 63,
+     "avg_R": 0.464,
+     "t": 0.89,
+     "win": 34.9
+    },
+    "ETHUSDT": {
+     "n": 58,
+     "avg_R": 0.399,
+     "t": 1.12,
+     "win": 31.0
+    },
+    "LINKUSDT": {
+     "n": 67,
+     "avg_R": 0.11,
+     "t": 0.46,
+     "win": 29.9
+    },
+    "LTCUSDT": {
+     "n": 69,
+     "avg_R": -0.004,
+     "t": -0.02,
+     "win": 30.4
+    },
+    "SOLUSDT": {
+     "n": 69,
+     "avg_R": 0.42,
+     "t": 0.96,
+     "win": 26.1
+    },
+    "XRPUSDT": {
+     "n": 67,
+     "avg_R": 0.106,
+     "t": 0.35,
+     "win": 22.4
+    }
+   },
+   "symbols_positive": 8,
+   "by_year": {
+    "2021": {
+     "n": 252,
+     "avg_R": 0.46,
+     "t": 2.2,
+     "win": 29.8
+    },
+    "2022": {
+     "n": 425,
+     "avg_R": 0.096,
+     "t": 0.79,
+     "win": 29.4
+    }
+   },
+   "long": {
+    "n": 363,
+    "avg_R": 0.243,
+    "t": 1.34,
+    "win": 22.6
+   },
+   "short": {
+    "n": 314,
+    "avg_R": 0.218,
+    "t": 2.03,
+    "win": 37.6
+   },
+   "tails": {
+    "median_R": -1.022,
+    "max_R": 28.7,
+    "top5pct_sumR": 330.6,
+    "total_sumR": 156.7,
+    "top5pct_share_of_gross_wins": 0.54,
+    "avg_R_ex_top1pct": 0.059,
+    "t_ex_top1pct": 0.72,
+    "avg_bars": 91.5
+   },
+   "PASS": true
+  },
+  "e_regime_4h": {
+   "params": {
+    "n": 20,
+    "k": 3.0,
+    "regime": "dvol_lo"
+   },
+   "tf": "4h",
+   "whole": {
+    "label": "",
+    "n": 666,
+    "trades_per_month": 33.0,
+    "win_pct": 38.7,
+    "avg_R": 0.147,
+    "t_stat": 2.38,
+    "sum_R": 98.0,
+    "pf": 1.38,
+    "ret_pct@0.5%": 59.9,
+    "max_dd_pct": 14.5,
+    "median_stop_pct": 7.896
+   },
+   "harsh": {
+    "label": "",
+    "n": 666,
+    "trades_per_month": 33.0,
+    "win_pct": 38.4,
+    "avg_R": 0.136,
+    "t_stat": 2.21,
+    "sum_R": 90.5,
+    "pf": 1.34,
+    "ret_pct@0.5%": 54.0,
+    "max_dd_pct": 15.2,
+    "median_stop_pct": 7.924
+   },
+   "per_symbol": {
+    "ADAUSDT": {
+     "n": 72,
+     "avg_R": 0.04,
+     "t": 0.24,
+     "win": 37.5
+    },
+    "AVAXUSDT": {
+     "n": 71,
+     "avg_R": 0.322,
+     "t": 1.37,
+     "win": 38.0
+    },
+    "BNBUSDT": {
+     "n": 66,
+     "avg_R": 0.07,
+     "t": 0.38,
+     "win": 39.4
+    },
+    "BTCUSDT": {
+     "n": 66,
+     "avg_R": 0.093,
+     "t": 0.6,
+     "win": 42.4
+    },
+    "DOGEUSDT": {
+     "n": 63,
+     "avg_R": 0.363,
+     "t": 1.0,
+     "win": 34.9
+    },
+    "ETHUSDT": {
+     "n": 61,
+     "avg_R": 0.188,
+     "t": 1.18,
+     "win": 39.3
+    },
+    "LINKUSDT": {
+     "n": 67,
+     "avg_R": 0.095,
+     "t": 0.79,
+     "win": 41.8
+    },
+    "LTCUSDT": {
+     "n": 70,
+     "avg_R": 0.042,
+     "t": 0.33,
+     "win": 41.4
+    },
+    "SOLUSDT": {
+     "n": 68,
+     "avg_R": 0.189,
+     "t": 1.08,
+     "win": 35.3
+    },
+    "XRPUSDT": {
+     "n": 62,
+     "avg_R": 0.081,
+     "t": 0.45,
+     "win": 37.1
+    }
+   },
+   "symbols_positive": 10,
+   "by_year": {
+    "2021": {
+     "n": 253,
+     "avg_R": 0.177,
+     "t": 1.71,
+     "win": 36.8
+    },
+    "2022": {
+     "n": 413,
+     "avg_R": 0.129,
+     "t": 1.67,
+     "win": 40.0
+    }
+   },
+   "long": {
+    "n": 346,
+    "avg_R": 0.143,
+    "t": 1.36,
+    "win": 32.4
+   },
+   "short": {
+    "n": 320,
+    "avg_R": 0.152,
+    "t": 2.48,
+    "win": 45.6
+   },
+   "tails": {
+    "median_R": -0.309,
+    "max_R": 20.8,
+    "top5pct_sumR": 165.9,
+    "total_sumR": 98.0,
+    "top5pct_share_of_gross_wins": 0.46,
+    "avg_R_ex_top1pct": 0.053,
+    "t_ex_top1pct": 1.17,
+    "avg_bars": 27.8
+   },
+   "PASS": true
+  }
+ }
+}
