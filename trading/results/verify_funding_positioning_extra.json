@@ -1,0 +1,133 @@
+{
+ "per_year": {
+  "2024": {
+   "n": 714,
+   "win_pct": 45.7,
+   "avg_R": 0.122,
+   "t_stat": 2.76,
+   "t_cl_week": 2.0,
+   "ret_pct@0.5%": 52.5,
+   "max_dd_pct": 8.9,
+   "sym_pos": 7,
+   "harsh_avg_R": 0.104
+  },
+  "2025": {
+   "n": 811,
+   "win_pct": 46.2,
+   "avg_R": 0.07,
+   "t_stat": 1.74,
+   "t_cl_week": 1.41,
+   "ret_pct@0.5%": 31.0,
+   "max_dd_pct": 15.5,
+   "sym_pos": 8,
+   "harsh_avg_R": 0.052
+  },
+  "2026": {
+   "n": 461,
+   "win_pct": 46.2,
+   "avg_R": 0.105,
+   "t_stat": 1.98,
+   "t_cl_week": 1.06,
+   "ret_pct@0.5%": 26.5,
+   "max_dd_pct": 17.9,
+   "sym_pos": 7,
+   "harsh_avg_R": 0.082
+  }
+ },
+ "altOOS_per_symbol": {
+  "ADAUSDT": {
+   "n": 103,
+   "avg_R": 0.098,
+   "harsh_avg_R": 0.082
+  },
+  "AVAXUSDT": {
+   "n": 87,
+   "avg_R": 0.08,
+   "harsh_avg_R": 0.063
+  },
+  "BNBUSDT": {
+   "n": 86,
+   "avg_R": 0.044,
+   "harsh_avg_R": 0.016
+  },
+  "BTCUSDT": {
+   "n": 71,
+   "avg_R": 0.239,
+   "harsh_avg_R": 0.205
+  },
+  "DOGEUSDT": {
+   "n": 102,
+   "avg_R": -0.008,
+   "harsh_avg_R": -0.025
+  },
+  "ETHUSDT": {
+   "n": 79,
+   "avg_R": 0.236,
+   "harsh_avg_R": 0.214
+  },
+  "LINKUSDT": {
+   "n": 89,
+   "avg_R": 0.009,
+   "harsh_avg_R": -0.008
+  },
+  "LTCUSDT": {
+   "n": 92,
+   "avg_R": 0.018,
+   "harsh_avg_R": -0.003
+  },
+  "SOLUSDT": {
+   "n": 81,
+   "avg_R": 0.128,
+   "harsh_avg_R": 0.109
+  },
+  "XRPUSDT": {
+   "n": 94,
+   "avg_R": 0.121,
+   "harsh_avg_R": 0.1
+  }
+ },
+ "altOOS_harsh": {
+  "n": 884,
+  "trades_per_month": 63.2,
+  "win_pct": 45.5,
+  "avg_R": 0.069,
+  "t_stat": 1.81,
+  "t_stat_day_cluster": 1.39,
+  "sum_R": 61.3,
+  "pf": 1.15,
+  "ret_pct@0.5%": 33.9,
+  "max_dd_pct": 19.5,
+  "median_stop_pct": 4.082,
+  "t_cl_week": 1.12,
+  "sym_pos": 7,
+  "n_sym": 10
+ },
+ "null_200perm_symbol_month": {
+  "n_perm": 200,
+  "seed": 2026,
+  "OOS_2025-01..": {
+   "n": 1272,
+   "real_avg_R": 0.0827,
+   "null_mean": 0.0012,
+   "null_sd": 0.0292,
+   "null_p95": 0.0525,
+   "p_value": 0.005
+  },
+  "altOOS_2025-07..": {
+   "n": 884,
+   "real_avg_R": 0.0903,
+   "null_mean": -0.0038,
+   "null_sd": 0.0327,
+   "null_p95": 0.0501,
+   "p_value": 0.005
+  },
+  "IS_2024": {
+   "n": 714,
+   "real_avg_R": 0.1217,
+   "null_mean": 0.0036,
+   "null_sd": 0.0395,
+   "null_p95": 0.0645,
+   "p_value": 0.005
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "n_events": 2095,
+ "n_IS": 798,
+ "n_OOS": 1297,
+ "base_rate_y7": 0.031338874660214004,
+ "share_fund_neg_event": 0.18520286396181385,
+ "share_fund_neg_panel": 0.19281649138451049,
+ "share_age_lt90_event": 0.15990453460620524,
+ "share_age_lt90_panel": 0.0779878832384799,
+ "share_ann14_event": 0.005250596658711217,
+ "share_ann14_panel": 0.006407196621993758,
+ "pump_rate_by_size_quintile": [
+  {
+   "size_q": 0,
+   "pump_rate": 0.026738802476200384,
+   "n": 76892
+  },
+  {
+   "size_q": 1,
+   "pump_rate": 0.0313977929584866,
+   "n": 76120
+  },
+  {
+   "size_q": 2,
+   "pump_rate": 0.032316568319512164,
+   "n": 76091
+  },
+  {
+   "size_q": 3,
+   "pump_rate": 0.035667367314766156,
+   "n": 76120
+  },
+  {
+   "size_q": 4,
+   "pump_rate": 0.030625693221113068,
+   "n": 76635
+  }
+ ],
+ "pump_rate_by_age": [
+  {
+   "age_b": "30-90",
+   "pump_rate": 0.05995632320825888,
+   "n": 30222
+  },
+  {
+   "age_b": "90-180",
+   "pump_rate": 0.05071495720152392,
+   "n": 40422
+  },
+  {
+   "age_b": "180-365",
+   "pump_rate": 0.04448514574861081,
+   "n": 64426
+  },
+  {
+   "age_b": ">365",
+   "pump_rate": 0.021228746940694036,
+   "n": 246788
+  }
+ ],
+ "post_peak": {
+  "median_ret_peak_to_14d": -0.1259748050389921,
+  "median_ret_peak_to_30d": -0.1730085582620144,
+  "median_base_to_30d_after_peak": 0.2573405482125432,
+  "share_below_base_30d_after_peak": 0.22911694510739858,
+  "median_days_to_peak": 7.0,
+  "median_peak_gain": 0.4700282994597375
+ }
+}

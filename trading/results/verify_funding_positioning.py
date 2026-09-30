@@ -199,7 +199,11 @@ def alt_split():
         print(var, tf, best["params"], "altIS", v["altIS"].get("n"), v["altIS"].get("avg_R"), v["altIS"].get("t_stat"),
               "| altOOS", o.get("n"), o.get("avg_R"), o.get("t_stat"), "harsh", v["altOOS_harsh_avgR"], v["verdict"], flush=True)
     r1 = {k: v for k, v in res.items() if v["group"] == "round1"}
-    fam = max(r1, key=lambda k: (v := r1[k]["altIS"]).get("t_stat") if v.get("n", 0) >= 30 else -1e9)
+    def _sc(k):
+        v = r1[k]["altIS"]
+        return v.get("t_stat") if v.get("n", 0) >= 30 and v.get("t_stat") is not None else -1e9
+    fam = max(r1, key=_sc)
+    json.dump(res, open("results/verify_funding_positioning_alt.json", "w"), indent=1, default=str)
     return {"variants": res, "family_pick_by_altIS_t_round1": fam,
             "family_pick_altOOS": res[fam]["altOOS"], "family_pick_verdict": res[fam]["verdict"]}
 

@@ -13,6 +13,7 @@ import os
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 import urllib.error
 import zipfile
@@ -39,6 +40,7 @@ def months(start=START, end=END):
 
 
 def get(url, tries=5):
+    url = urllib.parse.quote(url, safe=":/?&=%")   # non-ASCII symbols (e.g. 2025 Chinese-name memecoins)
     for k in range(tries):
         try:
             with urllib.request.urlopen(url, timeout=60) as r:

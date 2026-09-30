@@ -1,0 +1,82 @@
+{
+ "OOS_total_gross_sum": 0.4863,
+ "top10_symbol_days_sum": 0.2828,
+ "top50_symbol_days_sum": 0.8622,
+ "bottom10_symbol_days_sum": -0.1323,
+ "top10_symbols": {
+  "MYXUSDT": 0.0924,
+  "AIOTUSDT": 0.0524,
+  "HUSDT": 0.046,
+  "SIRENUSDT": 0.0449,
+  "PIPPINUSDT": 0.0435,
+  "BTWUSDT": 0.0412,
+  "AKEUSDT": 0.0365,
+  "EVAAUSDT": 0.0359,
+  "\u5e01\u5b89\u4eba\u751fUSDT": 0.0356,
+  "RIVERUSDT": 0.0348
+ },
+ "worst10_symbols": {
+  "EDGEUSDT": -0.0142,
+  "TROYUSDT": -0.0152,
+  "AIXBTUSDT": -0.0163,
+  "AGTUSDT": -0.017,
+  "PTBUSDT": -0.0179,
+  "PNUTUSDT": -0.0181,
+  "BEATUSDT": -0.0236,
+  "COAIUSDT": -0.0244,
+  "BANKUSDT": -0.0265,
+  "DASHUSDT": -0.027
+ },
+ "top10_symbol_days": [
+  [
+   "2025-09-07",
+   "MYXUSDT",
+   0.0332
+  ],
+  [
+   "2025-07-09",
+   "HYPERUSDT",
+   0.0323
+  ],
+  [
+   "2026-04-03",
+   "SIRENUSDT",
+   0.032
+  ],
+  [
+   "2025-11-05",
+   "AIAUSDT",
+   0.0314
+  ],
+  [
+   "2026-06-16",
+   "ESPORTSUSDT",
+   0.0309
+  ],
+  [
+   "2026-07-11",
+   "EVAAUSDT",
+   0.0282
+  ],
+  [
+   "2026-04-10",
+   "AIOTUSDT",
+   0.0274
+  ],
+  [
+   "2026-07-06",
+   "EVAAUSDT",
+   0.0239
+  ],
+  [
+   "2026-03-21",
+   "SIRENUSDT",
+   0.0226
+  ],
+  [
+   "2025-09-06",
+   "MYXUSDT",
+   0.0209
+  ]
+ ]
+}

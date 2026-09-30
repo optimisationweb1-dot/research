@@ -1,0 +1,31 @@
+symbol,onset,catalyst_label,narrative,source_url,source_date,source_level,verified
+TUTUSDT,2026-08-04,листинг перпов на DEX (Aster) + шорт-сквиз,мем,https://dailycoin.com/tut-becomes-cryptos-most-liquidated-token-after-1100-rally,2026-08,[пресса],частично (проверить дату публикации)
+HIFIUSDT,2025-09-05,шорт-сквиз после анонса делистинга Binance (03.09.2025 02:59 UTC),делистинг-памп,https://invezz.com/news/2025/09/10/binance-delisting-sparks-volatile-rallies-in-bakerytoken-hifi-finance-and-self-chain/,2025-09-10,[пресса]; анонс Binance [офиц.],да
+SYNUSDT,2026-06-15,нет данных,нет данных,,,,проверить
+SPKUSDT,2025-07-17,ожидание 2-й фазы аирдропа Ignition + листинги; рост TVL Spark,DeFi/RWA (Sky/Maker),https://www.cryptonews.net/news/altcoins/31294889/,2025-07,[пресса],частично
+AKEUSDT,2026-07-09,кампания Binance Alpha Box + крупный плечевой лонг на Aster,AI-gaming / Binance Alpha,https://bingx.com/en/news/post/why-is-akedo-ake-up-today-july-binance-alpha-box-attention-meets-a-usd-m-aster-long,2026-07-16,[вендор]/[пресса],частично
+HYPERUSDT,2025-07-03,листинг на Upbit/Bithumb (Корея),interop/L2 инфраструктура,https://www.ccn.com/analysis/crypto/hyperlane-hyper-price-pumps-upbit-listing/,2025-07,[пресса],да (время анонса Upbit — проверить)
+XPINUSDT,2025-10-12,без явного каталиста; рост объёма после листингов,DePIN (BNB Chain),https://www.ccn.com/analysis/crypto/xpin-network-xpin-price-ath-what-next-bnb-chain-depin-token/,2025-10,[пресса],частично
+RAVEUSDT,2026-04-02,шорт-сквиз (>70% шортов) после крупных ончейн-переводов,Web3-музыка/ивенты,https://phemex.com/blogs/rave-price-analysis-6000-pump-43m-liquidation-april-16,2026-04-16,[вендор],частично
+NFPUSDT,2026-06-24,анонс делистинга Binance 26.06.2026 09:00 UTC (сквиз во время окна делистинга),делистинг-памп,https://www.binance.com/en/support/announcement/detail/a9c1a7bb97064c69a660316bff39f2bd,2026-06-26,[офиц.] (только анонс; механизм — проверить),частично
+BULLAUSDT,2026-01-22,нет данных,мем,,,,проверить
+APRUSDT,2026-08-05,нет данных,нет данных,,,,проверить
+FOLKSUSDT,2025-12-06,объявление команды 09.12 + ожидание xChain V2 и инсентивов $10M,DeFi lending,https://www.bitget.com/news/detail/12560605116753,2025-12,[пресса]/[вендор],частично
+DEXEUSDT,2026-07-23,нет данных,DeFi,,,,проверить
+ESPORTSUSDT,2026-06-13,нет данных,gaming,,,,проверить
+MYXUSDT,2025-08-31,без новостей; аналитики подозревают манипуляцию инсайдеров; фон — V2 и Binance Alpha,perp-DEX,https://beincrypto.com/myx-finance-price-surge-manipulation/,2025-09,[пресса],частично
+MEMEFIUSDT,2025-07-30,анонс делистинга перпа Binance Futures 06.08.2025 07:30 UTC (в день пика),делистинг-памп,https://www.binance.com/en/support/announcement/detail/21e399dcea734230a3c181daf5407b64,2025-08-06,[офиц.],частично (механизм — проверить)
+PIEVERSEUSDT,2026-04-12,нет данных,нет данных,,,,проверить
+HUSDT,2025-10-06,без явных анонсов/листингов (моментум); позже — экспансия в SUI и отчёт Delphi,identity/proof-of-humanity,https://www.ccn.com/analysis/crypto/humanity-protocol-h-price-skyrockets-after-airdrop-overbought/,2025-10,[пресса],частично
+ZEREBROUSDT,2025-04-15,нарратив AI-агентов (AI x crypto),AI-агенты,https://coinjournal.net/news/why-is-zerebro-cryptocurrency-price-rising/,2025-04,[пресса],частично
+LIGHTUSDT,2025-12-09,нет данных (Bitlight; не путать с Lighter/LIT),BTC-L2?,https://coindcx.com/blog/price-predictions/bitlight-price-prediction/,нет данных,[вендор],проверить
+ENSOUSDT,2026-01-17,нет данных,нет данных,,,,проверить
+TAUSDT,2025-08-22,нет данных,нет данных,,,,проверить
+UMAUSDT,2024-01-12,рост TVS oSnap + ожидание запуска Oval; ликвидации шортов,DeFi оракулы,https://crypto.news/heres-why-uma-token-price-just-surged/,2024-01,[пресса] (старше 2025 — помечено),частично
+BASUSDT,2025-10-06,нет данных,нет данных,,,,проверить
+EPICUSDT,2025-07-11,нет данных,нет данных,,,,проверить
+NKNUSDT,2025-04-13,нет данных,нет данных,,,,проверить
+BULLAUSDT,2025-08-03,нет данных (свежий листинг, возраст 30 дн.),мем,,,,проверить
+TSTUSDT,2026-04-30,нет данных,мем (BNB Chain),,,,проверить
+AIOTUSDT,2026-04-01,нет данных,AI,,,,проверить
+PIPPINUSDT,2025-11-17,плечевой деривативный спрос; ончейн — ~50 связанных кошельков (подозрение на координацию),AI-агент мем (Solana),https://www.gate.com/crypto-wiki/article/how-does-on-chain-data-reveal-pippin-s-market-manipulation-in-2025-20251201,2025-12-01,[вендор],частично

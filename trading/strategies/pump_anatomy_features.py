@@ -44,6 +44,9 @@ def per_symbol(d):
     d["rcomp"] = r7 / r60
     first = d.loc[c.notna(), "date"].min()
     d["age"] = (d["date"] - first).dt.days
+    # data window starts 2023-01-01: a symbol already trading then was listed earlier -> not 'young'
+    if first <= pd.Timestamp("2023-01-01", tz="UTC"):
+        d["age"] = d["age"] + 1000
     d["size"] = np.log(d["med30qv"])
     d["dist_hi90"] = c / d["high"].rolling(90, min_periods=1).max() - 1
     d["dist_lo90"] = c / d["low"].rolling(90, min_periods=1).min() - 1
@@ -73,14 +76,30 @@ def add_btc_and_ranks(p):
     return p
 
 
+STOP = {"USDT", "USDC", "USD", "BUSD", "FDUSD", "NEW", "AND", "THE", "ON", "WILL", "COIN", "API", "VIP", "BNB"}
+
+
+def title_assets(title, known):
+    """Assets named in an announcement title: '(ASSET)', 'ASSETUSDT' contracts, and bare upper-case tickers
+    in comma lists (delisting titles), the latter only if the ticker is a known perp base asset."""
+    import re
+    t = str(title)
+    out = set(re.findall(r"\(([A-Z0-9]{2,15})\)", t))
+    out |= {re.sub(r"^(1000000|1000|1M)", "", m) for m in re.findall(r"\b([A-Z0-9]{2,20})USDT\b", t)}
+    if "delist" in t.lower() or "monitoring" in t.lower():
+        out |= {m for m in re.findall(r"\b([A-Z0-9]{2,15})\b", t) if m in known}
+    return {x for x in out if x not in STOP}
+
+
 def add_announcements(p):
     """ann14: any Binance announcement (listing/delisting catalogs) naming the base asset, published within
     the 14 days up to the close of day d. Base asset match on title tokens '(ASSET)'."""
     a = pd.read_csv(os.path.join(ROOT, "binance_announcements.csv"))
-    a["published_utc"] = pd.to_datetime(a["published_utc"], utc=True)
+    a["published_utc"] = pd.to_datetime(a["published_utc"], utc=True, format="ISO8601")
     rows = []
+    known = set(p["symbol"].str.replace("USDT$", "", regex=True).str.replace(r"^1000000|^1000|^1M", "", regex=True))
     for _, r in a.iterrows():
-        for tok in set(pd.Series(r["title"]).str.findall(r"\(([A-Z0-9]{2,15})\)").iloc[0]):
+        for tok in title_assets(r["title"], known):
             rows.append((tok, r["published_utc"], r["catalog"], r["title"]))
     an = pd.DataFrame(rows, columns=["asset", "pub", "catalog", "title"])
     base = p["symbol"].str.replace("USDT$", "", regex=True).str.replace(r"^1000000|^1000|^1M", "", regex=True)
@@ -148,7 +167,8 @@ def event_details(p, e):
 def build():
     raw = pd.read_parquet(os.path.join(ROOT, "panel_raw.parquet"))
     cls = pd.read_csv(os.path.join(ROOT, "symbol_class.csv"), index_col=0)
-    excl = set(INDEX_LIKE) | set(TRADFI)
+    # + weekend-activity test: TradFi underlyings barely move on Sat/Sun (all such symbols listed in 2026)
+    excl = set(INDEX_LIKE) | set(TRADFI) | set(cls.index[cls["we_ratio"] < 0.45])
     raw = raw[~raw["symbol"].isin(excl)]
     raw["date"] = pd.to_datetime(raw["date"], utc=True)
     p = pd.concat([per_symbol(g) for _, g in raw.groupby("symbol")], ignore_index=True)

@@ -1,0 +1,58 @@
+{
+ "auc": {
+  "score_A_IS_AUC": 0.6345,
+  "score_A_OOS_AUC": 0.6861,
+  "score_B_IS_AUC": 0.3878,
+  "score_B_OOS_AUC": 0.3185,
+  "score_C_IS_AUC": 0.937,
+  "score_C_OOS_AUC": 0.7018,
+  "POSTHOC_vol30_IS_AUC": 0.6313,
+  "POSTHOC_vol30_OOS_AUC": 0.7127
+ },
+ "coef_logit_A": {
+  "pr_rvol1": 0.244,
+  "pr_rvol3": 0.017,
+  "pr_rvol7": 0.113,
+  "pr_tshare1": 0.437,
+  "pr_tshare7": 0.11,
+  "pr_tshare_z": -0.185,
+  "pr_fund1": -0.141,
+  "pr_fund7": 0.055,
+  "pr_vcomp": 0.186,
+  "pr_rcomp": 0.192,
+  "pr_rs1": 0.034,
+  "pr_rs3": 0.232,
+  "pr_rs7": -0.045,
+  "pr_rs14": 0.126,
+  "pr_rs30": 0.011,
+  "pr_age": -0.362,
+  "pr_size": -0.01,
+  "pr_dist_hi90": -0.525,
+  "pr_dist_lo90": 0.958,
+  "pr_h_rvol_max": 0.109,
+  "pr_h_tshare_max": -0.339,
+  "pr_ret1": 0.034,
+  "pr_ret7": -0.045,
+  "young": 0.453,
+  "ann": -0.42,
+  "fneg": -0.239
+ },
+ "ew_market": {
+  "IS": {
+   "n_days": 711,
+   "mean_daily_pct": 0.153,
+   "ann_ret_pct": 32.0,
+   "sharpe_ann": 0.75,
+   "t_nw": 1.05,
+   "max_dd_pct": 60.9
+  },
+  "OOS": {
+   "n_days": 607,
+   "mean_daily_pct": -0.1148,
+   "ann_ret_pct": -50.5,
+   "sharpe_ann": -0.56,
+   "t_nw": -0.77,
+   "max_dd_pct": 78.7
+  }
+ }
+}

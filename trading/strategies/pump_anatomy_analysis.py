@@ -170,7 +170,19 @@ RULES = {
     "rvol7>=p80&vcomp<=p30": lambda q: (q["pr_rvol7"] >= 0.8) & (q["pr_vcomp"] <= 0.3),
     "rvol1>=p90&tshare1>=p80": lambda q: (q["pr_rvol1"] >= 0.9) & (q["pr_tshare1"] >= 0.8),
     "fund_neg&rs7>=p70": lambda q: (q["fund_last"] < 0) & (q["pr_rs7"] >= 0.7),
+    # POST-HOC naive benchmark (not pre-registered): plain realised volatility
+    "POSTHOC_vol30>=p90": lambda q: q["pr_vol30"] >= 0.9,
 }
+
+
+def add_vol(p):
+    """POST-HOC: 30-day realised vol of daily log returns (causal) and its cross-sectional percentile."""
+    p = p.sort_values(["symbol", "date"])
+    p["vol30"] = p.groupby("symbol")["lr"].transform(lambda x: x.rolling(30, min_periods=20).std())
+    p["pr_vol30"] = np.nan
+    m = p["elig"]
+    p.loc[m, "pr_vol30"] = p[m].groupby("date")["vol30"].rank(pct=True)
+    return p
 
 
 def rule_table(q, events, label):
@@ -188,11 +200,11 @@ def rule_table(q, events, label):
         # recall at onset day s and within s-3..s
         s_on = pd.Series(sig, index=qi.index)
         at = s_on.reindex(pd.MultiIndex.from_arrays([events["symbol"], events["date"]]))
-        rec0 = float(at.fillna(False).mean())
+        rec0 = float(at.fillna(False).astype(bool).mean())
         win = np.zeros(len(events), bool)
         for L in range(0, 4):
             w = s_on.reindex(pd.MultiIndex.from_arrays([events["symbol"], events["date"] - pd.Timedelta(days=L)]))
-            win |= w.fillna(False).to_numpy()
+            win |= w.fillna(False).to_numpy(dtype=bool)
         rows.append({"period": label, "rule": name, "n_signals": n, "signals_per_day": n / q["date"].nunique(),
                      "precision": prec, "base_rate": base, "lift": prec / base if base else np.nan,
                      "recall_at_s": rec0, "recall_s-3..s": float(win.mean()),
@@ -224,7 +236,7 @@ def placebo_lift(q, rule, n=200):
 
 
 def run_rules():
-    p = load_panel()
+    p = add_vol(load_panel())
     e = load_events()
     q = p[p["elig"] & p["y7"].notna()].copy()
     out = []
@@ -381,14 +393,18 @@ def topdecile_pr(p, e, score):
 
 
 def run_scanner():
-    p = load_panel()
+    p = add_vol(load_panel())
     e = load_events()
     p, auc, coefs = fit_scanner(p)
+    from sklearn.metrics import roc_auc_score
+    for per, m in (("IS", p["date"] <= TRAIN_END), ("OOS", p["date"] >= IS_END)):
+        mm = m & p["elig"] & p["y7"].notna() & p["pr_vol30"].notna()
+        auc[f"POSTHOC_vol30_{per}_AUC"] = round(float(roc_auc_score(p.loc[mm, "y7"].astype(int), p.loc[mm, "pr_vol30"])), 4)
     p[["date", "symbol", "score_A", "score_B", "score_C"]].dropna(subset=["score_A"]).to_parquet(
         os.path.join(ROOT, "scores.parquet"), index=False)
     mkt = ew_market(p)
-    res = pd.concat([eval_score(p, s, mkt=mkt) for s in ("score_A", "score_B", "score_C")])
-    pr = pd.DataFrame(sum([topdecile_pr(p, e, s) for s in ("score_A", "score_B", "score_C")], []))
+    res = pd.concat([eval_score(p, s, mkt=mkt) for s in ("score_A", "score_B", "score_C", "pr_vol30")])
+    pr = pd.DataFrame(sum([topdecile_pr(p, e, s) for s in ("score_A", "score_B", "score_C", "pr_vol30")], []))
     res.to_csv(os.path.join(RES, "pump_anatomy_scanner_portfolios.csv"), index=False)
     pr.to_csv(os.path.join(RES, "pump_anatomy_scanner_pr.csv"), index=False)
     with open(os.path.join(RES, "pump_anatomy_scanner.json"), "w") as f:

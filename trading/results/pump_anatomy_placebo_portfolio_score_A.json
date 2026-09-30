@@ -1,0 +1,9 @@
+{
+ "score": "score_A",
+ "hold": 7,
+ "obs_OOS_net_pct_day": 0.1139,
+ "null_mean_pct_day": -0.028,
+ "null_sd_pct_day": 0.013,
+ "p_value": 0.009900990099009901,
+ "n_perm": 100
+}

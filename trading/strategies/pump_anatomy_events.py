@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 
 from strategies.pump_anatomy_analysis import IS_END, RES, RNG, load_panel, week_block_boot
+from strategies.pump_anatomy_features import title_assets
 from strategies.pump_anatomy_panel import ROOT, load_1h
 
 IGN_TH = 0.20
@@ -46,6 +47,8 @@ def run_contagion():
     pos = {d: i for i, d in enumerate(dates)}
     for _, ev in q.iterrows():
         d, x = ev["date"], ev["symbol"]
+        if d not in pos:
+            continue
         i = pos[d]
         if i < 60:
             continue
@@ -123,15 +126,16 @@ def categorize(t):
 
 def run_announce():
     a = pd.read_csv(os.path.join(ROOT, "binance_announcements.csv"))
-    a["pub"] = pd.to_datetime(a["published_utc"], utc=True)
+    a["pub"] = pd.to_datetime(a["published_utc"], utc=True, format="ISO8601")
     a = a[(a["pub"] >= "2023-01-01") & (a["pub"] < "2026-08-25")]
     a["cat"] = a["title"].map(categorize)
+    syms = pd.read_csv(os.path.join(ROOT, "symbols_use.csv"))["symbol"]
+    known = set(syms.str.replace("USDT$", "", regex=True).str.replace(r"^1000000|^1000|^1M", "", regex=True))
     rows = []
     for _, r in a.iterrows():
-        for tok in set(pd.Series(r["title"]).str.findall(r"\(([A-Z0-9]{2,15})\)").iloc[0]):
+        for tok in title_assets(r["title"], known):
             rows.append({**r.to_dict(), "asset": tok})
     an = pd.DataFrame(rows)
-    syms = pd.read_csv(os.path.join(ROOT, "symbols_use.csv"))["symbol"]
     m = {}
     for s in syms:
         b = s[:-4]
