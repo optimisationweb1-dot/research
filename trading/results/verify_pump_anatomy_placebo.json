@@ -1,0 +1,40 @@
+{
+ "obs": {
+  "OOS_net": 0.1199,
+  "OOS_gross": 0.0744,
+  "altOOS_net": 0.1749
+ },
+ "iid": {
+  "null_mean_OOS_net": -0.033,
+  "null_sd_OOS_net": 0.0234,
+  "p_OOS_net": 0.004975124378109453,
+  "null_mean_OOS_gross": -0.0013,
+  "null_sd_OOS_gross": 0.0211,
+  "p_OOS_gross": 0.004975124378109453,
+  "null_mean_altOOS_net": -0.0336,
+  "p_altOOS_net": 0.004975124378109453,
+  "nrep": 200
+ },
+ "circshift": {
+  "null_mean_OOS_net": 0.131,
+  "null_sd_OOS_net": 0.0435,
+  "p_OOS_net": 0.5671641791044776,
+  "null_mean_OOS_gross": 0.1604,
+  "null_sd_OOS_gross": 0.038,
+  "p_OOS_gross": 1.0,
+  "null_mean_altOOS_net": 0.1888,
+  "p_altOOS_net": 0.5671641791044776,
+  "nrep": 200
+ },
+ "persist30": {
+  "null_mean_OOS_net": -0.0244,
+  "null_sd_OOS_net": 0.0531,
+  "p_OOS_net": 0.014925373134328358,
+  "null_mean_OOS_gross": 0.0066,
+  "null_sd_OOS_gross": 0.0459,
+  "p_OOS_gross": 0.06965174129353234,
+  "null_mean_altOOS_net": -0.0222,
+  "p_altOOS_net": 0.009950248756218905,
+  "nrep": 200
+ }
+}

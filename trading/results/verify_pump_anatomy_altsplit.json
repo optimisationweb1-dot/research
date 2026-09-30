@@ -1,0 +1,35 @@
+{
+ "auc": {
+  "A2_altOOS_AUC": 0.7111,
+  "A_orig_altOOS_AUC": 0.6996,
+  "vol30_altOOS_AUC": 0.7064
+ },
+ "coef": {
+  "pr_rvol1": 0.199,
+  "pr_rvol3": 0.023,
+  "pr_rvol7": 0.056,
+  "pr_tshare1": 0.628,
+  "pr_tshare7": 0.254,
+  "pr_tshare_z": -0.418,
+  "pr_fund1": 0.081,
+  "pr_fund7": 0.108,
+  "pr_vcomp": 0.46,
+  "pr_rcomp": 0.207,
+  "pr_rs1": 0.045,
+  "pr_rs3": 0.17,
+  "pr_rs7": -0.135,
+  "pr_rs14": 0.265,
+  "pr_rs30": -0.067,
+  "pr_age": -0.868,
+  "pr_size": 0.029,
+  "pr_dist_hi90": -0.95,
+  "pr_dist_lo90": 0.842,
+  "pr_h_rvol_max": 0.138,
+  "pr_h_tshare_max": -0.324,
+  "pr_ret1": 0.045,
+  "pr_ret7": -0.135,
+  "young": 0.159,
+  "ann": -0.27,
+  "fneg": 0.156
+ }
+}

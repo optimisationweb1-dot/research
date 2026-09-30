@@ -1,0 +1,35 @@
+date_utc,time_utc,event,category,what_to_watch,source_url,source_level,status
+2026-10-01,,SUI unlock (~$61M),unlock,sell pressure SUI,https://github.com/Ricosworks1/governance-research-reports/releases/tag/governance-token-unlock-october-dilution-20260924,[3P],проверить на tokenomist.ai
+2026-10-02,,DoubleZero 2Z cliff 1.66B 2Z (~$113M; 47.7% float),unlock,2Z price/perp funding,https://insights.unlocks.app/unlocks-activity-in-october-2026/,[3P],
+2026-10-02,12:30,US Employment Situation (Sep),macro,payrolls/unemployment vs Fed hike path,https://www.bls.gov/schedule/news_release/empsit.htm,[офиц.],
+2026-10-05,,Senate work period starts (to 2026-11-06) - CLARITY motion to reconsider possible,policy,any cloture re-vote,https://defirate.com/clarity-act-fact-sheet/,[3P],проверить senate.gov
+2026-10-06,,HYPE core-contributor monthly unlock (6th of each month),unlock,HYPE flows to exchanges,https://tokenomist.ai/hyperliquid,[3P],проверить размер
+2026-10-06,,Ethereum Glamsterdam Sepolia testnet fork (reported),protocol,mainnet date announcement,https://www.kucoin.com/news/flash/ethereum-s-glamsterdam-upgrade-enters-final-testnet-phase-ahead-of-q4-2026-mainnet-target,[пресса],проверить ethereum.org / ACD notes
+2026-10-14,12:30,US CPI (Sep),macro,headline 3.4% y/y and energy pass-through,https://www.bls.gov/schedule/news_release/cpi.htm,[офиц.],
+2026-10-15,,Starknet STRK cliff 226M,unlock,,https://github.com/Ricosworks1/governance-research-reports/releases/tag/governance-token-unlock-october-dilution-20260924,[3P],проверить
+2026-10-16,,Arbitrum ARB unlock (~$19.9M),unlock,,https://github.com/Ricosworks1/governance-research-reports/releases/tag/governance-token-unlock-october-dilution-20260924,[3P],проверить
+2026-10-28,18:00,FOMC statement (no SEP) + Warsh presser 18:30,macro,second hike vs hold; balance sheet signals,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,[офиц.],
+2026-10-28,,Strategy special meeting on daily preferred dividends,treasury,approval; STRC near par,https://www.sec.gov/Archives/edgar/data/1050446/000119312526401636/mstr-20260924.htm,[офиц.],
+2026-10-29,13:15,ECB decision (DFR 2.50% after Sep hike),macro,EUR/USD,https://www.financecalendar.com/ecb-rate-decisions/,[3P],проверить ecb.europa.eu
+2026-10-30,~03:00,BoJ decision + Outlook Report,macro,JPY carry,https://www.financecalendar.com/bank-of-japan-rate-decisions/,[3P],проверить boj.or.jp
+2026-10-30,08:00,Deribit monthly expiry (BTC ~121k BTC OI = 33.5% of total; ETH ~202k ETH = 16%),options,pinning / post-expiry vol,https://www.deribit.com/api/v2/public/get_book_summary_by_currency?currency=BTC&kind=option,[provider docs],snapshot 2026-09-30
+2026-10-31,,Mt. Gox repayment deadline (~34.5k BTC in trustee wallets),supply,wallet moves to exchanges or new extension,https://www.theblock.co/post/376205/mt-gox-postpones-repayment-deadline,[пресса],остаток BTC проверить on-chain
+2026-11-01,,US DST ends: 08:30 ET = 13:30 UTC from here,info,,,,
+2026-11-02,,First STRC daily dividend payment (if approved),treasury,,https://www.sec.gov/Archives/edgar/data/1050446/000119312526401636/mstr-20260924.htm,[офиц.],
+2026-11-03,,US midterm elections,policy,House/Senate control; crypto-policy odds,https://polymarket.com/event/balance-of-power-2026-midterms,[3P],
+2026-11-06,13:30,US Employment Situation (Oct),macro,,https://www.bls.gov/schedule/news_release/empsit.htm,[офиц.],
+2026-11-10,13:30,US CPI (Oct),macro,,https://www.bls.gov/schedule/news_release/cpi.htm,[офиц.],
+2026-11-XX,,OCC GENIUS Act final rule (target November),policy,stablecoin issuers licensing,https://www.pymnts.com/legal/2026/occ-races-the-clock-to-finish-genius-act-stablecoin-rules/,[пресса],дата не назначена
+2026-11-27,08:00,Deribit monthly expiry,options,,https://www.deribit.com/,[provider docs],
+2026-11-29,,HYPE anniversary unlock (~2.5% of mcap per tracker),unlock,,https://tokenomist.ai/hyperliquid,[3P],проверить
+2026-12-04,13:30,US Employment Situation (Nov),macro,,https://www.bls.gov/schedule/news_release/empsit.htm,[офиц.],
+2026-12-09,19:00,FOMC statement + SEP/dot plot,macro,2027 path; dots,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,[офиц.],
+2026-12-10,13:30,US CPI (Nov),macro,,https://www.bls.gov/schedule/news_release/cpi.htm,[офиц.],
+2026-12-11,,US continuing resolution expires (shutdown risk),policy,,https://www.nbcnews.com/politics/congress/senate-leaders-reach-deal-avert-shutdown-2026-elections-rcna590564,[пресса],проверить подписание закона
+2026-12-25,08:00,Deribit quarterly expiry (BTC ~120k BTC = 33% OI; ETH ~531k ETH = 42% OI),options,,https://www.deribit.com/api/v2/public/get_book_summary_by_currency?currency=ETH&kind=option,[provider docs],snapshot 2026-09-30
+2027-01-18,,GENIUS Act effective date (or 120 days after final regs if earlier),policy,,https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-3.html,[офиц.],
+2027-03-17,18:00,FOMC + SEP (tentative),macro,,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,[офиц.],tentative
+2027-03-26,08:00,Deribit quarterly expiry (BTC ~9.8% OI; ETH ~13.5%),options,,https://www.deribit.com/,[provider docs],
+2027-06-09,18:00,FOMC + SEP (tentative),macro,,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,[офиц.],tentative
+2027-09-15,18:00,FOMC + SEP (tentative),macro,,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,[офиц.],tentative
+2027-12-08,19:00,FOMC + SEP (tentative),macro,,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,[офиц.],tentative

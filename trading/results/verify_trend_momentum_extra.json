@@ -1,0 +1,38 @@
+{
+ "full_to_2026-08-31": {
+  "OOS_n": 203,
+  "avg_R": 0.36,
+  "t": 2.4,
+  "t_week_cluster": 1.69,
+  "t_month_cluster": 1.46,
+  "n_open_at_end": 9,
+  "sumR_open_at_end": 28.5,
+  "closed_only_avg_R": 0.23,
+  "closed_only_t": 1.63,
+  "sym_pos": 9
+ },
+ "data_end_2026-07-31": {
+  "OOS_n": 185,
+  "avg_R": 0.291,
+  "t": 1.99,
+  "t_week_cluster": 1.34,
+  "t_month_cluster": 1.17,
+  "n_open_at_end": 10,
+  "sumR_open_at_end": 6.7,
+  "closed_only_avg_R": 0.27,
+  "closed_only_t": 1.75,
+  "sym_pos": 9
+ },
+ "data_end_2026-06-30": {
+  "OOS_n": 178,
+  "avg_R": 0.354,
+  "t": 2.23,
+  "t_week_cluster": 1.4,
+  "t_month_cluster": 1.3,
+  "n_open_at_end": 10,
+  "sumR_open_at_end": 33.6,
+  "closed_only_avg_R": 0.175,
+  "closed_only_t": 1.15,
+  "sym_pos": 9
+ }
+}

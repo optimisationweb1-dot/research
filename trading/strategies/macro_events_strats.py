@@ -11,6 +11,7 @@ import math
 import os
 import sys
 from concurrent.futures import ProcessPoolExecutor
+from functools import lru_cache
 
 import numpy as np
 import pandas as pd
@@ -31,10 +32,15 @@ SETS = {"HIGH3": ["CPI", "NFP", "FOMC_STATEMENT"], "CPI_FOMC": ["CPI", "FOMC_STA
 FIVE = pd.Timedelta(minutes=5)
 
 
-def _events():
+@lru_cache(maxsize=None)
+def _events_cached():
     ev = pd.read_csv(EV)
     ev["t"] = pd.to_datetime(ev["t_publish_utc"], utc=True)
     return ev
+
+
+def _events():
+    return _events_cached().copy()
 
 
 def event_times(which):
@@ -42,14 +48,14 @@ def event_times(which):
     return sorted(ev.loc[ev["category"].isin(SETS[which]), "t"].tolist())
 
 
+@lru_cache(maxsize=None)
 def busy_dates():
     ev = _events()
-    return set(ev.loc[ev["category"].isin(BUSY_CATS), "t"].dt.tz_convert(ET).dt.date)
+    return frozenset(ev.loc[ev["category"].isin(BUSY_CATS), "t"].dt.tz_convert(ET).dt.date)
 
 
-def placebo_times(which, seed):
-    """One random non-event weekday per real event, same NY wall-clock time, within +-60 days."""
-    rng = np.random.default_rng(seed)
+@lru_cache(maxsize=None)
+def _cands(which):
     busy = busy_dates()
     out = []
     for t0 in event_times(which):
@@ -62,8 +68,14 @@ def placebo_times(which, seed):
             if d.weekday() >= 5 or d in busy:
                 continue
             cands.append(pd.Timestamp(f"{d} {loc.strftime('%H:%M')}", tz=ET).tz_convert("UTC"))
-        out.append(cands[rng.integers(len(cands))])
-    return sorted(out)
+        out.append(cands)
+    return out
+
+
+def placebo_times(which, seed):
+    """One random non-event weekday per real event, same NY wall-clock time, within +-60 days."""
+    rng = np.random.default_rng(seed)
+    return sorted(c[rng.integers(len(c))] for c in _cands(which))
 
 
 def _pos(idx, times):
@@ -219,6 +231,20 @@ def _run_one(args):
     return vname(v), sym, seed, out
 
 
+def _run_placebo(args):
+    v, sym, seeds = args
+    s_, es, p, H = v
+    df = load(sym, "5m")
+    res = []
+    for seed in seeds:
+        kw = dict(p, times=placebo_times(es, seed))
+        if s_ == "S2":
+            kw["busy"] = busy_dates()
+        tr = simulate(df, FUNCS[s_](df, **kw), COSTS["base"], max_hold=H, symbol=sym)
+        res.append((seed, tr[["t_entry", "R"]] if len(tr) else pd.DataFrame(columns=["t_entry", "R"])))
+    return vname(v), res
+
+
 def lookahead_checks():
     df = load("BTCUSDT", "5m", start="2024-01-01", end="2024-04-01")
     busy = busy_dates()
@@ -266,22 +292,31 @@ def main(n_placebo=int(os.environ.get("MACRO_PLACEBO", 100))):
         best = max(cand, key=lambda r: r["IS"].get("t_stat_day_cluster") or -99)
         sel[fam] = best["variant"]
     out["selected_IS"] = sel
+    for r in sorted(rows, key=lambda r: (r["variant"], r["cost"])):
+        i, o = r["IS"], r["OOS"]
+        print(f"{r['variant']:32s} {r['cost']:5s} IS n={i.get('n')} R={i.get('avg_R')} tc={i.get('t_stat_day_cluster')} | "
+              f"OOS n={o.get('n')} R={o.get('avg_R')} tc={o.get('t_stat_day_cluster')} pf={o.get('pf')}", flush=True)
+    print("selected", sel, flush=True)
     # placebo for selected variants: same rule on random non-event days (same NY time)
+    with open(OUT, "w") as f:
+        json.dump(out, f, indent=1, default=str)          # save the grid before the (slow) placebo
     vmap = {vname(v): v for v in variants()}
     plac = {}
     if n_placebo:
-        jobs = [(vmap[nm], sym, None, 1000 + i) for nm in sel.values() for i in range(n_placebo) for sym in SYMBOLS]
+        seeds = list(range(1000, 1000 + n_placebo))
+        jobs = [(vmap[nm], sym, seeds) for nm in sel.values() for sym in SYMBOLS]
         acc = {}
         with ProcessPoolExecutor(2) as ex:
-            for name, sym, seed, res in ex.map(_run_one, jobs, chunksize=10):
-                acc.setdefault((name, seed), []).append(res["base"])
+            for name, res in ex.map(_run_placebo, jobs):
+                for seed, tr in res:
+                    acc.setdefault((name, seed), []).append(tr)
+        cut = pd.Timestamp("2025-01-01", tz="UTC")
         for (name, seed), lst in acc.items():
             tr = pd.concat(lst, ignore_index=True)
             if len(tr) == 0:
                 continue
-            is_ = tr[tr["t_entry"] < pd.Timestamp("2025-01-01", tz="UTC")]["R"].mean()
-            oos = tr[tr["t_entry"] >= pd.Timestamp("2025-01-01", tz="UTC")]["R"].mean()
-            plac.setdefault(name, []).append((is_, oos, tr["R"].mean()))
+            te = pd.to_datetime(tr["t_entry"], utc=True)
+            plac.setdefault(name, []).append((tr.loc[te < cut, "R"].mean(), tr.loc[te >= cut, "R"].mean(), tr["R"].mean()))
         for name, arr in plac.items():
             a = np.array(arr, float)
             act = [r for r in rows if r["variant"] == name and r["cost"] == "base"][0]
@@ -338,7 +373,7 @@ def _run_posthoc(args):
     return es, str(p), seed, {k: pd.concat(v, ignore_index=True) for k, v in out.items()}
 
 
-def posthoc_main(n_placebo=100):
+def posthoc_main(n_placebo=50):
     df = load("BTCUSDT", "5m", start="2024-01-01", end="2024-06-01")
     check_lookahead(p_pre_long, df, {"times": [t for t in event_times("CPI") if df.index[0] < t < df.index[-1]]},
                     min_bars=2000)

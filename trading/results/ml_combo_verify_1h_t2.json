@@ -1,0 +1,25 @@
+{
+ "tf": "1h",
+ "track": 2,
+ "feature_check": {
+  "cuts": [
+   "2024-09-18 04:00:00+00:00",
+   "2024-11-29 20:00:00+00:00",
+   "2026-04-03 16:00:00+00:00"
+  ],
+  "max_abs_diff": 0.0
+ },
+ "prediction_recompute": {
+  "month": "2025-06-01 00:00:00+00:00",
+  "truncated_at": "2025-06-15 07:00:00+00:00",
+  "rows": 3440,
+  "max_abs_diff": 0.0
+ },
+ "engine_check_lookahead": {
+  "passed": true,
+  "symbol": "BTCUSDT",
+  "n_checks": 4,
+  "period": "2024-06-01 00:00:00+00:00..2025-08-31 23:00:00+00:00",
+  "signals_in_window": 5904
+ }
+}

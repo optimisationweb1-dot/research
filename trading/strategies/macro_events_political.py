@@ -199,6 +199,29 @@ def summarize_sample(rows, name, directional):
     return out, df
 
 
+# POST-HOC (added 30.09.2026 after seeing sample A; rules fixed BEFORE computing any B-directional number):
+# a transparent keyword classifier = what a real-time bot could do from the post text alone.
+import re as _re
+_CRYPTO = r"crypto|bitcoin|\bbtc\b|digital asset|stablecoin|genius act"
+_CRYPTO_POS = r"reserve|capital of|leader|support|sign|great|protect|end the war|stockpile|embrace"
+_TRADE = r"tariff|china|trade"
+_ESC = r"rais|increas|impos|additional|will be charged|\d+ ?%|hostile|retaliat|sanction|export control"
+_DEESC = r"paus|suspend|deal\b|agreement|reset|lower|reduc|great time to buy|will all be fine|productive|truce|extend"
+
+
+def classify(txt):
+    t = (txt or "").lower()
+    if _re.search(_CRYPTO, t) and _re.search(_CRYPTO_POS, t):
+        return 1
+    if _re.search(_TRADE, t):
+        de, es = bool(_re.search(_DEESC, t)), bool(_re.search(_ESC, t))
+        if de and not es:
+            return 1
+        if es and not de and _re.search(r"tariff", t):
+            return -1
+    return 0
+
+
 def main():
     ev = pd.read_csv(EV)
     ev["t"] = pd.to_datetime(ev["t_publish_utc"], utc=True)
@@ -227,8 +250,14 @@ def main():
     res["A_signed_by_exante_bp"] = {h: {"mean": round(1e4 * g[h].mean(), 1), "nw_t": round(nw_t(g[h].to_numpy()), 2),
                                         "hit": round(float((g[h] > 0).mean()), 2), "n": int(g[h].notna().sum())}
                                     for h in g.columns}
+    B["dir"] = B["txt"].map(classify)
     rowsB = build(B)
     res["B_truth_systematic"], dfB = summarize_sample(rowsB, "B Truth Social keyword posts (cluster-first)", False)
+    lab = [r for r in rowsB if r["dir"] != 0]
+    res["B_POSTHOC_keyword_classifier"], _ = summarize_sample(lab, "B posts with keyword-classifier label (post-hoc)", True)
+    res["B_POSTHOC_label_counts"] = B["dir"].value_counts().to_dict()
+    res["B_POSTHOC_labelled_posts"] = B.loc[B["dir"] != 0, ["t", "dir", "url", "txt"]].astype({"t": str}).assign(
+        txt=lambda x: x["txt"].str.slice(0, 120)).to_dict("records")
     # by keyword group, |r15| ratio
     kw = tp.set_index(tp["id"].astype(str))[[c for c in tp if c.startswith("kw_")]]
     dfB = dfB.join(kw, on="id")

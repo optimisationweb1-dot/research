@@ -1,0 +1,18 @@
+{
+ "obs": {
+  "OOS_net": 0.1199,
+  "OOS_gross": 0.0744,
+  "altOOS_net": 0.1749
+ },
+ "circshift": {
+  "null_mean_OOS_net": 0.0207,
+  "null_sd_OOS_net": 0.0293,
+  "p_OOS_net": 0.004975124378109453,
+  "null_mean_OOS_gross": 0.0586,
+  "null_sd_OOS_gross": 0.026,
+  "p_OOS_gross": 0.27860696517412936,
+  "null_mean_altOOS_net": 0.055,
+  "p_altOOS_net": 0.004975124378109453,
+  "nrep": 200
+ }
+}

@@ -1,0 +1,13 @@
+variant,period,n,net_pct_day,t_nw,gross_pct_day,fund_pct_day,cost_pct_day
+A2_fixed_dayfund,altIS<2025-07(in-sample),892,-0.027,-0.71,-0.0272,0.0178,-0.0176
+A2_fixed_dayfund_nofunding,altIS<2025-07(in-sample),892,-0.0448,-1.2,-0.0272,0.0178,-0.0176
+A2_fixed_dayfund,altOOS>=2025-07,427,0.1633,2.27,0.1072,0.0732,-0.0171
+A2_fixed_dayfund_nofunding,altOOS>=2025-07,427,0.0901,1.28,0.1072,0.0732,-0.0171
+A2_bh_exactfund,altIS<2025-07(in-sample),892,-0.0417,-1.02,-0.03,0.0197,-0.0314
+A2_bh_exactfund_nofunding,altIS<2025-07(in-sample),892,-0.0613,-1.55,-0.03,0.0197,-0.0314
+A2_bh_exactfund,altOOS>=2025-07,427,0.1607,1.8,0.0914,0.1007,-0.0314
+A2_bh_exactfund_nofunding,altOOS>=2025-07,427,0.06,0.73,0.0914,0.1007,-0.0314
+A2_bh_exactfund_extreme,altIS<2025-07(in-sample),892,-0.0816,-2.01,-0.03,0.0197,-0.0713
+A2_bh_exactfund_extreme_nofunding,altIS<2025-07(in-sample),892,-0.1013,-2.56,-0.03,0.0197,-0.0713
+A2_bh_exactfund_extreme,altOOS>=2025-07,427,0.1208,1.35,0.0914,0.1007,-0.0714
+A2_bh_exactfund_extreme_nofunding,altOOS>=2025-07,427,0.0201,0.24,0.0914,0.1007,-0.0714

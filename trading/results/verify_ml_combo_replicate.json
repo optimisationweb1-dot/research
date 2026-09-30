@@ -1,0 +1,29 @@
+{
+ "panel_vs_original": {
+  "shape_new": [
+   321360,
+   68
+  ],
+  "shape_orig": [
+   321360,
+   68
+  ],
+  "same_shape": true,
+  "max_abs_diff": 0.0,
+  "nan_mismatch": 0
+ },
+ "preds_raw_small": {
+  "rows_new": 277920,
+  "rows_orig": 277920,
+  "rows_joined": 277920,
+  "max_abs_diff": 0.0,
+  "secs": 244
+ },
+ "preds_raw_large": {
+  "rows_new": 277920,
+  "rows_orig": 277920,
+  "rows_joined": 277920,
+  "max_abs_diff": 0.0,
+  "secs": 548
+ }
+}

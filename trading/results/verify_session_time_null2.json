@@ -1,0 +1,98 @@
+{
+ "lodo_ny": {
+  "OOS_avgR": 0.067,
+  "n_days": 100,
+  "ex_top1_days": -0.088,
+  "ex_top2_days": -0.156,
+  "ex_top3_days": -0.221,
+  "ex_top5_days": -0.312,
+  "ex_top10_days": -0.456,
+  "top_day_trades": {
+   "2025-07-09": [
+    9,
+    31.36
+   ],
+   "2026-01-29": [
+    8,
+    12.37
+   ],
+   "2026-08-19": [
+    3,
+    11.75
+   ]
+  }
+ },
+ "clustered_null_ny": {
+  "n_perm": 1000,
+  "pool": "ny",
+  "IS": {
+   "real_avgR": 0.2606,
+   "null_mean": -0.103,
+   "null_sd": 0.1501,
+   "null_p95": 0.1554,
+   "p_value": 0.012
+  },
+  "OOS": {
+   "real_avgR": 0.0668,
+   "null_mean": -0.0501,
+   "null_sd": 0.1711,
+   "null_p95": 0.2344,
+   "p_value": 0.2517
+  },
+  "altOOS": {
+   "real_avgR": 0.1721,
+   "null_mean": -0.0347,
+   "null_sd": 0.19,
+   "null_p95": 0.2697,
+   "p_value": 0.1339
+  }
+ },
+ "lodo_all": {
+  "OOS_avgR": 0.157,
+  "n_days": 314,
+  "ex_top1_days": 0.119,
+  "ex_top2_days": 0.081,
+  "ex_top3_days": 0.046,
+  "ex_top5_days": -0.02,
+  "ex_top10_days": -0.145,
+  "top_day_trades": {
+   "2026-08-19": [
+    10,
+    35.41
+   ],
+   "2025-07-09": [
+    10,
+    35.17
+   ],
+   "2025-11-03": [
+    11,
+    32.19
+   ]
+  }
+ },
+ "clustered_null_all": {
+  "n_perm": 500,
+  "pool": "all",
+  "IS": {
+   "real_avgR": 0.0516,
+   "null_mean": -0.1694,
+   "null_sd": 0.0696,
+   "null_p95": -0.0532,
+   "p_value": 0.004
+  },
+  "OOS": {
+   "real_avgR": 0.1568,
+   "null_mean": -0.1316,
+   "null_sd": 0.079,
+   "null_p95": -0.0043,
+   "p_value": 0.002
+  },
+  "altOOS": {
+   "real_avgR": 0.1128,
+   "null_mean": -0.1316,
+   "null_sd": 0.0919,
+   "null_p95": 0.0215,
+   "p_value": 0.004
+  }
+ }
+}

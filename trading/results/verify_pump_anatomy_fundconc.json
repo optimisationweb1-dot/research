@@ -1,0 +1,18 @@
+{
+ "OOS_funding_total": 0.4673,
+ "top3_symbols_share": 0.348,
+ "top10_symbols_share": 0.583,
+ "top10": {
+  "MYXUSDT": 0.0935,
+  "RIVERUSDT": 0.0427,
+  "RAVEUSDT": 0.0266,
+  "LABUSDT": 0.0257,
+  "ALPACAUSDT": 0.0183,
+  "HOMEUSDT": 0.0164,
+  "PIPPINUSDT": 0.0141,
+  "POWERUSDT": 0.0124,
+  "HUSDT": 0.0117,
+  "SIRENUSDT": 0.011
+ },
+ "funding_ex_top10_pct_day": 0.0321
+}

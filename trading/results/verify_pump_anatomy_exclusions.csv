@@ -1,0 +1,13 @@
+variant,period,n,net_pct_day,t_nw,gross_pct_day,fund_pct_day,cost_pct_day
+A_bh_excl_top3_symbols,IS,711,-0.0483,-1.43,-0.032,0.0151,-0.0314
+A_bh_excl_top3_symbols,OOS,608,0.044,0.77,0.0149,0.0604,-0.0313
+A_bh_excl_top3_symbols,altIS<2025-07,892,-0.0402,-1.22,-0.0293,0.0204,-0.0313
+A_bh_excl_top3_symbols,altOOS>=2025-07,427,0.0664,0.93,0.0291,0.0686,-0.0314
+A_bh_excl_top10_symbols,IS,711,-0.048,-1.42,-0.0318,0.0152,-0.0314
+A_bh_excl_top10_symbols,OOS,608,-0.0308,-0.59,-0.0417,0.0421,-0.0312
+A_bh_excl_top10_symbols,altIS<2025-07,892,-0.0482,-1.58,-0.0353,0.0184,-0.0313
+A_bh_excl_top10_symbols,altOOS>=2025-07,427,-0.023,-0.34,-0.0386,0.0469,-0.0313
+A_bh_excl_top3_events(+-7d),IS,711,-0.0483,-1.43,-0.032,0.0151,-0.0314
+A_bh_excl_top3_events(+-7d),OOS,608,0.054,0.96,0.0237,0.0616,-0.0313
+A_bh_excl_top3_events(+-7d),altIS<2025-07,892,-0.0405,-1.22,-0.0294,0.0203,-0.0313
+A_bh_excl_top3_events(+-7d),altOOS>=2025-07,427,0.0811,1.17,0.0419,0.0705,-0.0314

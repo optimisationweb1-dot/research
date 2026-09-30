@@ -902,6 +902,675 @@
    }
   ]
  },
+ "B_POSTHOC_keyword_classifier": {
+  "name": "B posts with keyword-classifier label (post-hoc)",
+  "n_events": 53,
+  "n_rows": 265,
+  "abs_impact": [
+   {
+    "h_min": 1,
+    "mean_abs_bp": 17.6,
+    "base_abs_bp": 7.4,
+    "ratio": 2.38
+   },
+   {
+    "h_min": 2,
+    "mean_abs_bp": 28.5,
+    "base_abs_bp": 10.7,
+    "ratio": 2.66
+   },
+   {
+    "h_min": 5,
+    "mean_abs_bp": 36.6,
+    "base_abs_bp": 16.8,
+    "ratio": 2.18
+   },
+   {
+    "h_min": 15,
+    "mean_abs_bp": 62.4,
+    "base_abs_bp": 28.8,
+    "ratio": 2.17
+   },
+   {
+    "h_min": 60,
+    "mean_abs_bp": 100.0,
+    "base_abs_bp": 58.3,
+    "ratio": 1.72
+   },
+   {
+    "h_min": 240,
+    "mean_abs_bp": 167.1,
+    "base_abs_bp": 114.2,
+    "ratio": 1.46
+   }
+  ],
+  "placebo_abs_r15": {
+   "actual_bp": 62.4,
+   "placebo_mean_bp": 28.8,
+   "p": 0.0
+  },
+  "share_of_r60_done_before_L": {
+   "L1": 0.14,
+   "L2": 0.17,
+   "L5": 0.26,
+   "n_rows": 52
+  },
+  "fast_reaction": [
+   {
+    "mode": "momentum",
+    "L": 1,
+    "H": 60,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 19.0,
+    "hit": 0.4,
+    "nw_t": 0.81,
+    "IS_bp": -37.6,
+    "OOS_bp": 26.2
+   },
+   {
+    "mode": "momentum",
+    "L": 1,
+    "H": 60,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 11.0,
+    "hit": 0.4,
+    "nw_t": 0.47,
+    "IS_bp": -45.6,
+    "OOS_bp": 18.2
+   },
+   {
+    "mode": "momentum",
+    "L": 1,
+    "H": 240,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": -5.9,
+    "hit": 0.36,
+    "nw_t": -0.19,
+    "IS_bp": -76.3,
+    "OOS_bp": 3.0
+   },
+   {
+    "mode": "momentum",
+    "L": 1,
+    "H": 240,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": -13.9,
+    "hit": 0.36,
+    "nw_t": -0.43,
+    "IS_bp": -84.3,
+    "OOS_bp": -5.0
+   },
+   {
+    "mode": "momentum",
+    "L": 2,
+    "H": 60,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 18.5,
+    "hit": 0.38,
+    "nw_t": 0.89,
+    "IS_bp": -37.5,
+    "OOS_bp": 25.7
+   },
+   {
+    "mode": "momentum",
+    "L": 2,
+    "H": 60,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 10.5,
+    "hit": 0.3,
+    "nw_t": 0.51,
+    "IS_bp": -45.5,
+    "OOS_bp": 17.7
+   },
+   {
+    "mode": "momentum",
+    "L": 2,
+    "H": 240,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": -9.4,
+    "hit": 0.4,
+    "nw_t": -0.33,
+    "IS_bp": -80.3,
+    "OOS_bp": -0.3
+   },
+   {
+    "mode": "momentum",
+    "L": 2,
+    "H": 240,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": -17.4,
+    "hit": 0.36,
+    "nw_t": -0.61,
+    "IS_bp": -88.3,
+    "OOS_bp": -8.3
+   },
+   {
+    "mode": "momentum",
+    "L": 5,
+    "H": 60,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 20.8,
+    "hit": 0.45,
+    "nw_t": 0.97,
+    "IS_bp": -34.7,
+    "OOS_bp": 27.9
+   },
+   {
+    "mode": "momentum",
+    "L": 5,
+    "H": 60,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 12.8,
+    "hit": 0.42,
+    "nw_t": 0.6,
+    "IS_bp": -42.7,
+    "OOS_bp": 19.9
+   },
+   {
+    "mode": "momentum",
+    "L": 5,
+    "H": 240,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 13.1,
+    "hit": 0.45,
+    "nw_t": 0.44,
+    "IS_bp": -53.8,
+    "OOS_bp": 21.6
+   },
+   {
+    "mode": "momentum",
+    "L": 5,
+    "H": 240,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 5.1,
+    "hit": 0.43,
+    "nw_t": 0.17,
+    "IS_bp": -61.8,
+    "OOS_bp": 13.6
+   },
+   {
+    "mode": "exante",
+    "L": 1,
+    "H": 60,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 14.6,
+    "hit": 0.57,
+    "nw_t": 0.66,
+    "IS_bp": -27.8,
+    "OOS_bp": 20.0
+   },
+   {
+    "mode": "exante",
+    "L": 1,
+    "H": 60,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 6.6,
+    "hit": 0.53,
+    "nw_t": 0.3,
+    "IS_bp": -35.8,
+    "OOS_bp": 12.0
+   },
+   {
+    "mode": "exante",
+    "L": 1,
+    "H": 240,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 10.7,
+    "hit": 0.57,
+    "nw_t": 0.34,
+    "IS_bp": -50.8,
+    "OOS_bp": 18.5
+   },
+   {
+    "mode": "exante",
+    "L": 1,
+    "H": 240,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 2.7,
+    "hit": 0.53,
+    "nw_t": 0.09,
+    "IS_bp": -58.8,
+    "OOS_bp": 10.5
+   },
+   {
+    "mode": "exante",
+    "L": 2,
+    "H": 60,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 5.7,
+    "hit": 0.53,
+    "nw_t": 0.29,
+    "IS_bp": -30.7,
+    "OOS_bp": 10.4
+   },
+   {
+    "mode": "exante",
+    "L": 2,
+    "H": 60,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": -2.3,
+    "hit": 0.45,
+    "nw_t": -0.11,
+    "IS_bp": -38.7,
+    "OOS_bp": 2.4
+   },
+   {
+    "mode": "exante",
+    "L": 2,
+    "H": 240,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 4.8,
+    "hit": 0.57,
+    "nw_t": 0.16,
+    "IS_bp": -54.7,
+    "OOS_bp": 12.4
+   },
+   {
+    "mode": "exante",
+    "L": 2,
+    "H": 240,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": -3.2,
+    "hit": 0.51,
+    "nw_t": -0.11,
+    "IS_bp": -62.7,
+    "OOS_bp": 4.4
+   },
+   {
+    "mode": "exante",
+    "L": 5,
+    "H": 60,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 8.2,
+    "hit": 0.49,
+    "nw_t": 0.42,
+    "IS_bp": -39.4,
+    "OOS_bp": 14.2
+   },
+   {
+    "mode": "exante",
+    "L": 5,
+    "H": 60,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 0.2,
+    "hit": 0.42,
+    "nw_t": 0.01,
+    "IS_bp": -47.4,
+    "OOS_bp": 6.2
+   },
+   {
+    "mode": "exante",
+    "L": 5,
+    "H": 240,
+    "cost": "base",
+    "n_events": 53,
+    "mean_net_bp": 12.4,
+    "hit": 0.51,
+    "nw_t": 0.45,
+    "IS_bp": -39.6,
+    "OOS_bp": 19.0
+   },
+   {
+    "mode": "exante",
+    "L": 5,
+    "H": 240,
+    "cost": "harsh",
+    "n_events": 53,
+    "mean_net_bp": 4.4,
+    "hit": 0.49,
+    "nw_t": 0.16,
+    "IS_bp": -47.6,
+    "OOS_bp": 11.0
+   }
+  ]
+ },
+ "B_POSTHOC_label_counts": {
+  "0": 261,
+  "1": 36,
+  "-1": 17
+ },
+ "B_POSTHOC_labelled_posts": [
+  {
+   "t": "2024-04-23 10:28:49.905000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/112320061756751047",
+   "txt": "The Dollar has just hit a 34 year high against the Yen, a total disaster for the United States. When I was President, I "
+  },
+  {
+   "t": "2024-05-25 19:13:35.562000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/112503319133425856",
+   "txt": "I AM VERY POSITIVE AND OPEN MINDED TO CRYPTOCURRENCY COMPANIES, AND ALL THINGS RELATED TO THIS NEW AND BURGEONING INDUST"
+  },
+  {
+   "t": "2024-07-31 14:27:24.294000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/112881568598723413",
+   "txt": "Just spoke at the Bitcoin Conference in Nashville, Tennessee on Saturday. It was GREAT! Get your\u00a0Bitcoin Sneakers now. T"
+  },
+  {
+   "t": "2024-09-30 15:11:13.460000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/113227141838155766",
+   "txt": "I promised to Make America Great Again, this time with crypto. #WorldLibertyFi is planning to help make America the cryp"
+  },
+  {
+   "t": "2024-10-31 16:16:04.149000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/113402928440845044",
+   "txt": "I would like to wish our great Bitcoiners a Happy 16th Anniversary of Satoshi\u2019s White Paper. We will end Kamala\u2019s war on"
+  },
+  {
+   "t": "2024-12-05 12:55:19.034000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/113600319916325790",
+   "txt": "CONGRATULATIONS BITCOINERS!!! $100,000!!! YOU\u2019RE WELCOME!!! Together, we will Make America Great Again!"
+  },
+  {
+   "t": "2025-01-14 16:28:28.986000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/113827650534234057",
+   "txt": "For far too long, we have relied on taxing our Great People using the Internal Revenue Service (IRS). Through soft and p"
+  },
+  {
+   "t": "2025-02-01 22:42:54.547000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/113931044424714413",
+   "txt": "Today, I have implemented a 25%\u00a0Tariff on Imports from Mexico and Canada (10% on Canadian Energy), and a 10% additional "
+  },
+  {
+   "t": "2025-02-12 12:58:14.709000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/113991030846598649",
+   "txt": "Interest Rates should be lowered, something which would go hand in hand with upcoming Tariffs!!! Lets Rock and Roll, Ame"
+  },
+  {
+   "t": "2025-03-02 15:24:20.388000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114093526901586124",
+   "txt": "A U.S. Crypto Reserve will elevate this critical industry after years of corrupt attacks by the Biden Administration, wh"
+  },
+  {
+   "t": "2025-03-04 17:40:52.987000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114105388432604284",
+   "txt": "Please explain to Governor Trudeau, of Canada, that when he puts on a Retaliatory Tariff on the U.S., our Reciprocal Tar"
+  },
+  {
+   "t": "2025-03-11 03:18:05.624000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114141631976318293",
+   "txt": "Despite the fact that Canada is charging the USA from 250% to 390% Tariffs on many of our farm products, Ontario just an"
+  },
+  {
+   "t": "2025-03-11 14:15:41.562000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114144217763824399",
+   "txt": "Based on Ontario, Canada, placing a 25% Tariff on \u201cElectricity\u201d coming into the United States, I have instructed my Secr"
+  },
+  {
+   "t": "2025-03-13 11:58:38.721000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114155003492555395",
+   "txt": "The European Union, one of the most hostile and abusive taxing and tariffing authorities in the World, which was formed "
+  },
+  {
+   "t": "2025-03-26 23:49:03.225000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114231406967175939",
+   "txt": "Senator Cynthia Lummis is an America First Warrior for the Wonderful People of Wyoming!\u00c2\u00a0As the Chair of the Senate Bank"
+  },
+  {
+   "t": "2025-04-04 15:01:19.068000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114280292618523684",
+   "txt": "Just had a very productive call with To Lam, General Secretary of the Communist Party of Vietnam, who told me that Vietn"
+  },
+  {
+   "t": "2025-04-04 23:33:20.538000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114282305980898453",
+   "txt": "Big business is not worried about the Tariffs, because they know they are here to stay, but they are focused on the BIG,"
+  },
+  {
+   "t": "2025-04-09 17:18:40.629000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114309144289505174",
+   "txt": "Based on the lack of respect that China has shown to the World\u00e2\u0080\u0099s Markets, I am hereby raising the Tariff charged to Ch"
+  },
+  {
+   "t": "2025-04-17 12:02:56.150000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114353201227355474",
+   "txt": "Had a very productive call with the President of Mexico yesterday. Likewise, I met with the highest level Japanese Trade"
+  },
+  {
+   "t": "2025-04-27 13:06:19.612000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114410073592204291",
+   "txt": "When Tariffs cut in, many people\u00e2\u0080\u0099s Income Taxes will be substantially reduced, maybe even completely eliminated. Focus"
+  },
+  {
+   "t": "2025-05-08 14:59:00.195000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114472802068018414",
+   "txt": "Today is an incredible day for America as we deliver our first Fair, Open, and Reciprocal Trade Deal \u00e2\u0080\u0094 Something our p"
+  },
+  {
+   "t": "2025-05-10 23:12:21.866000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114486066663976973",
+   "txt": "A very good meeting today with China, in Switzerland. Many things discussed, much agreed to. A total reset negotiated in"
+  },
+  {
+   "t": "2025-05-13 17:43:22.547000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114501759958997511",
+   "txt": "No Inflation, and Prices of Gasoline, Energy, Groceries, and practically everything else, are DOWN!!! THE FED must lower"
+  },
+  {
+   "t": "2025-05-17 14:27:24.420000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114523638623110397",
+   "txt": "Walmart should STOP trying to blame Tariffs as the reason for raising prices throughout the chain. Walmart made BILLIONS"
+  },
+  {
+   "t": "2025-05-23 11:19:43.418000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114556874484491575",
+   "txt": "I have long ago informed Tim Cook of Apple that I expect their iPhone\u00e2\u0080\u0099s that will be sold in the United  States of Ame"
+  },
+  {
+   "t": "2025-05-25 22:15:01.999000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114570775887793036",
+   "txt": "I received a call today from Ursula von der Leyen, President of the European Commission, requesting an extension on the "
+  },
+  {
+   "t": "2025-05-30 12:09:14.104000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114596705340367716",
+   "txt": "Two weeks ago China was in grave economic danger! The very high Tariffs I set made it virtually impossible for China to "
+  },
+  {
+   "t": "2025-05-30 23:16:50.715000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114599330494282325",
+   "txt": "It is my great honor to raise the Tariffs on steel and aluminum from 25% to 50%, effective Wednesday, June 4th. Our stee"
+  },
+  {
+   "t": "2025-06-04 06:17:08.220000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114623632387180206",
+   "txt": "I like President XI of China, always have, and always will, but he is VERY TOUGH, AND EXTREMELY HARD TO MAKE A DEAL WITH"
+  },
+  {
+   "t": "2025-06-05 14:46:02.049000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114631295762726849",
+   "txt": "I just concluded a very good phone call with President Xi, of China, discussing some of the intricacies of our recently "
+  },
+  {
+   "t": "2025-06-11 12:04:07.488000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114664632971715644",
+   "txt": "OUR DEAL WITH CHINA IS DONE, SUBJECT TO FINAL APPROVAL WITH PRESIDENT XI AND ME. FULL MAGNETS, AND ANY NECESSARY RARE EA"
+  },
+  {
+   "t": "2025-06-12 13:02:48.206000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114670526015735789",
+   "txt": "THE CHINA DEAL IS GREAT!"
+  },
+  {
+   "t": "2025-06-19 00:01:39.854000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114707090627277644",
+   "txt": "The Senate just passed an incredible Bill that is going to make America the UNDISPUTED Leader in Digital Assets \u00e2\u0080\u0094 Nobo"
+  },
+  {
+   "t": "2025-06-27 17:44:19.289000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114756567645919781",
+   "txt": "We have just been informed that Canada, a very difficult Country to TRADE with, including the fact that they have charge"
+  },
+  {
+   "t": "2025-07-02 14:44:07.699000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114784170652465525",
+   "txt": "It is my Great Honor to announce that I have just made a Trade Deal with the Socialist Republic of Vietnam after speakin"
+  },
+  {
+   "t": "2025-07-10 00:29:17.214000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114826107762484260",
+   "txt": "I am announcing a 50% TARIFF on Copper, effective August 1, 2025, after receiving a robust NATIONAL SECURITY ASSESSMENT."
+  },
+  {
+   "t": "2025-07-10 14:28:38.068000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114829408208555940",
+   "txt": "Tech Stocks, Industrial Stocks, & NASDAQ, HIT ALL-TIME, RECORD HIGHS! CRYPTO, \u00e2\u0080\u009cThrough the Roof.\u00e2\u0080\u009d NVIDIA IS UP 47% S"
+  },
+  {
+   "t": "2025-07-15 15:29:02.978000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114857957325423668",
+   "txt": "HAPPY CRYPTO WEEK! The House will soon VOTE on a tremendous Bill to Make America the UNDISPUTED, NUMBER ONE LEADER in Di"
+  },
+  {
+   "t": "2025-07-16 14:35:44.386000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114863410012919913",
+   "txt": "Fox Business: \u00e2\u0080\u009cTariff revenues topped a record $113 billion for the first time during the fiscal year \u00e2\u0080\u0094 a revelation"
+  },
+  {
+   "t": "2025-07-18 23:53:21.186000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114876927258467384",
+   "txt": "I pledged that we would bring back American liberty and leadership and make the U.S. the crypto capital of the world\u00e2\u0080\u0094T"
+  },
+  {
+   "t": "2025-07-20 22:50:40.556000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114888005422699333",
+   "txt": "\u00e2\u0080\u009cGreatest Bitcoin\u00c2\u00a0explanation of all time\u00e2\u0080\u009d"
+  },
+  {
+   "t": "2025-07-21 17:54:43.204000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114892503981994226",
+   "txt": "\u00e2\u0080\u009cFact Sheet: President Donald J. Trump Signs GENIUS Act into Law\u00e2\u0080\u009d https://www.whitehouse.gov/fact-sheets/2025/07/fac"
+  },
+  {
+   "t": "2025-07-22 17:30:01.581000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114898069194751986",
+   "txt": "President Ferdinand Marcos, of the Philippines, is just leaving the White House, with all of his many Representatives. I"
+  },
+  {
+   "t": "2025-07-22 19:21:31.247000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114898507608732258",
+   "txt": "It is my Great Honor to announce our Trade Agreement with the Republic of Indonesia, as represented by their Highly Resp"
+  },
+  {
+   "t": "2025-07-29 02:46:56.936000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114934232969144109",
+   "txt": "The Fake News is reporting that I am SEEKING a \u00e2\u0080\u009cSummit\u00e2\u0080\u009d with President Xi of China. This is not correct, I am not SE"
+  },
+  {
+   "t": "2025-07-30 22:16:41.475000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/114944494894008041",
+   "txt": "I am pleased to announce that the United States of America has agreed to a Full and Complete Trade Deal with the Republi"
+  },
+  {
+   "t": "2025-08-11 03:21:16.825000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/115007977998503665",
+   "txt": "China is worried about its shortage of soybeans. Our great farmers produce the most robust soybeans. I hope China will q"
+  },
+  {
+   "t": "2025-08-12 00:00:06.468000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/115012849265805680",
+   "txt": "I have just signed an Executive Order that will extend the Tariff Suspension on China for another 90 days. All other ele"
+  },
+  {
+   "t": "2025-09-19 15:23:58.553000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/115231649861246548",
+   "txt": "I just completed a very productive call with President Xi of China. We made progress on many very important issues inclu"
+  },
+  {
+   "t": "2025-09-25 22:51:15.839000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/115267382531822964",
+   "txt": "In order to protect our Great Heavy Truck Manufacturers from unfair outside competition, I will be imposing, as of Octob"
+  },
+  {
+   "t": "2025-10-06 17:44:54.773000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/115328463321928109",
+   "txt": "Beginning November 1st, 2025, all Medium and Heavy Duty Trucks coming into the United States from other Countries will b"
+  },
+  {
+   "t": "2025-10-12 16:43:35.898000+00:00",
+   "dir": 1,
+   "url": "https://truthsocial.com/@realDonaldTrump/115362196088273474",
+   "txt": "Don\u00e2\u0080\u0099t worry about China, it will all be fine! Highly respected President Xi just had a bad moment. He doesn\u00e2\u0080\u0099t want D"
+  },
+  {
+   "t": "2025-10-22 16:42:09.380000+00:00",
+   "dir": -1,
+   "url": "https://truthsocial.com/@realDonaldTrump/115418813519600271",
+   "txt": "The Cattle Ranchers, who I love, don\u00e2\u0080\u0099t understand that the only reason they are doing so well, for the first time in d"
+  }
+ ],
  "B_by_keyword": {
   "kw_tariff": {
    "n_events": 158,
