@@ -373,14 +373,17 @@ def _run_posthoc(args):
     return es, str(p), seed, {k: pd.concat(v, ignore_index=True) for k, v in out.items()}
 
 
-def posthoc_main(n_placebo=50):
+def posthoc_main(n_placebo=int(os.environ.get("MACRO_PLACEBO", 20))):
     df = load("BTCUSDT", "5m", start="2024-01-01", end="2024-06-01")
     check_lookahead(p_pre_long, df, {"times": [t for t in event_times("CPI") if df.index[0] < t < df.index[-1]]},
                     min_bars=2000)
     res = []
-    jobs = [(es, p, None) for es, p in POSTHOC] + [(es, p, 2000 + i) for es, p in POSTHOC for i in range(n_placebo)]
     acc = {}
     with ProcessPoolExecutor(2) as ex:
+        for es, p, seed, out in ex.map(_run_posthoc, [(es, p, None) for es, p in POSTHOC]):
+            acc[(es, p, seed)] = out
+            print(es, p, json.dumps({cn: split_summary(out[cn], label=cn) for cn in out}, default=str), flush=True)
+        jobs = [(es, p, 2000 + i) for es, p in POSTHOC for i in range(n_placebo)]
         for es, p, seed, out in ex.map(_run_posthoc, jobs, chunksize=5):
             acc[(es, p, seed)] = out
     cut = pd.Timestamp("2025-01-01", tz="UTC")
